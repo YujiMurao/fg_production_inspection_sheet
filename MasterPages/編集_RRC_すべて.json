@@ -1,0 +1,2090 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 42
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 70
+  },
+  "Values": {
+    "0,12": "製造検査表",
+    "2,31": "この画面ではRRCで製造される計画のみリストされます。",
+    "3,31": "RRC担当者がRRC作成のファイルを添付します。",
+    "4,1": "情報登録 > すべて ",
+    "6,1": "高度な検索",
+    "6,28": "出荷日",
+    "6,39": "の文字からはじまる",
+    "6,66": "Clear",
+    "40,0": "RORZE CORPORATION"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "製造検査表-メイン",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ImagePath": "Navigation/165_home_3.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 0"
+      }
+    },
+    "1,61": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "Navigation/169_user_2.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 0"
+      }
+    },
+    "2,65": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowUserPicture": false,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "6,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "出荷情報一覧",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false,
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "高度な検索"
+      }
+    },
+    "6,31": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "/スラッシュは含めないこと"
+      }
+    },
+    "6,50": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "あいまい検索"
+      }
+    },
+    "6,63": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 2,
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_eqpshipping_info",
+                    "ColumnName": "plan_no",
+                    "RelationBinding": {
+                      "RelatedTable": "MPJN00_d",
+                      "RelatedColumn": "JKKENO",
+                      "DisplayColumn": "JKSYTE"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=編集_RRC_すべて!AF7"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                          "Condition1": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                        "Condition1": {
+                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                          "Condition1": {
+                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                            "Condition1": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "Condition1": {
+                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                "Condition1": {
+                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                  "Condition1": {
+                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                    "Condition1": {
+                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                      "Condition1": {
+                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                        "Condition1": {
+                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                          "Condition1": {
+                                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                            "Condition1": {
+                                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                              "Condition1": {
+                                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                "Condition1": {
+                                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                  "Condition1": {
+                                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                    "Condition1": {
+                                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                      "Condition1": {
+                                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                        "Condition1": {
+                                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                          "Condition1": {
+                                                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                            "Condition1": {
+                                                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                              "Condition1": {
+                                                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                "Condition1": {
+                                                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                  "Condition1": {
+                                                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                    "Condition1": {
+                                                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                      "Condition1": {
+                                                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                        "Condition1": {
+                                                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                          "Condition1": {
+                                                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                            "CompareType": 6,
+                                                                                            "ColumnBindingInfo": {
+                                                                                              "TableName": "trn_eqpshipping_info",
+                                                                                              "ColumnName": "plan_no"
+                                                                                            },
+                                                                                            "Value": {
+                                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                            },
+                                                                                            "LeftBracket": 1
+                                                                                          },
+                                                                                          "Condition2": {
+                                                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                            "CompareType": 6,
+                                                                                            "ColumnBindingInfo": {
+                                                                                              "TableName": "trn_eqpshipping_info",
+                                                                                              "ColumnName": "plan_no",
+                                                                                              "RelationBinding": {
+                                                                                                "RelatedTable": "MPJN00_d",
+                                                                                                "RelatedColumn": "JKKENO",
+                                                                                                "DisplayColumn": "JKTKNM"
+                                                                                              }
+                                                                                            },
+                                                                                            "Value": {
+                                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                            }
+                                                                                          },
+                                                                                          "RelationType": 1
+                                                                                        },
+                                                                                        "Condition2": {
+                                                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                          "CompareType": 6,
+                                                                                          "ColumnBindingInfo": {
+                                                                                            "TableName": "trn_eqpshipping_info",
+                                                                                            "ColumnName": "plan_no",
+                                                                                            "RelationBinding": {
+                                                                                              "RelatedTable": "MPJN00_d",
+                                                                                              "RelatedColumn": "JKKENO",
+                                                                                              "DisplayColumn": "JKNONM"
+                                                                                            }
+                                                                                          },
+                                                                                          "Value": {
+                                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                            "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                          }
+                                                                                        },
+                                                                                        "RelationType": 1
+                                                                                      },
+                                                                                      "Condition2": {
+                                                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                        "CompareType": 6,
+                                                                                        "ColumnBindingInfo": {
+                                                                                          "TableName": "trn_eqpshipping_info",
+                                                                                          "ColumnName": "plan_no",
+                                                                                          "RelationBinding": {
+                                                                                            "RelatedTable": "MPJN00_d",
+                                                                                            "RelatedColumn": "JKKENO",
+                                                                                            "DisplayColumn": "JKSNO"
+                                                                                          }
+                                                                                        },
+                                                                                        "Value": {
+                                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                          "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                        }
+                                                                                      },
+                                                                                      "RelationType": 1
+                                                                                    },
+                                                                                    "Condition2": {
+                                                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                      "CompareType": 6,
+                                                                                      "ColumnBindingInfo": {
+                                                                                        "TableName": "trn_eqpshipping_info",
+                                                                                        "ColumnName": "plan_no",
+                                                                                        "RelationBinding": {
+                                                                                          "RelatedTable": "MPJN00_d",
+                                                                                          "RelatedColumn": "JKKENO",
+                                                                                          "DisplayColumn": "JKSNAM"
+                                                                                        }
+                                                                                      },
+                                                                                      "Value": {
+                                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                        "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                      }
+                                                                                    },
+                                                                                    "RelationType": 1
+                                                                                  },
+                                                                                  "Condition2": {
+                                                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                    "CompareType": 6,
+                                                                                    "ColumnBindingInfo": {
+                                                                                      "TableName": "trn_eqpshipping_info",
+                                                                                      "ColumnName": "plan_no",
+                                                                                      "RelationBinding": {
+                                                                                        "RelatedTable": "MPJN00_d",
+                                                                                        "RelatedColumn": "JKKENO",
+                                                                                        "DisplayColumn": "JKSSNO"
+                                                                                      }
+                                                                                    },
+                                                                                    "Value": {
+                                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                      "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                    }
+                                                                                  },
+                                                                                  "RelationType": 1
+                                                                                },
+                                                                                "Condition2": {
+                                                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                  "CompareType": 2,
+                                                                                  "ColumnBindingInfo": {
+                                                                                    "TableName": "trn_eqpshipping_info",
+                                                                                    "ColumnName": "plan_no",
+                                                                                    "RelationBinding": {
+                                                                                      "RelatedTable": "MPJN00_d",
+                                                                                      "RelatedColumn": "JKKENO",
+                                                                                      "DisplayColumn": "JKKAND"
+                                                                                    }
+                                                                                  },
+                                                                                  "Value": {
+                                                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                    "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                  }
+                                                                                },
+                                                                                "RelationType": 1
+                                                                              },
+                                                                              "Condition2": {
+                                                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                                "CompareType": 6,
+                                                                                "ColumnBindingInfo": {
+                                                                                  "TableName": "trn_eqpshipping_info",
+                                                                                  "ColumnName": "plan_no",
+                                                                                  "RelationBinding": {
+                                                                                    "RelatedTable": "MPJN00_d",
+                                                                                    "RelatedColumn": "JKKENO",
+                                                                                    "DisplayColumn": "JKHN01"
+                                                                                  }
+                                                                                },
+                                                                                "Value": {
+                                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                  "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                                }
+                                                                              },
+                                                                              "RelationType": 1
+                                                                            },
+                                                                            "Condition2": {
+                                                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                              "CompareType": 6,
+                                                                              "ColumnBindingInfo": {
+                                                                                "TableName": "trn_eqpshipping_info",
+                                                                                "ColumnName": "plan_no",
+                                                                                "RelationBinding": {
+                                                                                  "RelatedTable": "MPJN00_d",
+                                                                                  "RelatedColumn": "JKKENO",
+                                                                                  "DisplayColumn": "JKSN01"
+                                                                                }
+                                                                              },
+                                                                              "Value": {
+                                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                              }
+                                                                            },
+                                                                            "RelationType": 1
+                                                                          },
+                                                                          "Condition2": {
+                                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                            "CompareType": 6,
+                                                                            "ColumnBindingInfo": {
+                                                                              "TableName": "trn_eqpshipping_info",
+                                                                              "ColumnName": "plan_no",
+                                                                              "RelationBinding": {
+                                                                                "RelatedTable": "MPJN00_d",
+                                                                                "RelatedColumn": "JKKENO",
+                                                                                "DisplayColumn": "JKHN02"
+                                                                              }
+                                                                            },
+                                                                            "Value": {
+                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                            }
+                                                                          },
+                                                                          "RelationType": 1
+                                                                        },
+                                                                        "Condition2": {
+                                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                          "CompareType": 6,
+                                                                          "ColumnBindingInfo": {
+                                                                            "TableName": "trn_eqpshipping_info",
+                                                                            "ColumnName": "plan_no",
+                                                                            "RelationBinding": {
+                                                                              "RelatedTable": "MPJN00_d",
+                                                                              "RelatedColumn": "JKKENO",
+                                                                              "DisplayColumn": "JKSN02"
+                                                                            }
+                                                                          },
+                                                                          "Value": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                          }
+                                                                        },
+                                                                        "RelationType": 1
+                                                                      },
+                                                                      "Condition2": {
+                                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                        "CompareType": 6,
+                                                                        "ColumnBindingInfo": {
+                                                                          "TableName": "trn_eqpshipping_info",
+                                                                          "ColumnName": "plan_no",
+                                                                          "RelationBinding": {
+                                                                            "RelatedTable": "MPJN00_d",
+                                                                            "RelatedColumn": "JKKENO",
+                                                                            "DisplayColumn": "JKHN03"
+                                                                          }
+                                                                        },
+                                                                        "Value": {
+                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                          "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                        }
+                                                                      },
+                                                                      "RelationType": 1
+                                                                    },
+                                                                    "Condition2": {
+                                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                      "CompareType": 6,
+                                                                      "ColumnBindingInfo": {
+                                                                        "TableName": "trn_eqpshipping_info",
+                                                                        "ColumnName": "plan_no",
+                                                                        "RelationBinding": {
+                                                                          "RelatedTable": "MPJN00_d",
+                                                                          "RelatedColumn": "JKKENO",
+                                                                          "DisplayColumn": "JKSN03"
+                                                                        }
+                                                                      },
+                                                                      "Value": {
+                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                        "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                      }
+                                                                    },
+                                                                    "RelationType": 1
+                                                                  },
+                                                                  "Condition2": {
+                                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                    "CompareType": 6,
+                                                                    "ColumnBindingInfo": {
+                                                                      "TableName": "trn_eqpshipping_info",
+                                                                      "ColumnName": "plan_no",
+                                                                      "RelationBinding": {
+                                                                        "RelatedTable": "MPJN00_d",
+                                                                        "RelatedColumn": "JKKENO",
+                                                                        "DisplayColumn": "JKHN04"
+                                                                      }
+                                                                    },
+                                                                    "Value": {
+                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                      "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                    }
+                                                                  },
+                                                                  "RelationType": 1
+                                                                },
+                                                                "Condition2": {
+                                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                  "CompareType": 6,
+                                                                  "ColumnBindingInfo": {
+                                                                    "TableName": "trn_eqpshipping_info",
+                                                                    "ColumnName": "plan_no",
+                                                                    "RelationBinding": {
+                                                                      "RelatedTable": "MPJN00_d",
+                                                                      "RelatedColumn": "JKKENO",
+                                                                      "DisplayColumn": "JKSN04"
+                                                                    }
+                                                                  },
+                                                                  "Value": {
+                                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                    "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                  }
+                                                                },
+                                                                "RelationType": 1
+                                                              },
+                                                              "Condition2": {
+                                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                "CompareType": 6,
+                                                                "ColumnBindingInfo": {
+                                                                  "TableName": "trn_eqpshipping_info",
+                                                                  "ColumnName": "plan_no",
+                                                                  "RelationBinding": {
+                                                                    "RelatedTable": "MPJN00_d",
+                                                                    "RelatedColumn": "JKKENO",
+                                                                    "DisplayColumn": "JKHN05"
+                                                                  }
+                                                                },
+                                                                "Value": {
+                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                  "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                                }
+                                                              },
+                                                              "RelationType": 1
+                                                            },
+                                                            "Condition2": {
+                                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                              "CompareType": 6,
+                                                              "ColumnBindingInfo": {
+                                                                "TableName": "trn_eqpshipping_info",
+                                                                "ColumnName": "plan_no",
+                                                                "RelationBinding": {
+                                                                  "RelatedTable": "MPJN00_d",
+                                                                  "RelatedColumn": "JKKENO",
+                                                                  "DisplayColumn": "JKSN05"
+                                                                }
+                                                              },
+                                                              "Value": {
+                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                              }
+                                                            },
+                                                            "RelationType": 1
+                                                          },
+                                                          "Condition2": {
+                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                            "CompareType": 6,
+                                                            "ColumnBindingInfo": {
+                                                              "TableName": "trn_eqpshipping_info",
+                                                              "ColumnName": "plan_no",
+                                                              "RelationBinding": {
+                                                                "RelatedTable": "MPJN00_d",
+                                                                "RelatedColumn": "JKKENO",
+                                                                "DisplayColumn": "JKHN06"
+                                                              }
+                                                            },
+                                                            "Value": {
+                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                            }
+                                                          },
+                                                          "RelationType": 1
+                                                        },
+                                                        "Condition2": {
+                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                          "CompareType": 6,
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "trn_eqpshipping_info",
+                                                            "ColumnName": "plan_no",
+                                                            "RelationBinding": {
+                                                              "RelatedTable": "MPJN00_d",
+                                                              "RelatedColumn": "JKKENO",
+                                                              "DisplayColumn": "JKSN06"
+                                                            }
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                          }
+                                                        },
+                                                        "RelationType": 1
+                                                      },
+                                                      "Condition2": {
+                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                        "CompareType": 6,
+                                                        "ColumnBindingInfo": {
+                                                          "TableName": "trn_eqpshipping_info",
+                                                          "ColumnName": "plan_no",
+                                                          "RelationBinding": {
+                                                            "RelatedTable": "MPJN00_d",
+                                                            "RelatedColumn": "JKKENO",
+                                                            "DisplayColumn": "JKHN07"
+                                                          }
+                                                        },
+                                                        "Value": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                        }
+                                                      },
+                                                      "RelationType": 1
+                                                    },
+                                                    "Condition2": {
+                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                      "CompareType": 6,
+                                                      "ColumnBindingInfo": {
+                                                        "TableName": "trn_eqpshipping_info",
+                                                        "ColumnName": "plan_no",
+                                                        "RelationBinding": {
+                                                          "RelatedTable": "MPJN00_d",
+                                                          "RelatedColumn": "JKKENO",
+                                                          "DisplayColumn": "JKSN07"
+                                                        }
+                                                      },
+                                                      "Value": {
+                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                        "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                      }
+                                                    },
+                                                    "RelationType": 1
+                                                  },
+                                                  "Condition2": {
+                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                    "CompareType": 6,
+                                                    "ColumnBindingInfo": {
+                                                      "TableName": "trn_eqpshipping_info",
+                                                      "ColumnName": "plan_no",
+                                                      "RelationBinding": {
+                                                        "RelatedTable": "MPJN00_d",
+                                                        "RelatedColumn": "JKKENO",
+                                                        "DisplayColumn": "JKHN08"
+                                                      }
+                                                    },
+                                                    "Value": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                    }
+                                                  },
+                                                  "RelationType": 1
+                                                },
+                                                "Condition2": {
+                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                  "CompareType": 6,
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "trn_eqpshipping_info",
+                                                    "ColumnName": "plan_no",
+                                                    "RelationBinding": {
+                                                      "RelatedTable": "MPJN00_d",
+                                                      "RelatedColumn": "JKKENO",
+                                                      "DisplayColumn": "JKSN08"
+                                                    }
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                  }
+                                                },
+                                                "RelationType": 1
+                                              },
+                                              "Condition2": {
+                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                "CompareType": 6,
+                                                "ColumnBindingInfo": {
+                                                  "TableName": "trn_eqpshipping_info",
+                                                  "ColumnName": "plan_no",
+                                                  "RelationBinding": {
+                                                    "RelatedTable": "MPJN00_d",
+                                                    "RelatedColumn": "JKKENO",
+                                                    "DisplayColumn": "JKHN09"
+                                                  }
+                                                },
+                                                "Value": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                                }
+                                              },
+                                              "RelationType": 1
+                                            },
+                                            "Condition2": {
+                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                              "CompareType": 6,
+                                              "ColumnBindingInfo": {
+                                                "TableName": "trn_eqpshipping_info",
+                                                "ColumnName": "plan_no",
+                                                "RelationBinding": {
+                                                  "RelatedTable": "MPJN00_d",
+                                                  "RelatedColumn": "JKKENO",
+                                                  "DisplayColumn": "JKSN09"
+                                                }
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                              }
+                                            },
+                                            "RelationType": 1
+                                          },
+                                          "Condition2": {
+                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                            "CompareType": 6,
+                                            "ColumnBindingInfo": {
+                                              "TableName": "trn_eqpshipping_info",
+                                              "ColumnName": "plan_no",
+                                              "RelationBinding": {
+                                                "RelatedTable": "MPJN00_d",
+                                                "RelatedColumn": "JKKENO",
+                                                "DisplayColumn": "JKHN10"
+                                              }
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                            }
+                                          },
+                                          "RelationType": 1
+                                        },
+                                        "Condition2": {
+                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                          "CompareType": 6,
+                                          "ColumnBindingInfo": {
+                                            "TableName": "trn_eqpshipping_info",
+                                            "ColumnName": "plan_no",
+                                            "RelationBinding": {
+                                              "RelatedTable": "MPJN00_d",
+                                              "RelatedColumn": "JKKENO",
+                                              "DisplayColumn": "JKSN10"
+                                            }
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                          }
+                                        },
+                                        "RelationType": 1
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                        "CompareType": 6,
+                                        "ColumnBindingInfo": {
+                                          "TableName": "trn_eqpshipping_info",
+                                          "ColumnName": "plan_no",
+                                          "RelationBinding": {
+                                            "RelatedTable": "MPJN00_d",
+                                            "RelatedColumn": "JKKENO",
+                                            "DisplayColumn": "JKHN11"
+                                          }
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                        }
+                                      },
+                                      "RelationType": 1
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                      "CompareType": 6,
+                                      "ColumnBindingInfo": {
+                                        "TableName": "trn_eqpshipping_info",
+                                        "ColumnName": "plan_no",
+                                        "RelationBinding": {
+                                          "RelatedTable": "MPJN00_d",
+                                          "RelatedColumn": "JKKENO",
+                                          "DisplayColumn": "JKSN11"
+                                        }
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                      }
+                                    },
+                                    "RelationType": 1
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 6,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "trn_eqpshipping_info",
+                                      "ColumnName": "plan_no",
+                                      "RelationBinding": {
+                                        "RelatedTable": "MPJN00_d",
+                                        "RelatedColumn": "JKKENO",
+                                        "DisplayColumn": "JKHN12"
+                                      }
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                    }
+                                  },
+                                  "RelationType": 1
+                                },
+                                "Condition2": {
+                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                  "CompareType": 6,
+                                  "ColumnBindingInfo": {
+                                    "TableName": "trn_eqpshipping_info",
+                                    "ColumnName": "plan_no",
+                                    "RelationBinding": {
+                                      "RelatedTable": "MPJN00_d",
+                                      "RelatedColumn": "JKKENO",
+                                      "DisplayColumn": "JKSN12"
+                                    }
+                                  },
+                                  "Value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                  }
+                                },
+                                "RelationType": 1
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 6,
+                                "ColumnBindingInfo": {
+                                  "TableName": "trn_eqpshipping_info",
+                                  "ColumnName": "plan_no",
+                                  "RelationBinding": {
+                                    "RelatedTable": "MPJN00_d",
+                                    "RelatedColumn": "JKKENO",
+                                    "DisplayColumn": "JKHN13"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=編集_RRC_すべて!AY7"
+                                }
+                              },
+                              "RelationType": 1
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 6,
+                              "ColumnBindingInfo": {
+                                "TableName": "trn_eqpshipping_info",
+                                "ColumnName": "plan_no",
+                                "RelationBinding": {
+                                  "RelatedTable": "MPJN00_d",
+                                  "RelatedColumn": "JKKENO",
+                                  "DisplayColumn": "JKSN13"
+                                }
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=編集_RRC_すべて!AY7"
+                              }
+                            },
+                            "RelationType": 1
+                          },
+                          "Condition2": {
+                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                            "CompareType": 6,
+                            "ColumnBindingInfo": {
+                              "TableName": "trn_eqpshipping_info",
+                              "ColumnName": "plan_no",
+                              "RelationBinding": {
+                                "RelatedTable": "MPJN00_d",
+                                "RelatedColumn": "JKKENO",
+                                "DisplayColumn": "JKHN14"
+                              }
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=編集_RRC_すべて!AY7"
+                            }
+                          },
+                          "RelationType": 1
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 6,
+                          "ColumnBindingInfo": {
+                            "TableName": "trn_eqpshipping_info",
+                            "ColumnName": "plan_no",
+                            "RelationBinding": {
+                              "RelatedTable": "MPJN00_d",
+                              "RelatedColumn": "JKKENO",
+                              "DisplayColumn": "JKSN14"
+                            }
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=編集_RRC_すべて!AY7"
+                          }
+                        },
+                        "RelationType": 1
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                        "CompareType": 6,
+                        "ColumnBindingInfo": {
+                          "TableName": "trn_eqpshipping_info",
+                          "ColumnName": "plan_no",
+                          "RelationBinding": {
+                            "RelatedTable": "MPJN00_d",
+                            "RelatedColumn": "JKKENO",
+                            "DisplayColumn": "JKHN15"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=編集_RRC_すべて!AY7"
+                        }
+                      },
+                      "RelationType": 1
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 6,
+                      "ColumnBindingInfo": {
+                        "TableName": "trn_eqpshipping_info",
+                        "ColumnName": "plan_no",
+                        "RelationBinding": {
+                          "RelatedTable": "MPJN00_d",
+                          "RelatedColumn": "JKKENO",
+                          "DisplayColumn": "JKSN15"
+                        }
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=編集_RRC_すべて!AY7"
+                      }
+                    },
+                    "RelationType": 1
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 6,
+                    "ColumnBindingInfo": {
+                      "TableName": "trn_eqpshipping_info",
+                      "ColumnName": "remark"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=編集_RRC_すべて!AY7"
+                    },
+                    "RightBracket": 1
+                  },
+                  "RelationType": 1
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "_3国間"
+                  }
+                },
+                "Value": "3"
+              }
+            },
+            "Params": [
+              "=AF7",
+              "=AY7"
+            ],
+            "ID": "6767b472284b41f6a4adbd905953b5cf"
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "ImagePath": "Search4.png"
+      }
+    },
+    "6,66": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=編集_RRC_すべて!AF7"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=編集_RRC_すべて!AY7"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "Clear",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "8,11": {
+      "IsPlaceHolderCell": true
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "FontSize": 29.333333333333332,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 4,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 4,
+        "BorderTop": 0
+      },
+      {
+        "Background": 4,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "Foreground": 1
+      },
+      {
+        "Background": 4,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 4,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 4,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 6
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 1
+      },
+      {
+        "Background": 0,
+        "BorderBottom": 2
+      },
+      {
+        "Background": 0,
+        "FontFamily": 3,
+        "FontSize": 14.666666666666666,
+        "FontStyle": 9,
+        "FontWeight": 9,
+        "Foreground": 10,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 1
+      },
+      {
+        "Background": 8,
+        "FontFamily": 3,
+        "FontSize": 18.666666666666664,
+        "Foreground": 1,
+        "Formatter": 6,
+        "HorizontalAlignment": 11,
+        "Underline": false
+      },
+      {
+        "Background": 1,
+        "FontSize": 10.666666666666666
+      },
+      {
+        "Background": 1,
+        "FontFamily": 3
+      },
+      {
+        "Background": 1,
+        "FontFamily": 3,
+        "Formatter": 12
+      },
+      {
+        "Background": 1,
+        "FontFamily": 3,
+        "FontSize": 16.0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 3
+      },
+      {
+        "Background": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 1,
+        "Formatter": 6,
+        "HorizontalAlignment": 11
+      },
+      {
+        "Background": 0,
+        "BorderTop": 1
+      },
+      {
+        "Background": 13,
+        "Foreground": 1,
+        "HorizontalAlignment": 11
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF88B556",
+        "Background 1 0",
+        "Left",
+        "Body",
+        "#FFFFFF00",
+        "Text 2 0",
+        "General",
+        "#FF4ABBD9",
+        "#FF00B0F0",
+        "Normal",
+        "black",
+        "Center",
+        "@",
+        "Text 1 0"
+      ],
+      "Borders": [
+        {
+          "Style": 6,
+          "Color": 5
+        },
+        {
+          "Style": 5,
+          "Color": 7
+        },
+        {
+          "Style": 5,
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,12": 1,
+      "0,30": 0,
+      "0,31": 0,
+      "0,32": 0,
+      "0,33": 0,
+      "0,34": 0,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 0,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 0,
+      "0,48": 0,
+      "0,49": 0,
+      "0,50": 0,
+      "0,51": 0,
+      "0,52": 0,
+      "0,53": 0,
+      "0,54": 0,
+      "0,55": 0,
+      "0,56": 0,
+      "0,57": 0,
+      "0,58": 0,
+      "0,59": 0,
+      "0,60": 0,
+      "0,61": 0,
+      "0,62": 0,
+      "0,63": 0,
+      "0,64": 0,
+      "0,65": 0,
+      "0,66": 0,
+      "0,67": 0,
+      "0,68": 0,
+      "0,69": 0,
+      "1,30": 0,
+      "1,31": 0,
+      "1,32": 0,
+      "1,33": 0,
+      "1,34": 0,
+      "1,35": 0,
+      "1,36": 0,
+      "1,37": 0,
+      "1,38": 0,
+      "1,39": 0,
+      "1,40": 0,
+      "1,41": 0,
+      "1,42": 0,
+      "1,43": 0,
+      "1,44": 0,
+      "1,45": 0,
+      "1,46": 0,
+      "1,47": 0,
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "1,51": 0,
+      "1,52": 0,
+      "1,53": 0,
+      "1,54": 0,
+      "1,55": 0,
+      "1,56": 0,
+      "1,57": 0,
+      "1,58": 0,
+      "1,59": 0,
+      "1,60": 0,
+      "1,61": 2,
+      "1,62": 3,
+      "1,63": 3,
+      "1,64": 2,
+      "1,65": 2,
+      "1,66": 2,
+      "1,67": 2,
+      "1,68": 2,
+      "1,69": 0,
+      "2,30": 4,
+      "2,31": 5,
+      "2,32": 5,
+      "2,33": 5,
+      "2,34": 5,
+      "2,35": 5,
+      "2,36": 5,
+      "2,37": 5,
+      "2,38": 5,
+      "2,39": 5,
+      "2,40": 5,
+      "2,41": 5,
+      "2,42": 5,
+      "2,43": 5,
+      "2,44": 5,
+      "2,45": 5,
+      "2,46": 5,
+      "2,47": 5,
+      "2,48": 6,
+      "2,49": 0,
+      "2,50": 0,
+      "2,51": 0,
+      "2,52": 0,
+      "2,53": 0,
+      "2,54": 0,
+      "2,55": 0,
+      "2,56": 0,
+      "2,57": 0,
+      "2,58": 0,
+      "2,59": 0,
+      "2,60": 0,
+      "2,61": 3,
+      "2,62": 3,
+      "2,63": 3,
+      "2,64": 2,
+      "2,65": 7,
+      "2,66": 3,
+      "2,67": 3,
+      "2,68": 3,
+      "2,69": 0,
+      "3,0": 0,
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,8": 0,
+      "3,9": 0,
+      "3,10": 0,
+      "3,11": 0,
+      "3,30": 8,
+      "3,31": 9,
+      "3,32": 9,
+      "3,33": 9,
+      "3,34": 9,
+      "3,35": 9,
+      "3,36": 9,
+      "3,37": 9,
+      "3,38": 9,
+      "3,39": 9,
+      "3,40": 9,
+      "3,41": 9,
+      "3,42": 9,
+      "3,43": 9,
+      "3,44": 9,
+      "3,45": 9,
+      "3,46": 9,
+      "3,47": 9,
+      "3,48": 10,
+      "3,49": 0,
+      "3,50": 0,
+      "3,51": 0,
+      "3,52": 0,
+      "3,53": 0,
+      "3,54": 0,
+      "3,55": 0,
+      "3,56": 0,
+      "3,57": 0,
+      "3,58": 0,
+      "3,59": 0,
+      "3,60": 0,
+      "3,61": 3,
+      "3,62": 3,
+      "3,63": 3,
+      "3,64": 2,
+      "3,65": 2,
+      "3,66": 2,
+      "3,67": 2,
+      "3,68": 2,
+      "3,69": 0,
+      "4,0": 0,
+      "4,1": 11,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 12,
+      "4,12": 12,
+      "4,13": 12,
+      "4,14": 12,
+      "4,15": 12,
+      "4,16": 12,
+      "4,17": 12,
+      "4,18": 12,
+      "4,19": 12,
+      "4,20": 12,
+      "4,21": 12,
+      "4,22": 12,
+      "4,23": 12,
+      "4,24": 12,
+      "4,25": 12,
+      "4,26": 12,
+      "4,27": 12,
+      "4,28": 12,
+      "4,29": 12,
+      "4,30": 12,
+      "4,31": 12,
+      "4,32": 12,
+      "4,33": 12,
+      "4,34": 12,
+      "4,35": 12,
+      "4,36": 12,
+      "4,37": 12,
+      "4,38": 12,
+      "4,39": 12,
+      "4,40": 12,
+      "4,41": 12,
+      "4,42": 12,
+      "4,43": 12,
+      "4,44": 12,
+      "4,45": 12,
+      "4,46": 12,
+      "4,47": 12,
+      "4,48": 12,
+      "4,49": 12,
+      "4,50": 13,
+      "4,51": 13,
+      "4,52": 13,
+      "4,53": 13,
+      "4,54": 13,
+      "4,55": 13,
+      "4,56": 13,
+      "4,57": 13,
+      "4,58": 13,
+      "4,59": 13,
+      "4,60": 13,
+      "4,61": 13,
+      "4,62": 13,
+      "4,63": 13,
+      "4,64": 13,
+      "4,65": 13,
+      "4,66": 13,
+      "4,67": 13,
+      "4,68": 13,
+      "4,69": 13,
+      "5,0": 0,
+      "5,1": 2,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 14,
+      "5,11": 15,
+      "5,12": 15,
+      "5,13": 15,
+      "5,14": 15,
+      "5,15": 15,
+      "5,16": 15,
+      "5,17": 15,
+      "5,18": 15,
+      "5,19": 15,
+      "5,20": 15,
+      "5,21": 15,
+      "5,22": 15,
+      "5,23": 15,
+      "5,24": 15,
+      "5,25": 15,
+      "5,26": 15,
+      "5,27": 15,
+      "5,28": 15,
+      "5,29": 15,
+      "5,30": 15,
+      "5,31": 15,
+      "5,32": 15,
+      "5,33": 15,
+      "5,34": 15,
+      "5,35": 15,
+      "5,36": 15,
+      "5,37": 15,
+      "5,38": 15,
+      "5,39": 15,
+      "5,40": 15,
+      "5,41": 15,
+      "5,42": 15,
+      "5,43": 15,
+      "5,44": 15,
+      "5,45": 15,
+      "5,46": 15,
+      "5,47": 15,
+      "5,48": 15,
+      "5,49": 15,
+      "5,51": 15,
+      "5,52": 15,
+      "5,53": 15,
+      "5,54": 15,
+      "5,55": 15,
+      "5,56": 15,
+      "5,57": 15,
+      "5,58": 15,
+      "5,59": 15,
+      "5,60": 15,
+      "5,61": 15,
+      "5,62": 15,
+      "5,63": 15,
+      "5,64": 15,
+      "5,65": 15,
+      "5,66": 15,
+      "5,67": 15,
+      "5,68": 15,
+      "5,69": 15,
+      "6,0": 0,
+      "6,1": 16,
+      "6,10": 14,
+      "6,11": 15,
+      "6,13": 15,
+      "6,14": 15,
+      "6,15": 15,
+      "6,16": 15,
+      "6,17": 17,
+      "6,25": 18,
+      "6,26": 18,
+      "6,27": 18,
+      "6,28": 18,
+      "6,29": 18,
+      "6,31": 19,
+      "6,32": 3,
+      "6,33": 3,
+      "6,34": 3,
+      "6,35": 3,
+      "6,36": 3,
+      "6,37": 3,
+      "6,38": 3,
+      "6,39": 20,
+      "6,47": 15,
+      "6,48": 15,
+      "6,49": 15,
+      "6,50": 19,
+      "6,51": 3,
+      "6,52": 3,
+      "6,53": 3,
+      "6,54": 3,
+      "6,55": 3,
+      "6,56": 3,
+      "6,57": 3,
+      "6,58": 3,
+      "6,59": 3,
+      "6,60": 3,
+      "6,61": 3,
+      "6,63": 18,
+      "6,64": 3,
+      "6,65": 3,
+      "6,66": 21,
+      "6,67": 3,
+      "6,68": 3,
+      "7,0": 0,
+      "7,10": 14,
+      "7,11": 15,
+      "7,12": 15,
+      "7,13": 15,
+      "7,14": 15,
+      "7,15": 15,
+      "7,16": 15,
+      "7,17": 15,
+      "7,18": 15,
+      "7,19": 15,
+      "7,20": 15,
+      "7,21": 15,
+      "7,22": 15,
+      "7,23": 15,
+      "7,24": 15,
+      "7,25": 15,
+      "7,26": 15,
+      "7,27": 15,
+      "7,28": 15,
+      "7,29": 15,
+      "7,30": 15,
+      "7,31": 15,
+      "7,32": 15,
+      "7,33": 15,
+      "7,34": 15,
+      "7,35": 15,
+      "7,36": 15,
+      "7,37": 15,
+      "7,38": 15,
+      "7,39": 15,
+      "7,40": 15,
+      "7,41": 15,
+      "7,42": 15,
+      "7,43": 15,
+      "7,44": 15,
+      "7,45": 15,
+      "7,46": 15,
+      "7,47": 15,
+      "7,48": 15,
+      "7,49": 15,
+      "7,51": 15,
+      "7,52": 15,
+      "7,53": 15,
+      "7,54": 15,
+      "7,55": 15,
+      "7,56": 15,
+      "7,57": 15,
+      "7,58": 15,
+      "7,59": 15,
+      "7,60": 15,
+      "7,61": 15,
+      "7,62": 15,
+      "7,63": 15,
+      "7,64": 15,
+      "7,65": 15,
+      "7,66": 15,
+      "7,67": 15,
+      "7,68": 15,
+      "7,69": 15,
+      "8,0": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 14,
+      "9,0": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "9,8": 0,
+      "9,9": 0,
+      "9,10": 14,
+      "10,0": 0,
+      "10,1": 0,
+      "10,2": 0,
+      "10,3": 0,
+      "10,4": 0,
+      "10,5": 0,
+      "10,6": 0,
+      "10,7": 0,
+      "10,8": 0,
+      "10,9": 0,
+      "10,10": 14,
+      "11,0": 0,
+      "11,1": 0,
+      "11,2": 0,
+      "11,3": 0,
+      "11,4": 0,
+      "11,5": 0,
+      "11,6": 0,
+      "11,7": 0,
+      "11,8": 0,
+      "11,9": 0,
+      "11,10": 14,
+      "12,0": 0,
+      "12,1": 0,
+      "12,2": 0,
+      "12,3": 0,
+      "12,4": 0,
+      "12,5": 0,
+      "12,6": 0,
+      "12,7": 0,
+      "12,8": 0,
+      "12,9": 0,
+      "12,10": 14,
+      "13,0": 0,
+      "13,1": 0,
+      "13,2": 0,
+      "13,3": 0,
+      "13,4": 0,
+      "13,5": 0,
+      "13,6": 0,
+      "13,7": 0,
+      "13,8": 0,
+      "13,9": 0,
+      "13,10": 14,
+      "14,0": 0,
+      "14,1": 0,
+      "14,2": 0,
+      "14,3": 0,
+      "14,4": 0,
+      "14,5": 0,
+      "14,6": 0,
+      "14,7": 0,
+      "14,8": 0,
+      "14,9": 0,
+      "14,10": 14,
+      "15,0": 0,
+      "15,1": 0,
+      "15,2": 0,
+      "15,3": 0,
+      "15,4": 0,
+      "15,5": 0,
+      "15,6": 0,
+      "15,7": 0,
+      "15,8": 0,
+      "15,9": 0,
+      "15,10": 14,
+      "16,0": 0,
+      "16,1": 0,
+      "16,2": 0,
+      "16,3": 0,
+      "16,4": 0,
+      "16,5": 0,
+      "16,6": 0,
+      "16,7": 0,
+      "16,8": 0,
+      "16,9": 0,
+      "16,10": 14,
+      "17,0": 0,
+      "17,1": 0,
+      "17,2": 0,
+      "17,3": 0,
+      "17,4": 0,
+      "17,5": 0,
+      "17,6": 0,
+      "17,7": 0,
+      "17,8": 0,
+      "17,9": 0,
+      "17,10": 14,
+      "18,0": 0,
+      "18,1": 0,
+      "18,2": 0,
+      "18,3": 0,
+      "18,4": 0,
+      "18,5": 0,
+      "18,6": 0,
+      "18,7": 0,
+      "18,8": 0,
+      "18,9": 0,
+      "18,10": 14,
+      "19,0": 0,
+      "19,1": 0,
+      "19,2": 0,
+      "19,3": 0,
+      "19,4": 0,
+      "19,5": 0,
+      "19,6": 0,
+      "19,7": 0,
+      "19,8": 0,
+      "19,9": 0,
+      "19,10": 14,
+      "20,0": 0,
+      "20,1": 0,
+      "20,2": 0,
+      "20,3": 0,
+      "20,4": 0,
+      "20,5": 0,
+      "20,6": 0,
+      "20,7": 0,
+      "20,8": 0,
+      "20,9": 0,
+      "20,10": 14,
+      "21,0": 0,
+      "21,1": 0,
+      "21,2": 0,
+      "21,3": 0,
+      "21,4": 0,
+      "21,5": 0,
+      "21,6": 0,
+      "21,7": 0,
+      "21,8": 0,
+      "21,9": 0,
+      "21,10": 14,
+      "22,0": 0,
+      "22,1": 0,
+      "22,2": 0,
+      "22,3": 0,
+      "22,4": 0,
+      "22,5": 0,
+      "22,6": 0,
+      "22,7": 0,
+      "22,8": 0,
+      "22,9": 0,
+      "22,10": 14,
+      "23,0": 0,
+      "23,1": 0,
+      "23,2": 0,
+      "23,3": 0,
+      "23,4": 0,
+      "23,5": 0,
+      "23,6": 0,
+      "23,7": 0,
+      "23,8": 0,
+      "23,9": 0,
+      "23,10": 14,
+      "24,0": 0,
+      "24,1": 0,
+      "24,2": 0,
+      "24,3": 0,
+      "24,4": 0,
+      "24,5": 0,
+      "24,6": 0,
+      "24,7": 0,
+      "24,8": 0,
+      "24,9": 0,
+      "24,10": 14,
+      "25,0": 0,
+      "25,1": 0,
+      "25,2": 0,
+      "25,3": 0,
+      "25,4": 0,
+      "25,5": 0,
+      "25,6": 0,
+      "25,7": 0,
+      "25,8": 0,
+      "25,9": 0,
+      "25,10": 14,
+      "26,0": 0,
+      "26,1": 0,
+      "26,2": 0,
+      "26,3": 0,
+      "26,4": 0,
+      "26,5": 0,
+      "26,6": 0,
+      "26,7": 0,
+      "26,8": 0,
+      "26,9": 0,
+      "26,10": 14,
+      "27,0": 0,
+      "27,1": 0,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 0,
+      "27,6": 0,
+      "27,7": 0,
+      "27,8": 0,
+      "27,9": 0,
+      "27,10": 14,
+      "28,0": 0,
+      "28,1": 0,
+      "28,2": 0,
+      "28,3": 0,
+      "28,4": 0,
+      "28,5": 0,
+      "28,6": 0,
+      "28,7": 0,
+      "28,8": 0,
+      "28,9": 0,
+      "28,10": 14,
+      "29,0": 0,
+      "29,1": 0,
+      "29,2": 0,
+      "29,3": 0,
+      "29,4": 0,
+      "29,5": 0,
+      "29,6": 0,
+      "29,7": 0,
+      "29,8": 0,
+      "29,9": 0,
+      "29,10": 14,
+      "30,0": 0,
+      "30,1": 0,
+      "30,2": 0,
+      "30,3": 0,
+      "30,4": 0,
+      "30,5": 0,
+      "30,6": 0,
+      "30,7": 0,
+      "30,8": 0,
+      "30,9": 0,
+      "30,10": 14,
+      "31,0": 0,
+      "31,1": 0,
+      "31,2": 0,
+      "31,3": 0,
+      "31,4": 0,
+      "31,5": 0,
+      "31,6": 0,
+      "31,7": 0,
+      "31,8": 0,
+      "31,9": 0,
+      "31,10": 14,
+      "32,0": 0,
+      "32,1": 0,
+      "32,2": 0,
+      "32,3": 0,
+      "32,4": 0,
+      "32,5": 0,
+      "32,6": 0,
+      "32,7": 0,
+      "32,8": 0,
+      "32,9": 0,
+      "32,10": 14,
+      "33,0": 0,
+      "33,1": 0,
+      "33,2": 0,
+      "33,3": 0,
+      "33,4": 0,
+      "33,5": 0,
+      "33,6": 0,
+      "33,7": 0,
+      "33,8": 0,
+      "33,9": 0,
+      "33,10": 14,
+      "34,0": 0,
+      "34,1": 0,
+      "34,2": 0,
+      "34,3": 0,
+      "34,4": 0,
+      "34,5": 0,
+      "34,6": 0,
+      "34,7": 0,
+      "34,8": 0,
+      "34,9": 0,
+      "34,10": 14,
+      "35,0": 0,
+      "35,1": 0,
+      "35,2": 0,
+      "35,3": 0,
+      "35,4": 0,
+      "35,5": 0,
+      "35,6": 0,
+      "35,7": 0,
+      "35,8": 0,
+      "35,9": 0,
+      "35,10": 14,
+      "36,0": 0,
+      "36,1": 0,
+      "36,2": 0,
+      "36,3": 0,
+      "36,4": 0,
+      "36,5": 0,
+      "36,6": 0,
+      "36,7": 0,
+      "36,8": 0,
+      "36,9": 0,
+      "36,10": 14,
+      "37,0": 0,
+      "37,1": 0,
+      "37,2": 0,
+      "37,3": 0,
+      "37,4": 0,
+      "37,5": 0,
+      "37,6": 0,
+      "37,7": 0,
+      "37,8": 0,
+      "37,9": 0,
+      "37,10": 14,
+      "38,0": 22,
+      "38,1": 0,
+      "38,2": 0,
+      "38,3": 0,
+      "38,4": 0,
+      "38,5": 0,
+      "38,6": 0,
+      "38,7": 0,
+      "38,8": 0,
+      "38,9": 0,
+      "38,10": 0,
+      "38,11": 23,
+      "38,12": 23,
+      "38,13": 23,
+      "38,14": 23,
+      "38,15": 23,
+      "38,16": 23,
+      "38,17": 23,
+      "38,18": 23,
+      "38,19": 23,
+      "38,20": 23,
+      "38,21": 23,
+      "38,22": 23,
+      "38,23": 23,
+      "38,24": 23,
+      "38,25": 23,
+      "38,26": 23,
+      "38,27": 23,
+      "38,28": 23,
+      "38,29": 23,
+      "38,30": 23,
+      "38,31": 23,
+      "38,32": 23,
+      "38,33": 23,
+      "38,34": 23,
+      "38,35": 23,
+      "38,36": 23,
+      "38,37": 23,
+      "38,38": 23,
+      "38,39": 23,
+      "38,40": 23,
+      "38,41": 23,
+      "38,42": 23,
+      "38,43": 23,
+      "38,44": 23,
+      "38,45": 23,
+      "38,46": 23,
+      "38,47": 23,
+      "38,48": 23,
+      "38,49": 23,
+      "38,50": 23,
+      "38,51": 23,
+      "38,52": 23,
+      "38,53": 23,
+      "38,54": 23,
+      "38,55": 23,
+      "38,56": 23,
+      "38,57": 23,
+      "38,58": 23,
+      "38,59": 23,
+      "38,60": 23,
+      "38,61": 23,
+      "38,62": 23,
+      "38,63": 23,
+      "38,64": 23,
+      "38,65": 23,
+      "38,66": 23,
+      "38,67": 23,
+      "38,68": 23,
+      "38,69": 23,
+      "39,0": 0,
+      "39,1": 0,
+      "39,2": 0,
+      "39,3": 0,
+      "39,4": 0,
+      "39,5": 0,
+      "39,6": 0,
+      "39,7": 0,
+      "39,8": 0,
+      "39,9": 0,
+      "39,10": 0,
+      "39,11": 0,
+      "39,12": 0,
+      "39,13": 0,
+      "39,14": 0,
+      "39,15": 0,
+      "39,16": 0,
+      "39,17": 0,
+      "39,18": 0,
+      "39,19": 0,
+      "39,20": 0,
+      "39,21": 0,
+      "39,22": 0,
+      "39,23": 0,
+      "39,24": 0,
+      "39,25": 0,
+      "39,26": 0,
+      "39,27": 0,
+      "39,28": 0,
+      "39,29": 0,
+      "39,30": 0,
+      "39,31": 0,
+      "39,32": 0,
+      "39,33": 0,
+      "39,34": 0,
+      "39,35": 0,
+      "39,36": 0,
+      "39,37": 0,
+      "39,38": 0,
+      "39,39": 0,
+      "39,40": 0,
+      "39,41": 0,
+      "39,42": 0,
+      "39,43": 0,
+      "39,44": 0,
+      "39,45": 0,
+      "39,46": 0,
+      "39,47": 0,
+      "39,48": 0,
+      "39,49": 0,
+      "39,50": 0,
+      "39,51": 0,
+      "39,52": 0,
+      "39,53": 0,
+      "39,54": 0,
+      "39,55": 0,
+      "39,56": 0,
+      "39,57": 0,
+      "39,58": 0,
+      "39,59": 0,
+      "39,60": 0,
+      "39,61": 0,
+      "39,62": 0,
+      "39,63": 0,
+      "39,64": 0,
+      "39,65": 0,
+      "39,66": 0,
+      "39,67": 0,
+      "39,68": 0,
+      "39,69": 0
+    },
+    "RowStyles": {
+      "40": 24,
+      "41": 24
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "0,12,4,18",
+    "0,0,3,12",
+    "2,65,1,4",
+    "1,61,3,3",
+    "8,11,30,59",
+    "6,31,1,8",
+    "6,50,1,12",
+    "6,63,1,3",
+    "6,17,1,7",
+    "6,1,2,9",
+    "6,66,1,3",
+    "40,0,2,70"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//cdLTMm8qIbj3CmnZQ3VVzj30RuL6FrjhJYxg3Bf41cr8JraugfNppNW1cPKhGutfhw/q8XAjFdNY9Loa46kUQD53m8kTiH5Gfdgp+l41El/bHUZbQRkB0jo1OjONe2fhxxlJwo2TP+3Z6mS16EbnNvXQU+uAFXR8j/CCpCPM8IYbHVzya53oDA5tQVW8+5l2HJD+wrstAW8BlHuv+EJ6cvh8yCnl3+NJXDnULN8PaNyGUWGTRzsT4/9M2DAQxRCLFX/eHvCXJ1DzWa+iUuCaHaTbcs6nTiTPsL4nPTWkJvcv90yLTKHoPeWbmcMujDoyt1Xu/61nIBDxltsUABKUo8/9eiEX/hRpY+u5KB57U5+Fhf58P4OaKe64CS0WM1/8OdGyYPrTkEmK8kf2PsHod/yI4oBspuo/qzbbEH/8++xJkKGLifl+VRi+EVPvZPdsW+WodzD6iGboi7a28774DUYdPk6g+VLu5Er+nhfSd79Jq3YI8BLGLsm8M3/67C+U8BDLsg+nqh67HtNnGrb1vzOn4P61Wkf+fItPTJNJqSDgVq865lJAsox69nM5aQiYQ97eH7+Od05SEK5YjkncYGf52hDJ/CEdkVxAjK9Q25TujkookmaU1Rx79jFDfM54tWwGudf50lriZyBwe0TU7DHET7299kiAicyuUMxVu2WYPFE96H3pKiEqUyFxOvNq5P8Cx9RktFOxMM8TNIJwaMkZRFiojtMHXOvdFcwDPfU58msRg4WCiGrkwn5ILdiPf+9aFAtwVnDMKk9Bfw4IcfzFVLic00bOzKak8XB96tnLQWmlTeGzgLJjvSDu5nNSQmnm7F3DEF9qaTsd9/rWFwTP7RCZ1P4G3+UZD4EEtvrLV+vC668j2NIX0dWh4j8LbVu9D1sspFqhQEWt5/sIXg==|920

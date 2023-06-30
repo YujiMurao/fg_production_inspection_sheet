@@ -1,0 +1,1099 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 32
+  },
+  "Cols": {
+    "Count": 59
+  },
+  "Values": {
+    "1,3": "すべて",
+    "1,9": "今年",
+    "1,15": "去年",
+    "1,53": "リンクアドレス取込",
+    "4,1": "データ数：",
+    "4,53": "日付データ取込",
+    "6,11": "得意先名",
+    "6,19": "納入先名",
+    "6,27": "親品番",
+    "6,35": "品名",
+    "6,41": "シリアル番号",
+    "6,45": "完成日",
+    "6,49": "出荷日",
+    "7,1": "編集",
+    "7,3": "削除"
+  },
+  "Formulas": {
+    "4,5": "COUNTA(H8)"
+  },
+  "AttachInfos": {
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "v_eqshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "plan_no"
+              },
+              "Value": "%Null%"
+            },
+            "Params": [],
+            "ID": "aee33ca2320649f0b66d8a1983688294"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!D2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!C3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "すべて",
+        "ClickMode": 1
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "v_eqshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "shipment_date",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(TODAY())"
+              }
+            },
+            "Params": [],
+            "ID": "44d35bd0fa09475fa868caec927e7f7a"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!J2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!I3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "今年",
+        "ClickMode": 1
+      }
+    },
+    "1,15": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "v_eqshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "shipment_date",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(TODAY())-1"
+              }
+            },
+            "Params": [],
+            "ID": "2af66f34b81c40a4a4b70cad45941967"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!P2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=RJ情報登録!O3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "去年",
+        "ClickMode": 1
+      }
+    },
+    "1,53": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "ImportExportCSV.ImportExportCSV, ImportExportCSV",
+            "ImportExportInfo": {
+              "IsAlert": true,
+              "AlertMessage": "CSVファイルのインポートが正常に完了しました。",
+              "ListViewName": "リストビュー1",
+              "ImportMode": 1,
+              "Columns": [
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=RJ情報登録!H8"
+                  },
+                  "CSVColumnName": "ProjectNumber",
+                  "CSVColumnIndex": 1,
+                  "IsPrimaryKey": true
+                },
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=RJ情報登録!BB8"
+                  },
+                  "CSVColumnName": "SystemLink",
+                  "CSVColumnIndex": 2
+                },
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=RJ情報登録!BC8"
+                  },
+                  "CSVColumnName": "UnitLink",
+                  "CSVColumnIndex": 3
+                },
+                {
+                  "ListViewColumnCell": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=RJ情報登録!BD8"
+                  },
+                  "CSVColumnName": "EtcLink",
+                  "CSVColumnIndex": 4
+                }
+              ],
+              "ColumnDelimiter": ",",
+              "EncodingType": "UTF-8",
+              "TextQualifier": "\"",
+              "FilePath": "Documents\\example.csv"
+            }
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "リストビュー1"
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "リンクアドレス取込",
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "4,53": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "日付データ取込",
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_eqshipping_info",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "ColumnCount": 58,
+        "RowCount": 26,
+        "ColumnOperation": 2,
+        "ShowGridLine": true,
+        "ShowEditStatusIcon": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "ユーザー設定1"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "出荷情報画面_登録・更新の共通ページ",
+            "PassValues": [],
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "Text": "編集",
+        "ClickMode": 1
+      }
+    },
+    "7,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.DeleteRecordCommand, ServerDesignerCommon",
+            "ShowConfirm": true,
+            "CheckDataValidation": false,
+            "ConfirmText": "本当に削除してもよろしいですか？",
+            "UpdateValues": []
+          }
+        ],
+        "Text": "削除",
+        "ClickMode": 1
+      }
+    },
+    "7,5": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "ID"
+      }
+    },
+    "7,7": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "plan_no"
+      }
+    },
+    "7,11": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKTKNM"
+      }
+    },
+    "7,19": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKNONM"
+      }
+    },
+    "7,27": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSNO"
+      }
+    },
+    "7,35": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSNAM"
+      }
+    },
+    "7,41": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSSNO"
+      }
+    },
+    "7,45": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKKAND"
+      }
+    },
+    "7,49": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "shipment_date"
+      }
+    },
+    "7,53": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RJ情報登録!BB8"
+            },
+            "PassValues": [],
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "system"
+      }
+    },
+    "7,54": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RJ情報登録!BC8"
+            },
+            "PassValues": [],
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "unit"
+      }
+    },
+    "7,55": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=RJ情報登録!BD8"
+            },
+            "PassValues": [],
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "etc"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "HorizontalAlignment": 1,
+        "Underline": false
+      },
+      {
+        "Foreground": 2,
+        "HorizontalAlignment": 1,
+        "Underline": false
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 2
+      },
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 4
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 4,
+        "Formatter": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 7,
+        "FontWeight": 7,
+        "Foreground": 8,
+        "Formatter": 9,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 7,
+        "FontWeight": 7,
+        "Foreground": 8,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "HorizontalAlignment": 11,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "HorizontalAlignment": 11,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 12,
+        "HorizontalAlignment": 1,
+        "Underline": true,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 12,
+        "Formatter": 13,
+        "HorizontalAlignment": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 8.0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": 1,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 0,
+        "Underline": false,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Formatter": 15
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Formatter": 16
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "Formatter": 13,
+        "Underline": true
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Foreground": 12,
+        "Underline": true
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "Center",
+        "#FF00B0F0",
+        "Body",
+        "#FF4ABAD8",
+        "#,##0",
+        "Background 1 0",
+        "Normal",
+        "black",
+        "[AUTO]General",
+        "DarkGray",
+        "Left",
+        "Blue",
+        "@",
+        "#D8D8D8",
+        "####/##/##",
+        "yyyy/m/d"
+      ],
+      "Borders": [
+        {
+          "Color": 10
+        },
+        {
+          "Color": 14
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,3": 0,
+      "1,9": 1,
+      "1,15": 0,
+      "1,53": 2,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 4,
+      "3,29": 5,
+      "4,1": 6,
+      "4,5": 7,
+      "4,6": 3,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "4,10": 3,
+      "4,11": 3,
+      "4,53": 2,
+      "4,54": 3,
+      "4,55": 3,
+      "4,56": 3,
+      "4,57": 3,
+      "6,1": 8,
+      "6,2": 9,
+      "6,3": 10,
+      "6,4": 9,
+      "6,5": 11,
+      "6,6": 9,
+      "6,7": 8,
+      "6,8": 12,
+      "6,9": 12,
+      "6,10": 9,
+      "6,11": 11,
+      "6,12": 12,
+      "6,13": 12,
+      "6,14": 12,
+      "6,15": 12,
+      "6,16": 12,
+      "6,17": 12,
+      "6,18": 9,
+      "6,19": 11,
+      "6,20": 12,
+      "6,21": 12,
+      "6,22": 12,
+      "6,23": 12,
+      "6,24": 12,
+      "6,25": 12,
+      "6,26": 9,
+      "6,27": 13,
+      "6,28": 13,
+      "6,29": 13,
+      "6,30": 13,
+      "6,31": 13,
+      "6,32": 13,
+      "6,33": 13,
+      "6,34": 14,
+      "6,35": 15,
+      "6,36": 12,
+      "6,37": 12,
+      "6,38": 12,
+      "6,39": 12,
+      "6,40": 9,
+      "6,41": 15,
+      "6,42": 12,
+      "6,43": 12,
+      "6,44": 9,
+      "6,45": 16,
+      "6,46": 13,
+      "6,47": 13,
+      "6,48": 14,
+      "6,49": 17,
+      "6,50": 13,
+      "6,51": 13,
+      "6,52": 13,
+      "6,53": 14,
+      "6,54": 18,
+      "6,55": 18,
+      "6,56": 19,
+      "6,57": 20,
+      "6,58": 14,
+      "7,1": 21,
+      "7,3": 22,
+      "7,5": 23,
+      "7,7": 24,
+      "7,8": 25,
+      "7,9": 25,
+      "7,10": 25,
+      "7,11": 26,
+      "7,27": 26,
+      "7,35": 26,
+      "7,41": 27,
+      "7,45": 28,
+      "7,49": 29,
+      "7,53": 30,
+      "7,54": 30,
+      "7,55": 31,
+      "7,58": 32,
+      "8,1": 33,
+      "8,58": 32,
+      "9,1": 33,
+      "9,58": 32,
+      "10,1": 33,
+      "10,58": 32,
+      "11,1": 33,
+      "11,58": 32,
+      "12,1": 33,
+      "12,58": 32,
+      "13,1": 33,
+      "13,58": 32,
+      "14,1": 33,
+      "14,58": 32,
+      "15,1": 33,
+      "15,58": 32,
+      "16,1": 33,
+      "16,58": 32,
+      "17,1": 33,
+      "17,58": 32,
+      "18,1": 33,
+      "18,58": 32,
+      "19,1": 33,
+      "19,58": 32,
+      "20,1": 33,
+      "20,58": 32,
+      "21,1": 33,
+      "21,58": 32,
+      "22,1": 33,
+      "22,58": 32,
+      "23,1": 33,
+      "23,58": 32,
+      "24,1": 33,
+      "24,58": 32,
+      "25,1": 33,
+      "25,58": 32,
+      "26,1": 33,
+      "26,58": 32,
+      "27,1": 33,
+      "27,58": 32,
+      "28,1": 33,
+      "28,58": 32,
+      "29,1": 33,
+      "29,58": 32,
+      "30,1": 33,
+      "30,58": 32,
+      "31,1": 34,
+      "31,2": 35,
+      "31,3": 35,
+      "31,4": 35,
+      "31,5": 35,
+      "31,6": 35,
+      "31,7": 35,
+      "31,8": 35,
+      "31,9": 35,
+      "31,10": 35,
+      "31,11": 35,
+      "31,12": 35,
+      "31,13": 35,
+      "31,14": 35,
+      "31,15": 35,
+      "31,16": 35,
+      "31,17": 35,
+      "31,18": 35,
+      "31,19": 35,
+      "31,20": 35,
+      "31,21": 35,
+      "31,22": 35,
+      "31,23": 35,
+      "31,24": 35,
+      "31,25": 35,
+      "31,26": 35,
+      "31,27": 35,
+      "31,28": 35,
+      "31,29": 35,
+      "31,30": 35,
+      "31,31": 35,
+      "31,32": 35,
+      "31,33": 35,
+      "31,34": 35,
+      "31,35": 35,
+      "31,36": 35,
+      "31,37": 35,
+      "31,38": 35,
+      "31,39": 35,
+      "31,40": 35,
+      "31,41": 35,
+      "31,42": 35,
+      "31,43": 35,
+      "31,44": 35,
+      "31,45": 35,
+      "31,46": 35,
+      "31,47": 35,
+      "31,48": 35,
+      "31,49": 35,
+      "31,50": 35,
+      "31,51": 35,
+      "31,52": 35,
+      "31,53": 35,
+      "31,54": 35,
+      "31,55": 35,
+      "31,56": 35,
+      "31,57": 35,
+      "31,58": 36
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "4,5,1,7",
+    "1,3,1,4",
+    "1,9,1,4",
+    "1,15,1,4",
+    "2,8,1,6",
+    "2,14,1,6",
+    "4,53,1,5",
+    "1,53,1,5",
+    "2,2,1,6",
+    "8,1,24,58",
+    "7,5,1,2",
+    "7,7,1,4",
+    "7,11,1,8",
+    "7,19,1,8",
+    "7,27,1,8",
+    "7,35,1,6",
+    "7,41,1,4",
+    "7,45,1,4",
+    "7,49,1,4",
+    "7,1,1,2",
+    "7,3,1,2",
+    "6,1,1,2",
+    "6,3,1,2",
+    "6,5,1,2",
+    "6,7,1,4",
+    "6,11,1,8",
+    "6,19,1,8",
+    "6,27,1,8",
+    "6,35,1,6",
+    "6,41,1,4",
+    "6,45,1,4",
+    "6,49,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "RJ情報登録_マスターページ",
+    "Title": "RJ情報登録",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+        "ListViewName": "リストビュー1",
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "plan_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "ID": "420cdd1515fd4069b1569a71e1bfd5cb"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 3
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_eqshipping_info"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//g7Hqmb2v5oWH2o7nTXgxKspm0F2kIl4sQmGrwZDPCqNPKXfmy+Cv+HStxtjQRzL8Ma9EkA4dx5pPFrkOxIlLxL6FQT1De5W65gz/MjNOxZ72iWNSgc+h1+9EDV5/nygNk5YUPZy6ktcqNoot0h0on36EdZRsW1cUvjxqWvpqnuN0uK6sVtTUI1w6WuCj6YW1b2wUxvGe2RWZv7HrtecPKOqoIYvQv7JUiYS6k2QCkBh3MqopQJrB3MpA6z8iQ/5aF8t1KP5PVbAv/gEBgpZzJzH3XhmLBgzVF64PAdHkrk4+I4/rjfNGh+4wspXLJSj7/6khPRAm9Huvp9TCwRtwIX9TQ03v6bOGQsLOMLUV4FYLcabPDN+7sKQZhGjKKhU8HO4WTwV3Bk87e/NYRirJQDu44jHujj2ouL2P004FsBHAcGPTkpnTgSV4iUCMgaNHf2LpyKC/x6bjO2J8JhV0rclVyPaHPf8m7o6oDLP76Cm0GQHNJl72mrSrVo6XsnS+zKPaPavZvJBjRF9D2mrvPOcUNrqodneyFPVZvJZrctCSmuZ4ghAYU5u6+R2584lS5/fqsr3KSwVtVXVpFzl5MgYRCxr7o/M/5HK81yJlt0rICbnIYtLoR7M2c6oU6/pRa67riJe/6kWUGDlMC5PDTy+UCfW185vSxyrRN1HcYOnSsITCNnH5YxPi+6YHiZO0eJ7rvHAj1KRuKnAIgkMgeqG/V15QuyidYB/AXZPcHfYVKvrN63yQu3lCCeuQamxMWzcAK4zy6FP61l8Hv0c8OV2rRdAIIUS3TprFBwkUvyiXS5Otk2iGJ+h9hVtMGhs3RLLaeR2pJ9HbrGrA5wJUBLHg8EuB4aSL3rOeZyLlTk24GQLkfZvkXPjYLhC8XPX9RAHI0tyYCH3JOLB4694NTQ==|920

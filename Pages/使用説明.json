@@ -1,0 +1,72 @@
+{
+  "Rows": {
+    "Count": 99
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "0,0": "ホームページ",
+    "3,1": "こちらには使用方法を説明します。"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "こちらには使用方法を説明します。"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontSize": 24.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF88B556",
+        "Background 1 0",
+        "Center",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "3,1": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "0,0,2,11",
+    "3,1,3,18"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "使用説明_マスターページ",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//R6ykYSocYdMEDQRmXKSqYeqKNMO34/eUeDSMV73mF4hg6SoofTKfxouz2vYUBPciZQfDKn6Rltu7A6QRAfx+ZZVTKuI5k47MXehC6+ZDZ5d1d8jTH8QN1fHRMoM8E5X6F+YrmA3n4hoWLhvVWRkXEKyrHbMen5K2u82xmjwViFWPUPSmH7fiMQu8QHCyFlTewl+QGocqKa5/XDcShLbndkl27cUciEnQO0VovHCvX8UmYxDH4Ct1EcE6RpaGwyRrexs7OiDmjIJY6dkcJoHtatXU6bKMk/quRForLIBn2Q0HOVQIEG7VNxCu196wJXvRWJI+YLObgdFH8qmuPQV6Gb+oQplsjxerqmhsR9XxqkkwzbmpRewLlyIe/4/6bb5fNm6Zvy76VRuMkIyIiwrIbrEu+qDxgX5XeFqhht6UfnkEgQJ29gdT6mADHOUkAyDXuwmwvxYNkV8fpgNeE+iRY4mR/R1RPnqoNY0BFo7VwLbDoiqAODFZVdkH1f0SBnWPuDk8ppG4y9YAYGdEsQXGbNjtvTjcLSPcLaWS/mDpwlxt65UBE3VbFqhOxCFMIwpX76qWHBGudHATEtd0pVOp3/05ZFEeSdVoztW4IAm0xYG2gBKikgtI7xMRo0pD5eJKedGENP7sAWI0vTiZ4zo6G/UPTwHUjH14dJ/bb7jEzODyZlvvUDsZUDLr2Wn4d/dVFGq4TosRelZ/eHWA8f586r/rGElUNk9/mj/EeWqW7SF18raFrMu8sapCKS63YF0Z/Ov0rUTmU/1BuwwRqxSYTvyDUPrcB2r6Cpqj1Hb1xi6MJovd19NRMKaLqFruiflggZklY3nW733YCh9ytzBJyfVZ5Mr1CYJdBkGW4LucqSIJwyZ4HH0X+amoe1VLNFUecTUxN5Cj8wzrtPsMPGXbdg==|920

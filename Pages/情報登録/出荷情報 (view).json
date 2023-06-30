@@ -1,0 +1,1274 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 30
+  },
+  "Cols": {
+    "Count": 59
+  },
+  "Values": {
+    "1,3": "すべて",
+    "1,9": "今年",
+    "1,15": "去年",
+    "1,21": "今月",
+    "1,27": "先月",
+    "4,1": "データ数：",
+    "6,3": "計画№",
+    "6,7": "得意先名",
+    "6,16": "納入先名",
+    "6,25": "システム品番",
+    "6,33": "システム品名",
+    "6,39": "シリアル№",
+    "6,43": "完成日",
+    "6,48": "出荷日",
+    "7,1": "編集"
+  },
+  "Formulas": {
+    "4,5": "COUNTA(D8)"
+  },
+  "AttachInfos": {
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no"
+                },
+                "Value": "%Null%"
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "_3国間"
+                  }
+                },
+                "Value": "3"
+              }
+            },
+            "Params": [],
+            "ID": "9b31aa7ed52e461abb71702fda49cea7"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!D2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!C3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!V2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AB2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!U3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AA3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "すべて",
+        "ClickMode": 1
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "出荷年"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YEAR(TODAY())"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "_3国間"
+                  }
+                },
+                "Value": "3"
+              }
+            },
+            "Params": [],
+            "ID": "5808b0181efd4695a913bc007fedfb44"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!J2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!I3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!V2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AB2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!U3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AA3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "今年",
+        "ClickMode": 1
+      }
+    },
+    "1,15": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "読込中...",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "出荷年"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YEAR(TODAY())-1"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "_3国間"
+                  }
+                },
+                "Value": "3"
+              }
+            },
+            "Params": [],
+            "ID": "e3b382b89e3143368793a18b6f68f83b"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!P2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!O3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!V2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AB2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!U3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AA3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "去年",
+        "ClickMode": 1
+      }
+    },
+    "1,21": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_eqpshipping_info",
+                    "ColumnName": "plan_no",
+                    "RelationBinding": {
+                      "RelatedTable": "MPJN00_d",
+                      "RelatedColumn": "JKKENO",
+                      "DisplayColumn": "_3国間"
+                    }
+                  },
+                  "Value": "3"
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_eqpshipping_info",
+                    "ColumnName": "plan_no",
+                    "RelationBinding": {
+                      "RelatedTable": "MPJN00_d",
+                      "RelatedColumn": "JKKENO",
+                      "DisplayColumn": "出荷月"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TEXT(MONTH(TODAY()),\"00\")"
+                  }
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "出荷年"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YEAR(TODAY())"
+                }
+              }
+            },
+            "Params": [],
+            "ID": "caa6dcce82134ea5be5e848643745b7d"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!V2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!U3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AB2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AA3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "今月",
+        "ClickMode": 1
+      }
+    },
+    "1,27": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "trn_eqpshipping_info",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_eqpshipping_info",
+                    "ColumnName": "plan_no",
+                    "RelationBinding": {
+                      "RelatedTable": "MPJN00_d",
+                      "RelatedColumn": "JKKENO",
+                      "DisplayColumn": "_3国間"
+                    }
+                  },
+                  "Value": "3"
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "trn_eqpshipping_info",
+                    "ColumnName": "plan_no",
+                    "RelationBinding": {
+                      "RelatedTable": "MPJN00_d",
+                      "RelatedColumn": "JKKENO",
+                      "DisplayColumn": "出荷月"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=TEXT(MONTH(TODAY())-1,\"00\")"
+                  }
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "trn_eqpshipping_info",
+                  "ColumnName": "plan_no",
+                  "RelationBinding": {
+                    "RelatedTable": "MPJN00_d",
+                    "RelatedColumn": "JKKENO",
+                    "DisplayColumn": "出荷年"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=YEAR(TODAY())"
+                }
+              }
+            },
+            "Params": [],
+            "ID": "6a9245f5a74b463a8ad64c589268842a"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!D2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!J2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!P2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!V2"
+                },
+                "PropertyType": 3,
+                "Value": "Text 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AB2"
+                },
+                "PropertyType": 3,
+                "Value": "#FF00B0F0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!C3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!I3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!O3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!U3"
+                },
+                "PropertyType": 2,
+                "Value": "Background 1 0"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='出荷情報 (view)'!AA3"
+                },
+                "PropertyType": 2,
+                "Value": "#FF00B0F0"
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          }
+        ],
+        "Text": "先月",
+        "ClickMode": 1
+      }
+    },
+    "6,1": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_eqshipping_info",
+        "RowIndex": 6,
+        "ColumnIndex": 1,
+        "ColumnCount": 54,
+        "RowCount": 23,
+        "ColumnOperation": 2,
+        "ShowGridLine": true,
+        "ShowEditStatusIcon": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Light2"
+      }
+    },
+    "7,3": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "plan_no"
+      }
+    },
+    "7,7": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "plan_no",
+        "RelationBinding": {
+          "RelatedTable": "trn_eqpshipping_info",
+          "RelatedColumn": "plan_no",
+          "DisplayColumn": "shipment_date"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "HorizontalAlignment": 1,
+        "Underline": false
+      },
+      {
+        "Foreground": 2,
+        "HorizontalAlignment": 1,
+        "Underline": false
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 2,
+        "HorizontalAlignment": 1,
+        "Underline": false
+      },
+      {
+        "Background": null
+      },
+      {
+        "Background": 0
+      },
+      {
+        "FontSize": 30.0,
+        "HorizontalAlignment": 1,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "Background": 5,
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 6,
+        "FontWeight": 6,
+        "Foreground": 7,
+        "Formatter": 8,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderLeft": 1,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 1
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "BorderBottom": 0,
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 11,
+        "HorizontalAlignment": 1,
+        "Underline": true,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": 2,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 2
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": 2,
+        "BorderLeft": 2
+      },
+      {
+        "BorderBottom": 2,
+        "BorderRight": 2
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "Underline": false,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 13.333333333333332,
+        "Formatter": 13
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Formatter": 14
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderLeft": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1,
+        "BorderRight": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF00B0F0",
+        "Center",
+        "#FF000000",
+        "Body",
+        "#,##0",
+        "Background 1 0",
+        "Normal",
+        "black",
+        "[AUTO]General",
+        "#FFA9A9A9",
+        "DarkGray",
+        "Blue",
+        "#D8D8D8",
+        "####/##/##",
+        "@"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        },
+        {
+          "Color": 10
+        },
+        {
+          "Color": 12
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,3": 0,
+      "1,9": 1,
+      "1,15": 1,
+      "1,21": 2,
+      "1,27": 1,
+      "2,2": 3,
+      "2,8": 4,
+      "3,29": 5,
+      "4,1": 6,
+      "4,5": 7,
+      "4,6": 6,
+      "4,7": 6,
+      "4,8": 6,
+      "4,9": 6,
+      "4,10": 6,
+      "4,11": 6,
+      "6,1": 8,
+      "6,2": 9,
+      "6,3": 10,
+      "6,4": 11,
+      "6,5": 11,
+      "6,6": 12,
+      "6,7": 10,
+      "6,8": 11,
+      "6,9": 11,
+      "6,10": 11,
+      "6,11": 11,
+      "6,12": 11,
+      "6,13": 11,
+      "6,14": 11,
+      "6,15": 11,
+      "6,16": 13,
+      "6,17": 11,
+      "6,18": 11,
+      "6,19": 11,
+      "6,20": 11,
+      "6,21": 11,
+      "6,22": 11,
+      "6,23": 11,
+      "6,24": 12,
+      "6,25": 10,
+      "6,26": 11,
+      "6,27": 11,
+      "6,28": 11,
+      "6,29": 11,
+      "6,30": 11,
+      "6,31": 11,
+      "6,32": 12,
+      "6,33": 10,
+      "6,34": 11,
+      "6,35": 11,
+      "6,36": 11,
+      "6,37": 11,
+      "6,38": 12,
+      "6,39": 10,
+      "6,40": 11,
+      "6,41": 11,
+      "6,42": 12,
+      "6,43": 10,
+      "6,44": 11,
+      "6,45": 11,
+      "6,46": 11,
+      "6,47": 12,
+      "6,48": 10,
+      "6,49": 11,
+      "6,50": 11,
+      "6,51": 11,
+      "6,52": 11,
+      "6,53": 14,
+      "6,54": 15,
+      "7,1": 16,
+      "7,2": 6,
+      "7,3": 17,
+      "7,4": 18,
+      "7,5": 18,
+      "7,6": 18,
+      "7,7": 19,
+      "7,8": 18,
+      "7,9": 18,
+      "7,10": 18,
+      "7,11": 18,
+      "7,12": 18,
+      "7,13": 18,
+      "7,14": 18,
+      "7,15": 20,
+      "7,16": 19,
+      "7,17": 18,
+      "7,18": 18,
+      "7,19": 18,
+      "7,20": 18,
+      "7,21": 18,
+      "7,22": 18,
+      "7,23": 18,
+      "7,24": 20,
+      "7,25": 19,
+      "7,26": 18,
+      "7,27": 18,
+      "7,28": 18,
+      "7,29": 18,
+      "7,30": 18,
+      "7,31": 18,
+      "7,32": 20,
+      "7,33": 19,
+      "7,34": 18,
+      "7,35": 18,
+      "7,36": 18,
+      "7,37": 18,
+      "7,38": 20,
+      "7,39": 21,
+      "7,43": 22,
+      "7,48": 22,
+      "7,53": 23,
+      "7,54": 24,
+      "8,1": 25,
+      "8,54": 24,
+      "9,1": 25,
+      "9,54": 24,
+      "10,1": 25,
+      "10,54": 24,
+      "11,1": 25,
+      "11,54": 24,
+      "12,1": 25,
+      "12,54": 24,
+      "13,1": 25,
+      "13,54": 24,
+      "14,1": 25,
+      "14,54": 24,
+      "15,1": 25,
+      "15,54": 24,
+      "16,1": 25,
+      "16,54": 24,
+      "17,1": 25,
+      "17,54": 24,
+      "18,1": 25,
+      "18,54": 24,
+      "19,1": 25,
+      "19,54": 24,
+      "20,1": 25,
+      "20,54": 24,
+      "21,1": 25,
+      "21,54": 24,
+      "22,1": 25,
+      "22,54": 24,
+      "23,1": 25,
+      "23,54": 24,
+      "24,1": 25,
+      "24,54": 24,
+      "25,1": 25,
+      "25,54": 24,
+      "26,1": 25,
+      "26,54": 24,
+      "27,1": 25,
+      "27,54": 24,
+      "28,1": 26,
+      "28,2": 27,
+      "28,3": 27,
+      "28,4": 27,
+      "28,5": 27,
+      "28,6": 27,
+      "28,7": 27,
+      "28,8": 27,
+      "28,9": 27,
+      "28,10": 27,
+      "28,11": 27,
+      "28,12": 27,
+      "28,13": 27,
+      "28,14": 27,
+      "28,15": 27,
+      "28,16": 27,
+      "28,17": 27,
+      "28,18": 27,
+      "28,19": 27,
+      "28,20": 27,
+      "28,21": 27,
+      "28,22": 27,
+      "28,23": 27,
+      "28,24": 27,
+      "28,25": 27,
+      "28,26": 27,
+      "28,27": 27,
+      "28,28": 27,
+      "28,29": 27,
+      "28,30": 27,
+      "28,31": 27,
+      "28,32": 27,
+      "28,33": 27,
+      "28,34": 27,
+      "28,35": 27,
+      "28,36": 27,
+      "28,37": 27,
+      "28,38": 27,
+      "28,39": 27,
+      "28,40": 27,
+      "28,41": 27,
+      "28,42": 27,
+      "28,43": 27,
+      "28,44": 27,
+      "28,45": 27,
+      "28,46": 27,
+      "28,47": 27,
+      "28,48": 27,
+      "28,49": 27,
+      "28,50": 27,
+      "28,51": 27,
+      "28,52": 27,
+      "28,53": 27,
+      "28,54": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "4,5,1,7",
+    "1,3,1,4",
+    "1,9,1,4",
+    "1,15,1,4",
+    "2,2,1,6",
+    "2,8,1,6",
+    "2,14,1,6",
+    "2,20,1,6",
+    "1,21,1,4",
+    "2,26,1,6",
+    "1,27,1,4",
+    "7,1,1,2",
+    "7,16,1,9",
+    "7,25,1,8",
+    "7,33,1,6",
+    "7,39,1,4",
+    "7,43,1,5",
+    "7,48,1,5",
+    "7,53,1,2",
+    "8,1,21,54",
+    "7,3,1,4",
+    "7,7,1,9",
+    "6,1,1,2",
+    "6,3,1,4",
+    "6,7,1,9",
+    "6,16,1,9",
+    "6,25,1,8",
+    "6,33,1,6",
+    "6,39,1,4",
+    "6,43,1,5",
+    "6,48,1,5",
+    "6,53,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "編集_RRC_すべて",
+    "Title": "出荷情報一覧",
+    "AuthorizeInfo": {
+      "VisitMode": 3
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_eqshipping_info"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//+wwd8J8Rh43dA3Duid0cGNpTiYMYEFDSZ0VCQDO/8vdBkczbWJyLVbgz7ygbSuHctHxP1srG7rZ2p2OtBJMlai9RlH1naKzPsODPIYHE96bxqHfodj6nZ4KnPyIxap7RDGAkLXgXAakB1pacH4sFZj7RlgnGDlmrStMKGQZpOjHHkfimxj2NfcBCmwySeeNHIY9CwZXxGsRux4AAvJvhJX3lfFtuPWuuIftntSOGOEIuHWpnnmkOTK6ewHr/AeJZUCqIu/QN19/gSOQKLyUsQdrAmcmk8hpzE8b9PRjLm6Dt7Tn1B2LWT43yUaXvCMPE2T95DR3PA/+JRsUwn019bfUlIsk49rJlraMuSjdjkTd8hkqlYeVlDjnpza7MYX6ygD/xjkqVtL5Z1KK6i1Geg/3ErA5TLkeqIUI6+zxXc8viFIhSWQE/J3KyY21VjU4fmt/cMFoPW2H8jfPVO5Km4CzBnYWMU/AlmDhH4rWwQrSPvvZWmkGMskn1jQH+gl+bLMyTW76NmTp39hUYEGwn2Lcxy7O5WCRPJ/xurEWcjk7E4N5R2tgADhUoCy7l1JE5bTXJTTjhHAWyfpbTwJ0QVAyHud1zs9KpAxNUZliDU2kS3ibAikEwxVMctemVNhtuQARhTYEFo9S/ggAwGu0q57D2ivgcoAVHmF1cFYoLUELJ4kXscmVKP7P7B5tqa9SbAmK1Qb/hDpJ3lG+oBV/GlGQ4L111aSKzvBa5Gti5hR65rAOG94R+yYS65HT4H0Mlz6J5M009gT5twfwT6zH0+y39lNpcEcFu+cxy/sgvoCOXwLMNZDHEBb3qaEY/cEZf4Oi7015EBKjSCmYmFMhMcHEvhRPSG3hHo0NwxTjQNZ9jv1DYtsqiLtVXf4GcEwTGIqTA3QJ4/WE9b7kn3VPMhA==|920

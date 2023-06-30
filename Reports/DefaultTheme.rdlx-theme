@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Theme xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Colors>
+    <Dark1>#000000</Dark1>
+    <Dark2>#676A55</Dark2>
+    <Light1>#FFFFFF</Light1>
+    <Light2>#EAEBDE</Light2>
+    <Accent1>#72A376</Accent1>
+    <Accent2>#B0CCB0</Accent2>
+    <Accent3>#A8CDD7</Accent3>
+    <Accent4>#C0BEAF</Accent4>
+    <Accent5>#CEC597</Accent5>
+    <Accent6>#E8B7B7</Accent6>
+    <Hyperlink>#FFFFFF</Hyperlink>
+    <HyperlinkFollowed>#FFFFFF</HyperlinkFollowed>
+  </Colors>
+  <Fonts>
+    <MajorFont>
+      <Family>Meiryo UI</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MajorFont>
+    <MinorFont>
+      <Family>Meiryo UI</Family>
+      <Style>Normal</Style>
+      <Size>10pt</Size>
+      <Weight>Normal</Weight>
+    </MinorFont>
+  </Fonts>
+  <Images />
+  <Constants />
+</Theme>

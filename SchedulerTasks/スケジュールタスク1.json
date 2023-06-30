@@ -1,0 +1,54 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.DailyScheduleTrigger, ServerDesignerCommon",
+      "StartDateTime": 44747.395833333336
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.ServerImportExportCSVCommand, ServerDesignerCommon",
+      "ImportMode": 1,
+      "TableName": "trn_eqpshipping_info",
+      "Columns": [
+        {
+          "BindingColumn": {
+            "TableName": "trn_eqpshipping_info",
+            "ColumnName": "plan_no"
+          },
+          "CSVColumnNameOrIndex": "ProjectNumber",
+          "IsPrimaryKey": true
+        },
+        {
+          "BindingColumn": {
+            "TableName": "trn_eqpshipping_info",
+            "ColumnName": "system"
+          },
+          "CSVColumnNameOrIndex": "SystemLink"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "trn_eqpshipping_info",
+            "ColumnName": "unit"
+          },
+          "CSVColumnNameOrIndex": "UnitLink"
+        },
+        {
+          "BindingColumn": {
+            "TableName": "trn_eqpshipping_info",
+            "ColumnName": "etc"
+          },
+          "CSVColumnNameOrIndex": "EtcLink"
+        }
+      ],
+      "FilePath": "D:\\Share_Work\\filelinklist.csv",
+      "RowDelimiter": "\\r\\n",
+      "ColumnDelimiter": ",",
+      "TextQualifier": "\"",
+      "ImportCSVEncoding": "UTF-8",
+      "ConvertDateTime": false
+    }
+  ],
+  "Name": "スケジュールタスク1"
+}

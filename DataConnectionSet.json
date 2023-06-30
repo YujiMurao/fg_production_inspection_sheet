@@ -1,0 +1,7 @@
+[
+  {
+    "ConnectionString": "Data Source=rjh-pgsql02;Initial Catalog=rjdb;Persist Security Info=True;User ID=sa;Password=Rjmssql1830",
+    "DataBaseType": 1,
+    "ID": "d8593abd-1c6d-4e8f-91c4-9c28bd85c2a4"
+  }
+]

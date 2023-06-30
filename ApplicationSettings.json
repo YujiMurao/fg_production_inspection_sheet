@@ -1,0 +1,18 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "7#lVdcWX(Pea"
+  },
+  "IsPageInContainerBackgroundHardCodeWhite": true,
+  "WebSitePort": 62865,
+  "UserServicePort": 53778,
+  "NotAllowModifyDatabaseByJsApi": false,
+  "NotAllowSendMailByJsApi": false,
+  "StartPage": "検索_高度な検索 (2)",
+  "StartDateFiscalYear": 4,
+  "MaxRowCount": 10000000,
+  "AuditingList": {
+    "trn_eqpshipping_info": 0,
+    "MPJN00_d": 0,
+    "v_eqshipping_info": 0
+  }
+}
