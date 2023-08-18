@@ -353,7 +353,7 @@
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='検索_高度な検索 (2)'!AM5"
+                      "SerializeProperty": "='検索_高度な検索 (2)'!AT5"
                     },
                     "RightBracket": 1
                   }
@@ -607,9 +607,10 @@
               "=F5",
               "=AM2",
               "=AM5",
+              "=AT5",
               "=F8"
             ],
-            "ID": "e05cae127545461dacd895c10dc20547"
+            "ID": "58ef21aa1f6f45e3a385c56789f7fc38"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -1001,7 +1002,7 @@
               "=AU5",
               "=F8"
             ],
-            "ID": "a96d9f2f358e4215923eb57f7ab92155",
+            "ID": "68d76614295941d19b1f45970b8c7e34",
             "Disabled": true
           },
           {
@@ -1151,7 +1152,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "f9908707387d4384a10ee2ce630b8a66",
+            "ID": "f7878645d3c642e5bae659ff11a5b549",
             "Disabled": true
           },
           {
@@ -1257,6 +1258,19 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "CompareType": 3,
+          "ColumnBindingInfo": {
+            "TableName": "v_eqshipping_info",
+            "ColumnName": "shipment_date",
+            "AttachType": {
+              "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+              "ColumnAttachType": 1
+            }
+          },
+          "Value": "2010"
+        },
         "TopCondition": null,
         "DoNotLoadDataWhenLoadPage": true,
         "ListViewStyleName": "ユーザー設定1"
@@ -1358,7 +1372,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "2578abce-2ae6-4370-9145-48bfa871f2d0"
+                "ID": "fc451111-fa8e-4be1-842f-853be11e7fa7"
               },
               {
                 "CommandList": [
@@ -1372,7 +1386,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "b961b2e9-c5d3-4928-b885-29a840721f87"
+                "ID": "5abb27d5-b1a0-4a51-96b4-f05b03af5d41"
               }
             ]
           }
@@ -1408,7 +1422,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "73f2ac93-a5dc-45db-8df4-6439a2eeadb5"
+                "ID": "a87fbdf9-d4e4-42f7-b887-050a8d86e8c1"
               },
               {
                 "CommandList": [
@@ -1422,7 +1436,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "a9c158b7-0b6a-41e9-8ba7-8ab081f356a9"
+                "ID": "63ad92b4-aaf2-4333-b4e9-3e659dcbb24d"
               }
             ]
           }
@@ -1458,7 +1472,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "6a871536-9e5b-4217-9b87-674e7a4430b7"
+                "ID": "8f1fcc96-43ba-401a-bb14-9c334abc18b6"
               },
               {
                 "CommandList": [
@@ -1472,7 +1486,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "2a7303e1-eb2d-41e7-9898-8a6dacb2c2d2"
+                "ID": "38a5eee4-1561-48d7-8171-eb9a17f0e4f1"
               }
             ]
           }
@@ -3026,7 +3040,7 @@
           }
         },
         "Params": [],
-        "ID": "0843ce606bcc4aa4b78e554551c82787",
+        "ID": "1caf085ea9eb4e84987d071b716f3c14",
         "Disabled": true
       },
       {
@@ -3043,7 +3057,7 @@
             }
           ]
         },
-        "ID": "075cf445dfbe4873a4a22691bec2be22"
+        "ID": "7e6b100f767d484bb91352b2e7839e34"
       }
     ],
     "AuthorizeInfo": {
@@ -3057,4 +3071,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//8lhtlzryQ16N0LWkj1JUNP5hYA2QxexRoM5tcqfxzue/nIbvwGmi/E2BWQ+Crg0PPhcwD5V3m+KcAqjukSexdWr2uwCM8qdJIv/i/PmubonP1GjMZodS9lfqti9DVdsNJaj6I2vkLvVZfQ/yFm411ULHVW4I9yABNk4VqRw3NtTa72hmS/muLXrklECmGU/C79DxnP4Yx7G6k/kLK4W6cd3aTB1/J5Y8b4FuG1UoeNFBdC3hpVrLiKuxjibiLL/D59u0gqo1hQ7bmi3xzGzGEPGGUJ+cVfoVBEDGE7io2pNgQQ8iBOYnueKo6lT1SzsDYeLnS6/Ko/ikoRtnEaQNeCnuqJH6vsu1bDapu/6wMgcaAK0FsFBc7fMFv/lq9cPXroEgBHZ/J+qj8qfnYGNAhTcrSX5rP5LatBG+v+uty9nfHbM++pSVdm56LN4tR+uaFDOOl5TU5AtS6/CAMT/E2Yj2kklCnUC6t9KX3IGiaq9FnkEe6E/7+ia+EcrTm7FWoF/jrXyiBosuFZny4tOWSjGHgoU07PWZsFMI34KMwYenL+W9ygNPc7UXOW5q/s1QYJAZs6ZIF70p/lete/ldPQgPblZF/vxghakvYWQC/S4XV8ZyQLQfGBSgIoPH+h0vtxar1CzLEPLl3n/8nUV9PNc4F9z/KD+i76xMQVI4mKK1Ustg7rPOLsCDskNniphUwFzc+lBKsecdGlevXT3I48k1Xkc9DEyuAeSWpLw5ICcjzbHOf2zJcQlz8CiEn6EFrcgMLhiQ5uh2NnHocvJ2hWMXl2xFIILOqmRdDVPRpD1vAsshbYPyzZ0A/x1QUKlbSsaT/JPHn3J45jkD0hmP9Hv0dA7u15r/V7cgZKoGFMvIrjWNtBhH9avWkUi9wFRK6dnR+InS9s9J2lEA5K5BrA==|920
+}//nBeEC3fgpBF3HNy3KHwS07lA2xL8P29/+RgUNkCLcxbRfnhZZCO5kYc+1dX7tlrnXPPw8I3VuGKi+BEcIbg7pEzQIXbEzCUFA6nyJNN9udCqBPB67xvFMIGS4xMl00Re6NKsuDsD4RcnM8H3YP4APfR576wsYCGi4PjhFUqVD0qYVQBwtfAW99eZbLPqACUdWDzrFVC9y4b1iELKSk2mz5F/efsHwjn2oI3kfZXTPMj1+4/FsZXdkLC1jChM0WdLNUkaJ1ba3GNRtk3qBCoksP9NgPhzS29/ukJLSfYGwpTFjdvgT4zT55gcf7JTSK9fpI122yRC7IHRzBvDeIXJS0Q/yQPlls1SOkp7FwiKQGXWMzNB8+ap9tir3oZBN+cofbz6ff+fgy8m84LO3718twilY+Hs7Z0oFJOAw/lTNw9ldeHKS4IZFhbLhmqo1FqSDcOkfgejE77Y9d2rwSwYaZW6YlEOB/J6z/5f6rbRroQ0O2pd15KEZ0op+dP+BQfSYT9OARVv/64uqbjY5MjrfLM1ZiJpJv+l3rCPNDRwHTKtTKBJyW+KbzIbEWzhCJAUtf/nT10h6sX3oB4YunaxiCx/1oC5kuFxITvjpnw5L7laO1QtKWaRkOH9kocYcsv/vUwdn0GHWP/Vert7U6bnCOHGLnjN1mx48BT5/OnpfnMXkOgf7jag0yaAi0kk0qdKbCsj216oxbKyaiUqoB8Mzm2dx5+J7TNhCVC4dVOzJ3MCEPlr6GrNrFp7Ul+f79SYgeedF+bUUN47hGQPC1F+qRwyKvAqsy+wLZdE4/thlIAgH9kuEF7RUHBxfSsoclA28dLxZ1qnyNBdFJK4q1buahzlIH7cv8I6hWDaLO1Ef1rN+m1xEDPGaH7xQT5TZ2ATzYvWRxS1/PvC4LitKz4h1g==|920
