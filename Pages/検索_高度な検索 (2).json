@@ -152,6 +152,7 @@
     "1,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -178,6 +179,7 @@
     "1,38": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -230,15 +232,30 @@
                           "Condition1": {
                             "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                             "Condition1": {
-                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                              "CompareType": 6,
-                              "ColumnBindingInfo": {
-                                "TableName": "v_eqshipping_info",
-                                "ColumnName": "plan_no"
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 6,
+                                "ColumnBindingInfo": {
+                                  "TableName": "v_eqshipping_info",
+                                  "ColumnName": "plan_no"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "='検索_高度な検索 (2)'!F2"
+                                }
                               },
-                              "Value": {
-                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "='検索_高度な検索 (2)'!F2"
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 6,
+                                "ColumnBindingInfo": {
+                                  "TableName": "v_eqshipping_info",
+                                  "ColumnName": "JKTKNM"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "='検索_高度な検索 (2)'!S6"
+                                }
                               }
                             },
                             "Condition2": {
@@ -246,37 +263,37 @@
                               "CompareType": 6,
                               "ColumnBindingInfo": {
                                 "TableName": "v_eqshipping_info",
-                                "ColumnName": "JKTKNM"
+                                "ColumnName": "JKNONM"
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                "SerializeProperty": "='検索_高度な検索 (2)'!S6"
+                                "SerializeProperty": "='検索_高度な検索 (2)'!S8"
                               }
                             }
                           },
                           "Condition2": {
                             "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                            "CompareType": 6,
+                            "CompareType": 2,
                             "ColumnBindingInfo": {
                               "TableName": "v_eqshipping_info",
-                              "ColumnName": "JKNONM"
+                              "ColumnName": "JKSNO"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                              "SerializeProperty": "='検索_高度な検索 (2)'!S8"
+                              "SerializeProperty": "='検索_高度な検索 (2)'!S2"
                             }
                           }
                         },
                         "Condition2": {
                           "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                          "CompareType": 2,
+                          "CompareType": 6,
                           "ColumnBindingInfo": {
                             "TableName": "v_eqshipping_info",
-                            "ColumnName": "JKSNO"
+                            "ColumnName": "JKSNAM"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                            "SerializeProperty": "='検索_高度な検索 (2)'!S2"
+                            "SerializeProperty": "='検索_高度な検索 (2)'!S4"
                           }
                         }
                       },
@@ -285,11 +302,11 @@
                         "CompareType": 6,
                         "ColumnBindingInfo": {
                           "TableName": "v_eqshipping_info",
-                          "ColumnName": "JKSNAM"
+                          "ColumnName": "JKSSNO"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "='検索_高度な検索 (2)'!S4"
+                          "SerializeProperty": "='検索_高度な検索 (2)'!F4"
                         }
                       }
                     },
@@ -298,30 +315,15 @@
                       "CompareType": 6,
                       "ColumnBindingInfo": {
                         "TableName": "v_eqshipping_info",
-                        "ColumnName": "JKSSNO"
+                        "ColumnName": "JKKAND"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                        "SerializeProperty": "='検索_高度な検索 (2)'!F4"
+                        "SerializeProperty": "='検索_高度な検索 (2)'!AM2"
                       }
                     }
                   },
                   "Condition2": {
-                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                    "CompareType": 6,
-                    "ColumnBindingInfo": {
-                      "TableName": "v_eqshipping_info",
-                      "ColumnName": "JKKAND"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='検索_高度な検索 (2)'!AM2"
-                    }
-                  }
-                },
-                "Condition2": {
-                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
-                  "Condition1": {
                     "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
                     "CompareType": 3,
                     "ColumnBindingInfo": {
@@ -331,21 +333,19 @@
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                       "SerializeProperty": "='検索_高度な検索 (2)'!AM4"
-                    },
-                    "LeftBracket": 1
+                    }
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 5,
+                  "ColumnBindingInfo": {
+                    "TableName": "v_eqshipping_info",
+                    "ColumnName": "shipment_date"
                   },
-                  "Condition2": {
-                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-                    "CompareType": 5,
-                    "ColumnBindingInfo": {
-                      "TableName": "v_eqshipping_info",
-                      "ColumnName": "shipment_date"
-                    },
-                    "Value": {
-                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                      "SerializeProperty": "='検索_高度な検索 (2)'!AT4"
-                    },
-                    "RightBracket": 1
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "='検索_高度な検索 (2)'!AT4"
                   }
                 }
               },
@@ -600,7 +600,7 @@
               "=AT4",
               "=F6"
             ],
-            "ID": "6566b3a61f3d4b979ce7a9575051488a"
+            "ID": "77f87c9356d243ed9407f22dfd379e9c"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -992,7 +992,7 @@
               "=AU4",
               "=F6"
             ],
-            "ID": "e67748b290d94dc7be521c40ecb9bb55",
+            "ID": "05b553cef7e6453aa20e912c44e33888",
             "Disabled": true
           },
           {
@@ -1023,6 +1023,7 @@
     "3,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -1120,6 +1121,12 @@
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                   "SerializeProperty": "='検索_高度な検索 (2)'!S8"
                 }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='検索_高度な検索 (2)'!AT4"
+                }
               }
             ],
             "Comments": "高度なクエリ設定をすべてクリアする"
@@ -1142,7 +1149,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "0c7452ce295d40baac1414b13b3e8a26",
+            "ID": "5c60c94d3c994f5e9134e74060e47f4b",
             "Disabled": true
           },
           {
@@ -1167,6 +1174,7 @@
     "5,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -1193,6 +1201,7 @@
     "7,18": {
       "CellType": {
         "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "SelectOnly": false,
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
         "IsBounding": true,
         "Items": [
@@ -1351,7 +1360,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "8747137a-e228-49fa-9276-6d2adfc3a0f6"
+                "ID": "6b9faa85-c7f0-476e-a56d-bd1edcc1f19d"
               },
               {
                 "CommandList": [
@@ -1365,7 +1374,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "98cf626b-cb6d-4a1e-8c26-4c656b3b4d46"
+                "ID": "0eee6967-c400-4ea3-af55-61fa33b06b59"
               }
             ]
           }
@@ -1401,7 +1410,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "6584597b-795b-4228-bf1a-0246a2bb97eb"
+                "ID": "0a0a7e09-ca48-40bd-acb3-d11b95a486c2"
               },
               {
                 "CommandList": [
@@ -1415,7 +1424,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "5b4d1dbd-7d2f-4d3a-a2ab-216cdd5ce263"
+                "ID": "b6f3fe5c-162a-4361-9175-30f75e4ddfcf"
               }
             ]
           }
@@ -1451,7 +1460,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "a1de825f-ddff-46d0-82f4-3489cb75e2fc"
+                "ID": "f08c2b65-13cd-41a5-8020-573344c462c9"
               },
               {
                 "CommandList": [
@@ -1465,7 +1474,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "ed231541-af0d-4235-8e5b-ed47cbed40a5"
+                "ID": "4700cd54-a462-4f03-8fc9-4dfaa7fe3c80"
               }
             ]
           }
@@ -3114,7 +3123,7 @@
           }
         },
         "Params": [],
-        "ID": "627ed0cf1d034246b6f1e60169c5c895"
+        "ID": "8bdd881b41eb46608ec2a7a8542be490"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -3130,7 +3139,7 @@
             }
           ]
         },
-        "ID": "83f7e24497ea4460b9457a0d15875c47"
+        "ID": "a59784256854481ca489cf78b53f6ac1"
       }
     ],
     "AuthorizeInfo": {
@@ -3145,4 +3154,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//E+nJm2e8ClSuhXr0IEs8T4RCnZZkt8BcbrlFdOnFk5WwZwxPZ+IwK0RfUgJ6J3sqYH+6mc2eOjVxBraHcw+rxKxzxaG07zfRgmSThzHq98cb/sA5Ob9ApqlfyDoLtJ9ja4sw4pa0c0dOTJ9zdV2azWF+nj+c/4gvdqkhVfZyG/CmVNwzWP2fEy620+c8v1LK1PXNoqZWCbL8sDxJqpztNZHh6gW4gXsi4uQeiwhPFRhWA+biCJwJzzT/tC+jINWSEBR8Mgu+ziprkHgO5TFp1qxsXNaebppyZ4578Y4K+bZFoWttfrJnbI9gOj67jgYW7GA71XTEAWpNJ2DRpvxmMd6DiIQSP8ZUEP9PzcpnMqdKGauXZFhtcakzFvaUQ7CywTeYHP7iNGdbPE7vUh+ciHLpXnQXQ1bjSpfEdOsOrU/loSbOj5iFoyvLnwjiCxnjGWaVOPDYRZesR4Cemkfa91po8oNI9QYtA4v5ns3VYP530acUMeNvxdcyPTS1GYe831Pmm3A9imjXaV5EpK0F2LLGUndy5ISlnNdPxNc7z83/lPKOn/BVkzHoVfw8qsVZpck5BMNBce93QB3EH6AsqQHIpggyt97/Dem4MJLNAZgPK7EcqdJ9YAsILjUVf90mHyDSLV5ktYTRLlZ/kWkmJhihMjuiBBU7gPfXepv7N7HmdaAYDuhmGys+OE5trQ0SqoTFkoMeDRbpiSiKld7gKt0t+abbgQX0kPPSxXWgyoZM27vTY+cMsLzaFvuDTUW9/H/3QeaMyCrDbAM8qqSI4aIPJVSG/GJ/GUMzK+ngw0pofkgyDi3nY1qW5kMyVKkFerzAw01V5wG3KYol56deEBm9hRqT38fgTxUXsfC8lZTzzeOs5jd/QHL4p5zhhkcZZ8J48XRTIWoPeee9wU3abg==|920
+}//veFVKmcy06cVeCg7dVoWdF//EdOa3IhbIomADVWsQl+375fnVfg1qdQz6SS2NppJcznVqNzDDxKOzR+UnP19WRgKUUpoc0fzBvPdC4kj+gsguyQfkZmVN3yeQL8KSopVcV8TW5OC7Es5tzZ9c0ftYlZRgr6g3ZBQ1Dd0awoAtZMslL7PYl0z8VT73xS6BmKcO5f5eEDV1OsmeiyVwUwluROiPWvk1Xvf7dbHfluCE9ZXJc2QX9zdoeI02zuxzp07tRrk7nka/xNLbM+Ea5a1j5jDg4qQfMfPHuojlc/jCbyYCFUzV/dHXOB84H9q9xtR4BbhXYryVQBFIbWQPWrz+arWtdFipg+zxAO+7ZyHUQNZmyeNo9wfgyCjUXGNNiTFgj409N93TCoK6N2Bp26ODY2s9nUuX3ljHwniLyHRi08bBw9IhPtZ81yer8dfBxq0bFRpBfbYNY+4X9uw6MBxgSskdyvWHCUkNfYplrrh+ATR4bnSBHi+0c1nI89yvnrtWjyGEOzEBdAodvEPPoxyE+GlIpJNypADPp928qiQ3vZslvAk4EdNonsrXx+j9Krb4aa2hupIefhIXzseEI3xdD5xqUELWvQjcQTr+8htiAEs0ngOqW0SKIZZeQFV3ErCA5NCF/j/JEXHxV1dcsuXo301C4Z2TiptP3hXtiH2koYfp3hQB7wFbH0tpYh3Hk8CwVv4xBXkQ4XJJXpEdPy9KKD1ItzFTovn2ri/npP8hUIFNGtWh+GeqrtYGmE1BrTiCZrftP15mBtRCS49RRq/w1M8oaEyPdssOkxQ4RLmGzHArm3h9mZR4mTM0pdadnWycBXXLamj272nDkIGpCf1EBfcvKgHvmVznKABSoEkaOMAw/brmjopW/gmUu88Ov83W5aFZClOTJkKYbHFjCw7nQ==|920
