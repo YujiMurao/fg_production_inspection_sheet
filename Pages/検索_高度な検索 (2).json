@@ -81,14 +81,14 @@
           "DesignLengthInPixel": 10.0
         }
       },
-      "62": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 19.0
-        }
-      },
       "51": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 19.0
         }
       }
     },
@@ -600,7 +600,7 @@
               "=AT4",
               "=F6"
             ],
-            "ID": "1c4beda95f864645addc956deaf5cd0d"
+            "ID": "6566b3a61f3d4b979ce7a9575051488a"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -992,7 +992,7 @@
               "=AU4",
               "=F6"
             ],
-            "ID": "57f54efb53584699831597eba6d6f96d",
+            "ID": "e67748b290d94dc7be521c40ecb9bb55",
             "Disabled": true
           },
           {
@@ -1142,7 +1142,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "b783e441b0c94ed582ca0fef238cfd9a",
+            "ID": "0c7452ce295d40baac1414b13b3e8a26",
             "Disabled": true
           },
           {
@@ -1351,7 +1351,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "ee70939f-5e4e-48aa-a907-b04b5744ca5d"
+                "ID": "8747137a-e228-49fa-9276-6d2adfc3a0f6"
               },
               {
                 "CommandList": [
@@ -1365,7 +1365,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "c8374b17-e70c-43d7-a299-279e585b0cd6"
+                "ID": "98cf626b-cb6d-4a1e-8c26-4c656b3b4d46"
               }
             ]
           }
@@ -1401,7 +1401,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "c47184a8-8073-4171-ad53-2933db0064fa"
+                "ID": "6584597b-795b-4228-bf1a-0246a2bb97eb"
               },
               {
                 "CommandList": [
@@ -1415,7 +1415,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "52a4f6a9-4580-42da-b526-03321dd3b471"
+                "ID": "5b4d1dbd-7d2f-4d3a-a2ab-216cdd5ce263"
               }
             ]
           }
@@ -1451,7 +1451,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "2e09d882-2417-4a18-b718-79454484f04b"
+                "ID": "a1de825f-ddff-46d0-82f4-3489cb75e2fc"
               },
               {
                 "CommandList": [
@@ -1465,7 +1465,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "9f96f4f1-3bb5-45cd-87dc-a6ca6082dd88"
+                "ID": "ed231541-af0d-4235-8e5b-ed47cbed40a5"
               }
             ]
           }
@@ -3041,6 +3041,7 @@
     "3,52,1,5",
     "9,50,1,7",
     "9,5,1,3",
+    "13,1,18,59",
     "11,1,1,3",
     "11,4,1,8",
     "11,12,1,8",
@@ -3051,8 +3052,7 @@
     "11,43,1,4",
     "11,47,1,3",
     "11,50,1,4",
-    "11,54,1,3",
-    "13,1,18,59"
+    "11,54,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3065,18 +3065,36 @@
         "SqlCondition": {
           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
           "Condition1": {
-            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-            "ColumnBindingInfo": {
-              "TableName": "v_eqshipping_info",
-              "ColumnName": "shipment_date",
-              "AttachType": {
-                "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-                "ColumnAttachType": 1
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "shipment_date",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 1
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=YEAR(NOW())"
               }
             },
-            "Value": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=YEAR(NOW())"
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_eqshipping_info",
+                "ColumnName": "shipment_date",
+                "AttachType": {
+                  "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
+                  "ColumnAttachType": 4
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=MONTH(NOW())"
+              }
             }
           },
           "Condition2": {
@@ -3086,17 +3104,17 @@
               "ColumnName": "shipment_date",
               "AttachType": {
                 "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-                "ColumnAttachType": 4
+                "ColumnAttachType": 5
               }
             },
             "Value": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=MONTH(NOW())"
+              "SerializeProperty": "=DAY(NOW())"
             }
           }
         },
         "Params": [],
-        "ID": "bc8f58ed9bec4de7ac51baf4bf9a8b4f"
+        "ID": "627ed0cf1d034246b6f1e60169c5c895"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -3112,7 +3130,7 @@
             }
           ]
         },
-        "ID": "64d03ddb882a4ee3a1b8e9c81cc91a96"
+        "ID": "83f7e24497ea4460b9457a0d15875c47"
       }
     ],
     "AuthorizeInfo": {
@@ -3127,4 +3145,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//yds2JGQEg4oMGqfYe2Dq5rodNjOXvmfhEXHRYsb7arvzm4YPvXmm0Vm7pqhD/CadGU4lzEEIc6/lgcsd5Rpmn7UKMN+vglrR1MQTXIUBPn9TGd05QIzUp0c1Dr330gyzm9zN4a7YXagOAZostYQRCo800jvy5LFZAcqFuq0+uxQPsQK6iDn0mhzQ0u9DyRgkC437vBvZ9XP73HMZvs5tDVLB6/a3Y6C2OBJH9YtZ9ZqFTq1UsrQjrEQhwOicS+Fb5tLyXSh0QJl/IUcADCPV1FUPXU9sUkkSdEdGrYj28JV03wPWCxR60Cvx1ZZMLj597aOvp/xso0+Krg7lTieUe6t2qRoV8YVcUg9dXQQwkHJ+eYvTJjT2jSVyK2RESTjZ7j7IrIt7i2urZZQqJ7BVJNP4tNU9rMkaaqKgloK+vT8hFmMQLEQko0KLEKOB0p1Lxm8ZMJWRr4KE1vBPjGg/36YSJPqF26zi3ggO95iAQJYh524sKQKnU3p+rOy2na7Cd6XCF6ymy3YLil1YhMXL/KnoKqyFpgcTD4j1gwS7kZD4YYeezh5yjt5nht64gxp8xG62V2/8JJx5fU2p4HklObHTeGPxj4h0hT3sJ9lR+uRi3XZznDsf66LOMypd+dRExs1C+hMYSDUZB9EWFz7tI2vMoIMZOQLKVUVyZNbFJRqo+9ZVC64BsJsMQtgWRUdP8u2qpKhdcK2yus7cpirPSHxLRTLOID/Rhl+YNIBi3awc2WWBWdQUxqV+aeHjM0AK/txp1ylSdpkNNkHMlEztNeO9WgCVqVnuCCKv1DLPie7xoWmgJXQ3mipSsrHAE8d3h8x/U91l3Dhc8B8sCAssyqKYnMUgJa9Vf78audleY8F2rfpAXX0lH/PbMhZwessX0ASeEjTrcKXwqOwQejv1og==|920
+}//E+nJm2e8ClSuhXr0IEs8T4RCnZZkt8BcbrlFdOnFk5WwZwxPZ+IwK0RfUgJ6J3sqYH+6mc2eOjVxBraHcw+rxKxzxaG07zfRgmSThzHq98cb/sA5Ob9ApqlfyDoLtJ9ja4sw4pa0c0dOTJ9zdV2azWF+nj+c/4gvdqkhVfZyG/CmVNwzWP2fEy620+c8v1LK1PXNoqZWCbL8sDxJqpztNZHh6gW4gXsi4uQeiwhPFRhWA+biCJwJzzT/tC+jINWSEBR8Mgu+ziprkHgO5TFp1qxsXNaebppyZ4578Y4K+bZFoWttfrJnbI9gOj67jgYW7GA71XTEAWpNJ2DRpvxmMd6DiIQSP8ZUEP9PzcpnMqdKGauXZFhtcakzFvaUQ7CywTeYHP7iNGdbPE7vUh+ciHLpXnQXQ1bjSpfEdOsOrU/loSbOj5iFoyvLnwjiCxnjGWaVOPDYRZesR4Cemkfa91po8oNI9QYtA4v5ns3VYP530acUMeNvxdcyPTS1GYe831Pmm3A9imjXaV5EpK0F2LLGUndy5ISlnNdPxNc7z83/lPKOn/BVkzHoVfw8qsVZpck5BMNBce93QB3EH6AsqQHIpggyt97/Dem4MJLNAZgPK7EcqdJ9YAsILjUVf90mHyDSLV5ktYTRLlZ/kWkmJhihMjuiBBU7gPfXepv7N7HmdaAYDuhmGys+OE5trQ0SqoTFkoMeDRbpiSiKld7gKt0t+abbgQX0kPPSxXWgyoZM27vTY+cMsLzaFvuDTUW9/H/3QeaMyCrDbAM8qqSI4aIPJVSG/GJ/GUMzK+ngw0pofkgyDi3nY1qW5kMyVKkFerzAw01V5wG3KYol56deEBm9hRqT38fgTxUXsfC8lZTzzeOs5jd/QHL4p5zhhkcZZ8J48XRTIWoPeee9wU3abg==|920
