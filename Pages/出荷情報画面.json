@@ -3,149 +3,153 @@
     "RowColumnAttachedInfos": {
       "1": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 30.0
+          "DesignLengthInPixel": 10.0
         }
       },
-      "6": {
+      "11": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
       },
-      "16": {
+      "28": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
       }
     },
-    "Count": 34
+    "Count": 29
   },
   "Cols": {
     "RowColumnAttachedInfos": {
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 87.0
-        }
-      },
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 199.0
         }
       },
-      "4": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 61.0
-        }
-      },
       "5": {
         "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 61.0
+          "DesignLengthInPixel": 61.0,
+          "IsHidden": true
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 310.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 178.0
         }
       }
     },
+    "InLogicalVisibleIndexes": [
+      5
+    ],
     "Count": 6,
-    "DefaultSize": 227.0
+    "DefaultSize": 10.0
   },
   "Values": {
-    "4,1": "製 品 情 報",
-    "5,2": "更新日：",
-    "7,1": "計画ＮＯ．",
-    "7,3": "検査表データ（PDF)　システム用",
-    "8,1": "得意先名",
-    "8,3": "",
-    "9,1": "納入先名",
-    "10,1": "システム品番",
-    "11,1": "システム品名",
-    "11,3": "その他データ",
-    "12,1": "シリアルＮＯ.",
-    "13,1": "完成日→生産工場",
-    "14,1": "出荷日(電算データ)",
-    "15,1": "出荷日(日付データ変換)",
-    "17,1": "単体品番",
-    "17,2": "シリアルＮＯ.",
-    "17,3": "検査表データ(PDF)　単体用"
+    "0,2": "更新日：",
+    "2,1": "計画ＮＯ．",
+    "2,3": "検査表データ（PDF)\nシステム用",
+    "3,1": "得意先名",
+    "4,1": "納入先名",
+    "4,3": "",
+    "5,1": "システム品番",
+    "6,1": "システム品名",
+    "7,1": "シリアルＮＯ.",
+    "7,3": "その他データ",
+    "8,1": "完成日→生産工場",
+    "9,1": "出荷日(電算データ)",
+    "10,1": "出荷日(日付データ変換)",
+    "12,1": "単体品番",
+    "12,2": "シリアルＮＯ.",
+    "12,3": "検査表データ(PDF)\n単体用"
   },
   "AttachInfos": {
-    "1,0": {
-      "CellType": {
-        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
-            "ConditionAndCommandPairList": [
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=出荷情報画面!A2"
-                      }
-                    ]
-                  },
-                  "value": "登録"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_eqpshipping_info",
-                    "UpdateType": "add",
-                    "ConfirmText": "本当に追加してもよろしいですか？",
-                    "UpdateValues": []
-                  }
-                ],
-                "ID": "2e2678ef-8526-4860-91f5-186bbd3c5e87"
-              },
-              {
-                "Condition": {
-                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
-                  "param": {
-                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
-                    "cellLocations": [
-                      {
-                        "SerializeProperty": "=出荷情報画面!A2"
-                      }
-                    ]
-                  },
-                  "value": "更新"
-                },
-                "CommandList": [
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "trn_eqpshipping_info",
-                    "ConfirmText": "本当に更新してもよろしいですか？",
-                    "UpdateValues": []
-                  }
-                ],
-                "ID": "c1932cfd-4397-4d69-a27c-115251ad0e58"
-              }
-            ]
-          },
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "NavigateType": "back",
-            "PassValues": [],
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          }
-        ]
-      }
-    },
-    "5,3": {
+    "0,3": {
       "BindingInfo": {
         "TableName": "trn_eqpshipping_info",
         "ColumnName": "FGC_LastModifyDate"
       }
     },
-    "7,2": {
+    "2,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "plan_no"
       }
     },
-    "8,2": {
+    "3,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKTKNM"
+      }
+    },
+    "3,5": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "system"
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKNONM"
+      }
+    },
+    "4,3": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "ValueFormula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=出荷情報画面!F4"
+            },
+            "PassValues": [],
+            "IsOpenInNewTab": true,
+            "IgnoreTargetPageCachedCurrentRowInfo": false
+          }
+        ],
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=出荷情報画面!D3"
+        },
+        "ImagePath": "Navigation/237_folder_6.svg",
+        "BuiltIn": true,
+        "Color": "#FF88B556"
+      }
+    },
+    "5,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSNO"
+      }
+    },
+    "6,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSNAM"
+      }
+    },
+    "7,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSSNO"
+      }
+    },
+    "7,5": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "etc"
+      }
+    },
+    "8,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKKAND"
       }
     },
     "8,3": {
@@ -156,7 +160,7 @@
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "ValueFormula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=出荷情報画面!E9"
+              "SerializeProperty": "=出荷情報画面!F8"
             },
             "PassValues": [],
             "IsOpenInNewTab": true,
@@ -172,97 +176,49 @@
         "Color": "#FF88B556"
       }
     },
-    "8,4": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "system"
-      }
-    },
     "9,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKNONM"
-      }
-    },
-    "10,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKSNO"
-      }
-    },
-    "11,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKSNAM"
-      }
-    },
-    "12,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKSSNO"
-      }
-    },
-    "12,3": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "CommandList": [
-          {
-            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
-            "ValueFormula": {
-              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=出荷情報画面!E13"
-            },
-            "PassValues": [],
-            "IsOpenInNewTab": true,
-            "IgnoreTargetPageCachedCurrentRowInfo": false
-          }
-        ],
-        "ToolTip": {
-          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=出荷情報画面!D12"
-        },
-        "ImagePath": "Navigation/237_folder_6.svg",
-        "BuiltIn": true,
-        "Color": "#FF88B556"
-      }
-    },
-    "12,4": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "etc"
-      }
-    },
-    "13,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKKAND"
-      }
-    },
-    "14,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSYTE"
       }
     },
-    "15,2": {
+    "10,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "shipment_date"
       }
     },
-    "18,1": {
+    "13,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN01"
       }
     },
-    "18,2": {
+    "13,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN01"
       }
     },
-    "18,3": {
+    "13,5": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "unit"
+      }
+    },
+    "14,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN02"
+      }
+    },
+    "14,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN02"
+      }
+    },
+    "14,3": {
       "CellType": {
         "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
         "CommandList": [
@@ -270,7 +226,7 @@
             "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
             "ValueFormula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=出荷情報画面!E19"
+              "SerializeProperty": "=出荷情報画面!F14"
             },
             "PassValues": [],
             "IsOpenInNewTab": true,
@@ -279,182 +235,164 @@
         ],
         "ToolTip": {
           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-          "SerializeProperty": "=出荷情報画面!D19"
+          "SerializeProperty": "=出荷情報画面!D15"
         },
         "ImagePath": "Navigation/237_folder_6.svg",
         "BuiltIn": true,
         "Color": "#FF88B556"
       }
     },
-    "18,4": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "unit"
-      }
-    },
-    "19,1": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKHN02"
-      }
-    },
-    "19,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "JKSN02"
-      }
-    },
-    "20,1": {
+    "15,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN03"
       }
     },
-    "20,2": {
+    "15,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN03"
       }
     },
-    "21,1": {
+    "16,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN04"
       }
     },
-    "21,2": {
+    "16,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN04"
       }
     },
-    "22,1": {
+    "17,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN05"
       }
     },
-    "22,2": {
+    "17,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN05"
       }
     },
-    "23,1": {
+    "18,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN06"
       }
     },
-    "23,2": {
+    "18,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN06"
       }
     },
-    "24,1": {
+    "19,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN07"
       }
     },
-    "24,2": {
+    "19,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN07"
       }
     },
-    "25,1": {
+    "20,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN08"
       }
     },
-    "25,2": {
+    "20,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN08"
       }
     },
-    "26,1": {
+    "21,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN09"
       }
     },
-    "26,2": {
+    "21,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN09"
       }
     },
-    "27,1": {
+    "22,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN10"
       }
     },
-    "27,2": {
+    "22,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN10"
       }
     },
-    "28,1": {
+    "23,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN11"
       }
     },
-    "28,2": {
+    "23,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN11"
       }
     },
-    "29,1": {
+    "24,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN12"
       }
     },
-    "29,2": {
+    "24,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN12"
       }
     },
-    "30,1": {
+    "25,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN13"
       }
     },
-    "30,2": {
+    "25,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN13"
       }
     },
-    "31,1": {
+    "26,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN14"
       }
     },
-    "31,2": {
+    "26,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN14"
       }
     },
-    "32,1": {
+    "27,1": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKHN15"
       }
     },
-    "32,2": {
+    "27,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN15"
@@ -464,47 +402,15 @@
   "StyleDatas": {
     "Styles": [
       {
-        "Foreground": 0,
-        "Underline": true
-      },
-      {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 4,
-        "Formatter": 5,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 8,
-        "Formatter": 9,
-        "HorizontalAlignment": 7,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 9,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderBottom": null,
@@ -513,77 +419,31 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 12,
+        "FontFamily": 6,
         "FontSize": 34.666666666666664,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 10,
-        "Formatter": 9,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 7,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false
       },
       {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 9,
-        "TextIndent": 0,
-        "HorizontalAlignment": 13,
-        "VerticalAlignment": 11,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null,
-        "BorderRight": null
+        "Formatter": 8
       },
       {
-        "FontFamily": 1,
+        "Background": 10,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 9,
-        "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
-        "WordWrap": false,
-        "Strikethrough": false
-      },
-      {
-        "Formatter": 5
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 9,
-        "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": null
-      },
-      {
-        "Background": 14,
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 10,
-        "Formatter": 9,
-        "HorizontalAlignment": 7,
-        "VerticalAlignment": 7,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderBottom": 0,
@@ -592,40 +452,46 @@
         "BorderRight": 0
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 13.333333333333332,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
         "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "Background": 14,
-        "FontWeight": 3,
-        "Formatter": 5,
-        "HorizontalAlignment": 7,
-        "VerticalAlignment": 7,
         "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 1,
+        "Background": 10,
+        "FontWeight": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "BorderTop": 0
+      },
+      {
+        "Background": null,
+        "FontWeight": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9
+      },
+      {
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 9,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderBottom": null,
@@ -633,123 +499,154 @@
         "BorderRight": null
       },
       {
-        "FontFamily": 1,
-        "FontSize": 10.666666666666666,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 16,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 1,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 8,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 13,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
         "WordWrap": false,
         "Underline": false,
         "Strikethrough": false
       },
       {
-        "BorderBottom": 1,
-        "BorderTop": 1,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 12.0,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0
-      },
-      {
-        "BorderBottom": 0,
-        "BorderTop": 1,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "Background": 14,
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 10,
-        "Formatter": 5,
-        "HorizontalAlignment": 7,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderTop": 0,
-        "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 1,
-        "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 8,
-        "Formatter": 9,
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
         "TextIndent": 0,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 11,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
         "WordWrap": false,
         "Strikethrough": false
       },
       {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "TextIndent": 3,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 18
+        "BorderRight": 0
       },
       {
-        "Background": 14,
-        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 15,
+        "Underline": true
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 10,
-        "Formatter": 19,
-        "HorizontalAlignment": 7,
-        "VerticalAlignment": 7,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 8,
+        "TextIndent": 0,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 8,
+        "TextIndent": 0,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 13,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 10,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 16,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "WordWrap": true,
         "Strikethrough": false,
         "BorderBottom": 0,
@@ -758,406 +655,489 @@
         "BorderRight": 0
       },
       {
-        "Formatter": 5,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 17,
+        "TextIndent": 3,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
         "BorderBottom": 0,
+        "BorderTop": 0,
         "BorderLeft": 0,
         "BorderRight": 0
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Foreground": 10,
-        "Formatter": 19,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 16,
         "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
         "WordWrap": true,
         "Strikethrough": false,
         "BorderLeft": null
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 19,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 16,
         "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
         "WordWrap": true,
         "Strikethrough": false,
         "BorderRight": null
       },
       {
-        "FontFamily": 1,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 19,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 16,
         "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 16,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
         "WordWrap": true,
         "Strikethrough": false
       },
       {
-        "Background": 14,
-        "FontWeight": 3,
-        "Formatter": 5,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "Background": 10,
+        "FontWeight": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "BorderBottom": 0,
         "BorderTop": 0,
         "BorderLeft": 0,
-        "BorderRight": 2
+        "BorderRight": 1
       },
       {
-        "Background": 14,
-        "FontFamily": 1,
+        "Background": 10,
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
-        "FontStyle": 2,
-        "FontWeight": 3,
-        "Formatter": 5,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
         "BorderBottom": 0,
         "BorderTop": 0,
-        "BorderLeft": 2
+        "BorderLeft": 1
       },
       {
-        "Background": 20,
-        "FontSize": 12.0,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 2
-      },
-      {
-        "Background": 20,
-        "FontFamily": 1,
-        "FontSize": 13.333333333333332,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
+        "Background": 10,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 2
+        "BorderTop": 0
       },
       {
-        "FontFamily": 1,
-        "FontSize": 10.666666666666666,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Formatter": 9,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 16,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "Foreground": 8
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 12.0,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 2
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 13.333333333333332,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 2
-      },
-      {
-        "Background": 20,
-        "FontFamily": 1,
-        "FontSize": 12.0,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 2
-      },
-      {
-        "Background": 20,
-        "FontFamily": 1,
-        "FontSize": 13.333333333333332,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Foreground": 10,
-        "Formatter": 5,
-        "TextIndent": 3,
-        "HorizontalAlignment": 5,
-        "VerticalAlignment": 7,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 2
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 10.666666666666666,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Formatter": 5,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 16,
-        "WordWrap": false,
-        "Strikethrough": false,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "Formatter": 5,
-        "BorderBottom": null,
-        "BorderTop": null,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "BorderBottom": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 1,
-        "FontSize": 10.666666666666666,
-        "FontStyle": 2,
-        "FontWeight": 2,
-        "Formatter": 9,
-        "TextIndent": 0,
-        "HorizontalAlignment": 6,
-        "VerticalAlignment": 16,
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 7,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false
+      },
+      {
+        "Background": 18,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "Background": 18,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 1,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 13
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 18,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 8,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 8,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 10.666666666666666,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 14,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "Formatter": 8,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 9,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666984558105,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "TextIndent": 0,
+        "HorizontalAlignment": 8,
+        "VerticalAlignment": 5,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
       }
     ],
     "Types": {
       "Strs": [
-        "Blue",
         "Body",
         "Normal",
-        "Bold",
-        "#FFFF0000",
-        "General",
-        "Left",
-        "Center",
-        "Background 1 0",
-        "[AUTO]General",
         "#FF000000",
+        "[AUTO]General",
+        "Right",
         "Bottom",
         "メイリオ",
-        "Right",
+        "Bold",
+        "General",
+        "Center",
         "Background 1 -5",
         "Background 1 -15",
+        "Left",
+        "Background 1 0",
         "Top",
-        "black",
-        "ＭＳ 明朝",
+        "Blue",
         "@",
+        "yyyy/MM/dd",
         "#FFCCFFFF"
       ],
       "Borders": [
         {
-          "Color": 15
-        },
-        {
-          "Color": 17
+          "Color": 11
         },
         {
           "Style": 4,
-          "Color": 15
+          "Color": 11
         }
       ]
     },
     "CellStyles": {
-      "1,0": 0,
+      "0,2": 0,
       "1,1": 1,
-      "1,2": 0,
+      "1,2": 2,
       "1,3": 2,
-      "3,0": 3,
-      "4,1": 4,
-      "4,2": 5,
-      "4,3": 6,
-      "6,1": 4,
-      "6,2": 7,
-      "6,3": 7,
-      "7,0": 8,
-      "7,1": 9,
-      "7,2": 10,
-      "7,3": 11,
-      "7,4": 12,
-      "8,0": 8,
-      "8,1": 9,
-      "8,2": 10,
-      "8,3": 13,
-      "8,4": 14,
-      "9,0": 8,
-      "9,1": 9,
-      "9,2": 10,
-      "9,3": 15,
-      "9,4": 12,
-      "10,0": 8,
-      "10,1": 9,
-      "10,2": 16,
-      "10,3": 17,
-      "11,1": 9,
-      "11,2": 10,
-      "11,3": 18,
-      "11,4": 0,
-      "12,1": 9,
-      "12,2": 10,
-      "12,3": 19,
-      "12,4": 20,
-      "13,1": 9,
-      "13,2": 10,
-      "13,3": 21,
-      "13,4": 0,
-      "13,5": 22,
-      "14,1": 9,
-      "14,2": 10,
-      "14,3": 21,
-      "14,4": 0,
-      "15,1": 23,
-      "15,2": 10,
-      "15,3": 24,
-      "16,1": 25,
-      "16,2": 26,
-      "16,3": 27,
-      "17,1": 28,
-      "17,2": 29,
-      "17,3": 9,
-      "18,0": 8,
-      "18,1": 30,
-      "18,2": 31,
-      "18,3": 32,
-      "18,4": 33,
-      "19,0": 6,
-      "19,1": 34,
-      "19,2": 35,
-      "19,3": 21,
-      "20,0": 6,
-      "20,1": 36,
-      "20,2": 37,
-      "20,3": 21,
-      "21,0": 8,
-      "21,1": 34,
-      "21,2": 35,
-      "21,3": 38,
-      "22,0": 8,
-      "22,1": 36,
-      "22,2": 37,
+      "1,4": 2,
+      "2,1": 3,
+      "2,2": 4,
+      "2,3": 5,
+      "2,4": 6,
+      "2,5": 7,
+      "3,1": 3,
+      "3,2": 4,
+      "3,4": 6,
+      "3,5": 8,
+      "4,1": 3,
+      "4,2": 4,
+      "4,3": 9,
+      "4,4": 10,
+      "4,5": 7,
+      "5,1": 3,
+      "5,2": 11,
+      "5,3": 12,
+      "5,4": 10,
+      "6,1": 3,
+      "6,2": 4,
+      "6,3": 13,
+      "6,4": 10,
+      "6,5": 14,
+      "7,1": 3,
+      "7,2": 4,
+      "7,3": 15,
+      "7,4": 16,
+      "7,5": 17,
+      "8,1": 3,
+      "8,2": 4,
+      "8,3": 18,
+      "8,4": 19,
+      "8,5": 14,
+      "9,1": 3,
+      "9,2": 4,
+      "9,3": 12,
+      "9,4": 19,
+      "9,5": 14,
+      "10,1": 20,
+      "10,2": 21,
+      "10,3": 13,
+      "10,4": 19,
+      "11,1": 22,
+      "11,2": 23,
+      "11,3": 24,
+      "11,4": 24,
+      "12,1": 25,
+      "12,2": 26,
+      "12,3": 27,
+      "12,4": 28,
+      "13,1": 29,
+      "13,2": 30,
+      "13,4": 28,
+      "13,5": 31,
+      "14,1": 32,
+      "14,2": 33,
+      "14,3": 34,
+      "14,4": 10,
+      "15,1": 35,
+      "15,2": 30,
+      "15,3": 36,
+      "15,4": 10,
+      "16,1": 32,
+      "16,2": 33,
+      "16,3": 37,
+      "16,4": 10,
+      "17,1": 35,
+      "17,2": 30,
+      "17,3": 38,
+      "18,1": 32,
+      "18,2": 33,
+      "18,3": 38,
+      "19,1": 35,
+      "19,2": 30,
+      "19,3": 39,
+      "19,4": 40,
+      "20,1": 32,
+      "20,2": 33,
+      "20,3": 41,
+      "20,4": 2,
+      "21,1": 35,
+      "21,2": 30,
+      "21,3": 41,
+      "21,4": 2,
+      "22,1": 32,
+      "22,2": 33,
       "22,3": 39,
-      "23,0": 6,
-      "23,1": 34,
-      "23,2": 35,
-      "23,3": 39,
-      "24,0": 8,
-      "24,1": 36,
-      "24,2": 37,
-      "24,3": 38,
-      "25,0": 8,
-      "25,1": 34,
-      "25,2": 35,
+      "22,4": 40,
+      "23,1": 35,
+      "23,2": 30,
+      "23,3": 41,
+      "23,4": 2,
+      "24,1": 32,
+      "24,2": 33,
+      "24,3": 41,
+      "24,4": 2,
+      "25,1": 35,
+      "25,2": 30,
       "25,3": 39,
-      "26,0": 6,
-      "26,1": 36,
-      "26,2": 37,
-      "26,3": 39,
-      "27,0": 8,
-      "27,1": 34,
-      "27,2": 35,
-      "27,3": 38,
-      "28,0": 8,
-      "28,1": 36,
-      "28,2": 37,
-      "28,3": 39,
-      "29,0": 6,
-      "29,1": 34,
-      "29,2": 35,
-      "29,3": 39,
-      "30,0": 8,
-      "30,1": 36,
-      "30,2": 37,
-      "30,3": 38,
-      "31,1": 34,
-      "31,2": 35,
-      "31,3": 39,
-      "32,1": 36,
-      "32,2": 37,
-      "32,3": 40,
-      "33,2": 41,
-      "33,3": 41
+      "25,4": 40,
+      "26,1": 32,
+      "26,2": 33,
+      "26,3": 41,
+      "26,4": 2,
+      "27,1": 35,
+      "27,2": 30,
+      "27,3": 13,
+      "28,1": 42,
+      "28,2": 43
     },
     "ColStyles": {
-      "0": 3,
-      "1": 3,
-      "2": 3,
-      "3": 3
+      "1": 44,
+      "2": 44,
+      "3": 44,
+      "4": 44
     },
     "SheetStyle": {
-      "FontFamily": 1,
+      "FontFamily": 0,
       "FontSize": 14.666666984558105,
-      "FontStyle": 2,
-      "FontWeight": 2,
-      "Foreground": 10,
-      "Formatter": 9,
+      "FontStyle": 1,
+      "FontWeight": 1,
+      "Foreground": 2,
+      "Formatter": 3,
       "TextIndent": 0,
-      "HorizontalAlignment": 5,
-      "VerticalAlignment": 11,
+      "HorizontalAlignment": 8,
+      "VerticalAlignment": 5,
       "WordWrap": false,
       "Strikethrough": false,
       "BorderBottom": null,
@@ -1168,13 +1148,14 @@
   },
   "Spans": [
     "8,3,3,1",
-    "18,3,3,1",
-    "4,1,2,1",
-    "12,3,3,1"
+    "4,3,3,1",
+    "2,3,2,1",
+    "14,3,3,1",
+    "12,3,2,1"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
-    "Title": "出荷情報",
+    "Title": "製品情報",
     "AuthorizeInfo": {
       "VisitMode": 3
     },
@@ -1188,4 +1169,4 @@
     "PageOrder": 1,
     "PaperSize": {}
   }
-}//7OkLACtRQkKHes/6H6JyazGCSLE2dkyfweIlK/vjcfVnSjxOwwlJUW2p02D45putmVzCgcYSkANJcz1DMX8cT44WMIlNF4EYboh3hqqfO09TVe1nQkovWf0hjyCo31QSXn3yO01hkcpEicfe+B7dPCpqAx8G6uyiPJb2l9++DASVKCgVlRAYoueZNr3aezLhnEKYWr4Ay24MKVVg78yIHhF1D3JVRYMioyhmZw+/ra37J7jq7paXPl/Z00iYWgGefdetRawop4+YYs/XfWPzNe8v/W4BqzUmQGRBtU9S0egyeBUMdIXyt1OHiRykqj7PGufpQqMjdc2nID+m7wIsmtNpnd+3tZp2uKUhq2Cvc+vHWg3I0pDOBNpzO2VkdCCH0fovbC7CIcWKhyebreFP+m6NGw+LKL+xbrghds26TMPP+WWyr7EtwJD3x1ppvNn18buel62GUUxUs7DT9B32ABKtfL3edbUChzCbLYBi6IciEsvgm9KJARi3GTqOUTTAMDihL7XW6ueVisdWL+wlGMc427vPGNhVpb02PwNzLwZwYLTdZYPxjgM4AvIH6rXDStdCo+Ievc1dNnfn3BlSa3NO94DRr7Nh14njvRjKGVmTETv7Gz8nRFn+s6bMYb7vBRsFsDxwua8vVzpWiiZYlIlHLb+Nwj1ldydyWdR6UeqAYjG29nH7SZ48u3VozpsiFLQiHNnApmfdg4TQA+MqLKw6opyfFWCEWp5FYW3F5tPWICmSk2F3maJgLw31qzuAk2kxHGMuZAPs/vpKbBprSvTS2JA+US6xcm2yXPVm6J289B4aqfo+bX1hzpGPtlU2BsoWen7+/Pq6t6pKT0DGyT4fz2fwqP4S0gdLWN8nKk91vRsu6a/aw8Xr1NNpHzt4rDf1ouu7moOCITc9+U5OBQ==|920
+}//VLbK5Dvd6IfkNmRGiMGnquFm4nVbPDCpm1QnmY5a2fqjzxiUYpXPbjxTjGeNp1vVeNb6ns4eVDp0Gp/UfBMpuNNywIQR3B/KpC42IgpM+fvYONCSs+Gnx2fg9hHTtntJIEaLC17jcmiFvBcPgEmrFvb8Xa9L17/5XGN5oq97ZG0Ur91V749ikxK3WpDo5iLQTZ4mh8VDszIU3b/BOPiq4RPKOHj6nCEF4J7QUcp0XWkZ5VI210EcPgoe1thGUPaNjTCa1H0dUtA3/aBHpEAv8ia5MCd1krmwcH/qXISXDl5MtN6tR5DsuQexyl5E6STyDYXrcPxEZxmRumYYJVi7aEexpNcAYr4uYU0uTt3wssZLgX4sDmBqnRc/lb25yKHq3HvuqhAMy6V5ss9u8WSISGLoQStPLgn3+rfq8qMcu4JG6huwpZZEvt0qX3Eh3YXqwgFbqDNdlTOsuBa1By7zbTTV5wX1VVZa7NS24F8VBe9JBsO1DribOXMsrfw6yjuQlwOaPaEGlctfiTvshaIYJTF4rQvGCK3xwKR3GHD2k0fuKKNZ+tLu1ZJ2Qrzbk6jTzUuQK5qPjsK3prQYUUv70b+sz5GBkPVM0NYKTFgT688WEHpXali8B6rvoNAkUs1B3tHCEu1aHM/ST+j/qbz7I+03y/cOdP6QOh4bcMr/PvllE6ai8f91rqG/8VxixCdqWZsyhIpXjhtjsKSUSWkklm+JJpGnDG1ozAM9JM9xTtNZxI6BUBQqpLWFczheZYD3yR8k3WONvP8esQW7m2+LTsuDIE9/S6pXiav2iN5PjbNjty+sO+GXnGH1JbRTwjgJz//AT4t12TVtNb2CqaKyan/tshcdE+I54BU0HbeZ25/C/H/106sJE/J/6mmi1VUlhmDYbDPR1oDdVJYYVw3bBQ==|920
