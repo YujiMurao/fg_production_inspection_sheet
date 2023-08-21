@@ -142,7 +142,16 @@
   },
   {
     "ModuleName": "PCPage/検索_高度な検索",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-08-21T11:45:12.2030836+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\検索_高度な検索.json"
+    ]
   },
   {
     "ModuleName": "PCPage/RJ情報登録",
@@ -155,7 +164,7 @@
       "UserName": "murao.yuji@rorze.com",
       "Email": "murao.yuji@rorze.com"
     },
-    "LockDateTime": "2023-08-21T11:41:22.9886924+09:00",
+    "LockDateTime": "2023-08-21T11:45:12.2030836+09:00",
     "ModuleType": 1,
     "ToRemoveFiles": [
       "Pages\\出荷情報画面.json"
