@@ -153,19 +153,6 @@
     "ModuleType": 1
   },
   {
-    "ModuleName": "PCPage/検索_高度な検索 (2)",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-25T15:47:24.0213531+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\検索_高度な検索 (2).json"
-    ]
-  },
-  {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
     "ModuleType": 3
   },
@@ -235,12 +222,6 @@
   },
   {
     "ModuleName": "PCPage/検索_高度な検索",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-25T15:47:24.0213531+09:00",
     "ModuleType": 1
   }
 ]
