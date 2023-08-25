@@ -1405,11 +1405,11 @@
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=検索_高度な検索!$BF$14=\"\""
+              "SerializeProperty": "=検索_高度な検索!$BF14=\"\""
             },
             "StyleInfo": {
               "Background": "Background 2 0",
-              "Foreground": "Background 2 0",
+              "Foreground": "#FF000000",
               "Underline": null,
               "Strikethrough": null
             }
@@ -1472,7 +1472,7 @@
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=検索_高度な検索!$BG$14=\"\""
+              "SerializeProperty": "=検索_高度な検索!$BG14=\"\""
             },
             "StyleInfo": {
               "Background": "Background 2 0",
@@ -1538,7 +1538,7 @@
             "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
             "Formula": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=検索_高度な検索!$BH$14=\"\""
+              "SerializeProperty": "=検索_高度な検索!$BH14=\"\""
             },
             "StyleInfo": {
               "Background": "Background 2 0",
@@ -3218,4 +3218,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//QLpJhI452LCXMlar5DWIqqrwaETGGQOeXoBQwrY6mAXe1t0q+NCQGVeYmPUzm9fTygoNqip0SRgEMkSkwzEbFoCS039l+R9ecipSUdkeqIrLYuiJmrjnyz1ZJZh3sJVuq3B2SINegM3Ui7C9zau9BmUcPTk9ASUGOkyI84kD9IH5aeE/jZ74oVvCsWw2hECpLNsXZzTR/Xugj83G/hiDbS3KwfYU9EG0puCnbp+PcQmxIu2pnMDfkyn1mGPii1LVX72k7DY5Sxa/ho/rKDqKmrfv4cya1EvceAQQSqYMvVtk7C5A7H3D+cltp/Ux8c1rqa8KF6R9YnjRp0opJD2P0JZXb8KWhveVyAthEPv6iBwlRGOIe/zQe8lvZIiXqwLWdUyeMa0vr/5ENeUyVGYkgHG3Hvx94PtaOz0HsF+smUct/1w3HvqqSsM5OfsBAeJd+iVdoI6JNr5wtGCItqkG+1yuMIdL72nG8+snHIEwSvDNeh/SluRGqVq60tOM/GGgj7zrKw9aQStM+VNWJ4pja0t6cY4PrjDDby22muYQXtBo46o+fsHDt8D1p+74reS1GgMNUglG7holm1TxWVUMfRBu6uSoCo7i1ltfWsHeOFvn8sJVWI7S/0K6HjIteM454rBwvTRpFst5C+SggE6gwesWtI5DAbeHqK4lHWJ4A/8UbIxmZ4LCBAQAS6ZCiDXEYs7kDrr5dMyOz5D6FfJC8lEmeH/s+tIa4ZJoM5J18+uOLj+3qAGkFIaYesEiKs7FIYybBjC63hvgpg1tZpchZ8ABLuNquuVVHH3DcDpOWHiO98XTYXcKoTNEjKrFjsSBvcPqQEBIDiLkxwxXJ28qqlzqts+aE13b76cWh9PlcfLgOLBNZlkR2LGayZUk56lk+B16XboNiwMV5GdmZZP/xg==|920
+}//u6Owl/FF3uF8KyjKj41oCErtxHrWKNaarnytkOWunnLVxDnIde6LeUX7jOWldyqmeuEcIJA9Fp3O6RsYj+RjrCFiTbrJVbS3FVUkD09E7kL2BYulXwmqZ4KCaoE7NE+UGx237j75pDmzsyoUtY1UguhnXsTwnLGF+vTGKhlN25cAEa6g7egt+LCDA8sITfuxhdLNpLzjK7emQ0tKGaWtbXJYfuTt//mS8BVRrzJa14ObQkVisTGuhuyovHb3UikLNhL6SPBl3TLZQEOtjOULPGkmak08KyYauGG19pzoIFkpRIiNzRrJHg5IsWmTKGPiJRtJ4l85FyfG2ePmsUOoWLP+OoaULi3n/PnZrTqltONFr2P+E/LYDyoVDDmcBnImH4uj3XllwfhianHHUhLfMJFY5gspAdhCibUfgfrNMe2ZHs6cTma9XQq1UTBl21SwmDG2DX0Pq5fKNVMDkLcLrXavhOgOzIfGn1WNBOowzT52PkJVZZvgiUyh8xHq5BIbHPaz3fY06ljM82PcExEIbkNQCCSyCiYowIrnYiktjwdJ7Y+L5j1L99v3K2JdnelcunwmcHgnTSOpnrQAliH2BXbcP8FObRfKakEWkOrP2RCeSyQgHQ+zKPQq6Gdhwdy8MQL8sYUGMUJ1bDbLQtRYv+YWkG7NiLw347a64TumXSf6saVSH9MguYETUviTtHNpxflRMpQA9XVOZm/5v2P2wunHA/I3KN6smmMxQZ8WBJzUiBjUgASK5LvXg3+8+CiXBd75ydcVuAQkqia1fdh43Wsdf2bZrgA6wRdMYDJ4NGe9tNCBQYdu1BzCCA8E6ZwHjx88AOduIt7qQSQQuJfg6+e/+TpNxNhMXLLzcc17sXsNmoiFw3KhxBdiTBsgRQB1S52e03FuOm4oJ7LGtQD2yA==|920
