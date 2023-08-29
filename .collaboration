@@ -233,5 +233,15 @@
     },
     "LockDateTime": "2023-08-29T14:56:36.174794+09:00",
     "ModuleType": 1
+  },
+  {
+    "ModuleName": "TableView/v_eqshipping_info_zero",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "murao.yuji@rorze.com",
+      "Email": "murao.yuji@rorze.com"
+    },
+    "LockDateTime": "2023-08-29T15:15:18.8830341+09:00",
+    "ModuleType": 23
   }
 ]
