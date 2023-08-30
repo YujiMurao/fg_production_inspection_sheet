@@ -1,6 +1,11 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 47.0
+        }
+      },
       "1": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
@@ -70,11 +75,6 @@
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
-      },
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 47.0
-        }
       }
     },
     "Count": 33
@@ -125,8 +125,10 @@
     "6,32": "を含む",
     "8,13": "納入先名",
     "8,32": "を含む",
+    "8,62": "M",
     "10,4": "ヒット数：",
     "10,50": "リストをエクスポート",
+    "10,62": "T",
     "12,1": "計画№",
     "12,4": "得意先名",
     "12,12": "納入先名",
@@ -615,7 +617,7 @@
               "=AT5",
               "=F7"
             ],
-            "ID": "68bf5e3c56c8475f83f32e8dcfc3c2a6"
+            "ID": "424090d622e14ffcbcc14b74474339fe"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -1007,7 +1009,7 @@
               "=AU5",
               "=F7"
             ],
-            "ID": "9fc762d702f846848418f417b4bf581e",
+            "ID": "fe2a41339cc74802bdcf419efc12a2f8",
             "Disabled": true
           },
           {
@@ -1164,7 +1166,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "5096be1153594f3ba66953cdf9458daa",
+            "ID": "3f7debbe141c4715a7107b7d7a3f94cd",
             "Disabled": true
           },
           {
@@ -1240,6 +1242,21 @@
         }
       }
     },
+    "8,62": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "装置情報マスター",
+            "PassValues": [],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "M",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2"
+      }
+    },
     "10,50": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
@@ -1258,6 +1275,21 @@
           "BuiltIn": true,
           "Color": "Background 1"
         }
+      }
+    },
+    "10,62": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "検索_高度な検索 (全件)",
+            "PassValues": [],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "T",
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2"
       }
     },
     "12,1": {
@@ -1375,7 +1407,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "802db243-dd1d-4241-bb98-602ee19f3507"
+                "ID": "acccad74-ba46-49be-b7c9-571455350c2c"
               },
               {
                 "CommandList": [
@@ -1389,7 +1421,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "58cacf16-ba7b-42a9-9664-984118bfec53"
+                "ID": "1256d319-4514-4d05-ba8d-b5702cad6f45"
               }
             ]
           }
@@ -1442,7 +1474,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "c0776354-1c4f-422d-81ce-1fcedf8153b0"
+                "ID": "5d325e01-d90e-4068-8e48-0427baf7d1f0"
               },
               {
                 "CommandList": [
@@ -1456,7 +1488,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "70dbc39c-eb2e-43eb-b809-901c76304844"
+                "ID": "28e3fa35-fa67-4a79-ace0-104327022008"
               }
             ]
           }
@@ -1508,7 +1540,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "0f71979a-650e-4841-b1b1-78b26f833880"
+                "ID": "13897137-e597-4973-91a9-f74c9ed83aaf"
               },
               {
                 "CommandList": [
@@ -1522,7 +1554,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "16afe76e-3703-4745-a18a-dc6accd4d311"
+                "ID": "b87f7159-ead2-4e5f-a428-6999269b2686"
               }
             ]
           }
@@ -1909,8 +1941,6 @@
       "10,10": 6,
       "10,12": 6,
       "10,50": 15,
-      "10,60": 6,
-      "10,61": 6,
       "10,62": 6,
       "11,6": 16,
       "12,1": 17,
@@ -3114,6 +3144,7 @@
     "4,52,1,5",
     "10,50,1,7",
     "10,5,1,3",
+    "14,1,18,59",
     "12,1,1,3",
     "12,4,1,8",
     "12,12,1,8",
@@ -3124,8 +3155,7 @@
     "12,43,1,4",
     "12,47,1,3",
     "12,50,1,4",
-    "12,54,1,3",
-    "14,1,18,59"
+    "12,54,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3187,7 +3217,7 @@
           }
         },
         "Params": [],
-        "ID": "c60661e6570b437793c4e2715fceeede"
+        "ID": "c5b276cf0c334b64a20ff2c0d3e9f833"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -3203,7 +3233,7 @@
             }
           ]
         },
-        "ID": "dc5b2492abb148f7ba0f528a5a11ac95"
+        "ID": "bc042e75e164447fa465bbf44ee7ad4f"
       }
     ],
     "AuthorizeInfo": {
@@ -3218,4 +3248,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//u6Owl/FF3uF8KyjKj41oCErtxHrWKNaarnytkOWunnLVxDnIde6LeUX7jOWldyqmeuEcIJA9Fp3O6RsYj+RjrCFiTbrJVbS3FVUkD09E7kL2BYulXwmqZ4KCaoE7NE+UGx237j75pDmzsyoUtY1UguhnXsTwnLGF+vTGKhlN25cAEa6g7egt+LCDA8sITfuxhdLNpLzjK7emQ0tKGaWtbXJYfuTt//mS8BVRrzJa14ObQkVisTGuhuyovHb3UikLNhL6SPBl3TLZQEOtjOULPGkmak08KyYauGG19pzoIFkpRIiNzRrJHg5IsWmTKGPiJRtJ4l85FyfG2ePmsUOoWLP+OoaULi3n/PnZrTqltONFr2P+E/LYDyoVDDmcBnImH4uj3XllwfhianHHUhLfMJFY5gspAdhCibUfgfrNMe2ZHs6cTma9XQq1UTBl21SwmDG2DX0Pq5fKNVMDkLcLrXavhOgOzIfGn1WNBOowzT52PkJVZZvgiUyh8xHq5BIbHPaz3fY06ljM82PcExEIbkNQCCSyCiYowIrnYiktjwdJ7Y+L5j1L99v3K2JdnelcunwmcHgnTSOpnrQAliH2BXbcP8FObRfKakEWkOrP2RCeSyQgHQ+zKPQq6Gdhwdy8MQL8sYUGMUJ1bDbLQtRYv+YWkG7NiLw347a64TumXSf6saVSH9MguYETUviTtHNpxflRMpQA9XVOZm/5v2P2wunHA/I3KN6smmMxQZ8WBJzUiBjUgASK5LvXg3+8+CiXBd75ydcVuAQkqia1fdh43Wsdf2bZrgA6wRdMYDJ4NGe9tNCBQYdu1BzCCA8E6ZwHjx88AOduIt7qQSQQuJfg6+e/+TpNxNhMXLLzcc17sXsNmoiFw3KhxBdiTBsgRQB1S52e03FuOm4oJ7LGtQD2yA==|920
+}//gMhen+L+vJdKAiuQHdftS7pbjr7nU/ZkfaydAaKjhCXIEgwsxT/7c/ks9cJqDUa6wtU5x3UowZLBIdfSPbnXV7BAyQCXPM3OKaJRzIo5aeSJ3CSqG5CWV1FDDeK2EwCuR/ZxM86vI+NBpiL0gvdDVpribjdp4/nt7mmfY3hA2MmM9flAwqbhT2XXQW28+BFkpCC/dSNQrebWm2yutG655V+4NL/EWlScoFzz2kACcOo/TOBFuXH8IYOHslhueg2bvnZp+MVlCMqQqKw/gKqkc92p8DL7YloXu72tZYIo5aFGK0UkpnLuIchtMqOeukvHvfxcomyjN3lEdAItsCFJPdkf2JN/6FL2DysvDFy3XZF+47Xh1bSktw2aLOhHrQhfmKMOest/ZdQQrM+q0tVrgT7ncMEEOK1ZA5Lf8qpLG0lBH6HEp1EYIzxaqG/xRcTtt3/6Sv5pWP1HlifW0p/VPelig6KeRksqwOzb/7V3Chi0xZrD6CabvF9t4Utwye9gDf9dWlB0SG3JkAV7BoJgS28si+Xae6GuoVgGuq782GiC2obgCAfZFsw/XYwcIz/ZE8+PDAdzAFLw0OokNzVrHsFWOODX73ZMaOJQ0tPV6fbwTJAsR4OQy3nYfSXrQUopHMMUU6NrlaPgsB1dZh1iaZbsPJBwjBfKkGtBrFP80LfYl7DB+6+F+xuQy94tg0ZWINAnJa7xqCpqpzoMg4GDl4uMmwfqGUkjMFCuJAGgkiQ3qpqGyjbQlPk78mlG5pUUujG+mbkD5Ajbq5RN05uhY+l2tIulN8qvhG3W0sQ6ruvi7SdE8EMb4pIA1OmOD14E/oRnUxHly0HBN1i7dh/aXpKeoSKpgkXkZcuk6/aUtmF5QjywRDP70NRvYW5i4mbpWSycop2QDAoCBVnlVa/oiQ==|920

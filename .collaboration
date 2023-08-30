@@ -186,17 +186,7 @@
   },
   {
     "ModuleName": "ApplicationSetting",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-29T16:53:11.9327967+09:00",
-    "ModuleType": 8,
-    "ToRemoveFiles": [
-      "ApplicationSettings.json",
-      "favicon.ico"
-    ]
+    "ModuleType": 8
   },
   {
     "ModuleName": "Theme",
@@ -232,45 +222,18 @@
   },
   {
     "ModuleName": "PCPage/検索_高度な検索",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-29T15:22:11.7025201+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\検索_高度な検索.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/検索_高度な検索 (全件)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-29T14:56:36.174794+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "TableView/v_eqshipping_info_zero",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-29T15:15:18.8830341+09:00",
     "ModuleType": 23
   },
   {
     "ModuleName": "PCPage/装置情報マスター",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "murao.yuji@rorze.com",
-      "Email": "murao.yuji@rorze.com"
-    },
-    "LockDateTime": "2023-08-29T16:58:15.3865506+09:00",
     "ModuleType": 1
   }
 ]

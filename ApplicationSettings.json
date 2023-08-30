@@ -7,9 +7,9 @@
   "UserServicePort": 53778,
   "NotAllowModifyDatabaseByJsApi": false,
   "NotAllowSendMailByJsApi": false,
-  "StartPage": "検索_高度な検索 (2)",
+  "StartPage": "検索_高度な検索",
   "StartDateFiscalYear": 4,
-  "MaxRowCount": 10000000,
+  "MaxRowCount": 100000000,
   "AuditingList": {
     "trn_eqpshipping_info": 0,
     "MPJN00_d": 0,

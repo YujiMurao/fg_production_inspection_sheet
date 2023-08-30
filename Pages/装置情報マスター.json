@@ -1,0 +1,393 @@
+{
+  "Rows": {
+    "Count": 21
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 37.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 68.0
+        }
+      }
+    },
+    "Count": 44
+  },
+  "Formulas": {
+    "0,0": "COUNTA(A3)"
+  },
+  "AttachInfos": {
+    "1,0": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_eqshipping_info_zero",
+        "RowIndex": 1,
+        "ColumnCount": 44,
+        "RowCount": 19,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2"
+      }
+    },
+    "2,0": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "ID"
+      }
+    },
+    "2,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "plan_no"
+      }
+    },
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "remark"
+      }
+    },
+    "2,3": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "system"
+      }
+    },
+    "2,4": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "unit"
+      }
+    },
+    "2,5": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "etc"
+      }
+    },
+    "2,6": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "shipment_date"
+      }
+    },
+    "2,7": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKTKNM"
+      }
+    },
+    "2,8": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKNONM"
+      }
+    },
+    "2,9": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSNO"
+      }
+    },
+    "2,10": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSNAM"
+      }
+    },
+    "2,11": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSSNO"
+      }
+    },
+    "2,12": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKKAND"
+      }
+    },
+    "2,13": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSYTE"
+      }
+    },
+    "2,14": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN01"
+      }
+    },
+    "2,15": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN01"
+      }
+    },
+    "2,16": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN02"
+      }
+    },
+    "2,17": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN02"
+      }
+    },
+    "2,18": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN03"
+      }
+    },
+    "2,19": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN03"
+      }
+    },
+    "2,20": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN04"
+      }
+    },
+    "2,21": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN04"
+      }
+    },
+    "2,22": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN05"
+      }
+    },
+    "2,23": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN05"
+      }
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN06"
+      }
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN06"
+      }
+    },
+    "2,26": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN07"
+      }
+    },
+    "2,27": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN07"
+      }
+    },
+    "2,28": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN08"
+      }
+    },
+    "2,29": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN08"
+      }
+    },
+    "2,30": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN09"
+      }
+    },
+    "2,31": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN09"
+      }
+    },
+    "2,32": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN10"
+      }
+    },
+    "2,33": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN10"
+      }
+    },
+    "2,34": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN11"
+      }
+    },
+    "2,35": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN11"
+      }
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN12"
+      }
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN12"
+      }
+    },
+    "2,38": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN13"
+      }
+    },
+    "2,39": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN13"
+      }
+    },
+    "2,40": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN14"
+      }
+    },
+    "2,41": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN14"
+      }
+    },
+    "2,42": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKHN15"
+      }
+    },
+    "2,43": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info_zero",
+        "ColumnName": "JKSN15"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "FontSize": 10.666666666666666
+    }
+  },
+  "Spans": [
+    "3,0,17,44"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "装置情報マスター",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_eqshipping_info_zero",
+    "PageResponsiveMode": 3
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//WKFuGbXkm90jamfAFB1ue4qoT3vrT6FZLKvd5SmKRupFrxO36jP3AE1IYwUOMQD9lK84gmEmcmRytb6vbESQiXfPoQ0Op9wqzBnPfmxB7UJht3ZiRmxDaqzID6hqcLfhLLEENlW74vgLULSoTC5mJ5/Ev1M+tRZFnZuBt2eYAaz2fsAKgNS9U3qpWMUxLNywKqIlPqO6kyYP1yVkJ5g+d2gl49Ton+8rNY/g9Ir+V3trg7A8PX1VCAcyrEwk8+iVCWjEG/xR0f2I5VPUFHA2fIAvkpJfwT4caKR7HRTe5W+zOnmzWrdXJsgURDLiXOnsO/K0pdOSfQUND7K02OkBeIXp2WNJSLF3RS36AG4mVbVi64L4OZ/boCCjIV67CTonFaRdE1jy+VRqP8iuuq84eRumC0NGwSGsO/YXPHeajGDpqpt7VDQ9PuR46rPCaPAKwiPSdrKu+S6y9awQY4tWdmROWi8S3FXWENv3LJctEzBBgsHjjZwuKOQZVb1P1W576hofq60SeHdeF/nydWkks5K3TBv4maHkDoi0CbP4B21SAvLOVf8Tb074HJWqKlFUNmDsrFaiYKI05EDPH6TND+dF8sewiQKcNvC1WewB4FGPJz3ji/OeTgqCLfUVRn1hPHtyWwYb44CmUse9uxLiyklQCAwLtPxIkNYa2gv0ADZfGS918kHax+Am5WdNtu6SiTbS3wgZu1uCNQ4vWZtDajAhZLtDun9NHqCnfmWdbyqPq8fCpUeSnpthPvYFPOtJtMyGEn1Q/Q0xB4gQa21E+iSCKj+mcJGhCk/zIUS8YSErp75esWXWRzpm/2zLIbvo9SQHt3uXwI2mg9qWzhQ05KvXXMlFDQPoGKD9wQfEnouRN/ChOTnimWhhYK5Sl1dsGjUJvhQm0XiHVKm7Cw8MPw==|920
