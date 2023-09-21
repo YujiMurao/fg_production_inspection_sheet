@@ -142,7 +142,8 @@
     "12,54": "その他"
   },
   "Formulas": {
-    "10,5": "COUNTA(B14)"
+    "10,5": "COUNTA(B14)",
+    "0,57": "\"出荷情報一覧(\"&TEXT(TODAY(),\"yyyymmdd\")&\")\""
   },
   "AttachInfos": {
     "0,52": {
@@ -617,7 +618,7 @@
               "=AT5",
               "=F7"
             ],
-            "ID": "424090d622e14ffcbcc14b74474339fe"
+            "ID": "eba8fec4eff3491a8f03b5092222011c"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -1009,7 +1010,7 @@
               "=AU5",
               "=F7"
             ],
-            "ID": "fe2a41339cc74802bdcf419efc12a2f8",
+            "ID": "249b01dd728243a180544b65ec7f646a",
             "Disabled": true
           },
           {
@@ -1166,7 +1167,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "3f7debbe141c4715a7107b7d7a3f94cd",
+            "ID": "93d7a3f80c084a3e894aea34d6054b09",
             "Disabled": true
           },
           {
@@ -1254,7 +1255,22 @@
           }
         ],
         "Text": "M",
-        "TemplateKey": "_RS_Outline_RoundCorner_Style2"
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          }
+        ]
       }
     },
     "10,50": {
@@ -1264,8 +1280,12 @@
           {
             "$type": "Forguncy.Model.ExportListViewToExcelCommand, ServerDesignerCommon",
             "ListViewName": "リストビュー1",
+            "ExportExcelListviewNameMode": 1,
             "IsOnlyExportValue": false,
-            "NewOtherName": ""
+            "NewOtherName": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=検索_高度な検索!BF1"
+            }
           }
         ],
         "Text": "リストをエクスポート",
@@ -1289,7 +1309,22 @@
           }
         ],
         "Text": "T",
-        "TemplateKey": "_RS_Outline_RoundCorner_Style2"
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2",
+        "UIPermissions": [
+          {
+            "Scope": 2,
+            "AllowRoles": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Scope": 1,
+            "Enabled": true,
+            "AllowRoles": [
+              "Administrator"
+            ]
+          }
+        ]
       }
     },
     "12,1": {
@@ -1304,19 +1339,6 @@
         "ShowEditStatusIcon": true,
         "UseSimpleBar": true,
         "Name": "リストビュー1",
-        "SqlCondition": {
-          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
-          "CompareType": 3,
-          "ColumnBindingInfo": {
-            "TableName": "v_eqshipping_info",
-            "ColumnName": "shipment_date",
-            "AttachType": {
-              "$type": "ForguncyDataAccess.DateColumnAttachObj, ForguncyDataAccess",
-              "ColumnAttachType": 1
-            }
-          },
-          "Value": "2010"
-        },
         "TopCondition": null,
         "DoNotLoadDataWhenLoadPage": true,
         "ListViewStyleName": "ユーザー設定1"
@@ -1407,7 +1429,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "acccad74-ba46-49be-b7c9-571455350c2c"
+                "ID": "a1a1f7a7-2d8f-40c8-a9e6-bc104c1a3ac9"
               },
               {
                 "CommandList": [
@@ -1421,7 +1443,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "1256d319-4514-4d05-ba8d-b5702cad6f45"
+                "ID": "358c8311-8114-4bbc-9d9a-e1ff723b6c83"
               }
             ]
           }
@@ -1474,7 +1496,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "5d325e01-d90e-4068-8e48-0427baf7d1f0"
+                "ID": "2044a95f-50b5-4a72-8b7c-2726c751769b"
               },
               {
                 "CommandList": [
@@ -1488,7 +1510,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "28e3fa35-fa67-4a79-ace0-104327022008"
+                "ID": "1ad06c00-5301-41d7-894f-788d2c4a3be5"
               }
             ]
           }
@@ -1540,7 +1562,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "13897137-e597-4973-91a9-f74c9ed83aaf"
+                "ID": "e519887e-badc-4d5c-bcd3-98a8d0a212c0"
               },
               {
                 "CommandList": [
@@ -1554,7 +1576,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "b87f7159-ead2-4e5f-a428-6999269b2686"
+                "ID": "5d2f9a20-80f9-4492-9efc-20c5468ed894"
               }
             ]
           }
@@ -3217,7 +3239,7 @@
           }
         },
         "Params": [],
-        "ID": "c5b276cf0c334b64a20ff2c0d3e9f833"
+        "ID": "d353360135e74475a06e5fbe253f58ae"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -3233,7 +3255,7 @@
             }
           ]
         },
-        "ID": "bc042e75e164447fa465bbf44ee7ad4f"
+        "ID": "cb84e4b33b114fc2889a94e83091f1de"
       }
     ],
     "AuthorizeInfo": {
@@ -3248,4 +3270,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//gMhen+L+vJdKAiuQHdftS7pbjr7nU/ZkfaydAaKjhCXIEgwsxT/7c/ks9cJqDUa6wtU5x3UowZLBIdfSPbnXV7BAyQCXPM3OKaJRzIo5aeSJ3CSqG5CWV1FDDeK2EwCuR/ZxM86vI+NBpiL0gvdDVpribjdp4/nt7mmfY3hA2MmM9flAwqbhT2XXQW28+BFkpCC/dSNQrebWm2yutG655V+4NL/EWlScoFzz2kACcOo/TOBFuXH8IYOHslhueg2bvnZp+MVlCMqQqKw/gKqkc92p8DL7YloXu72tZYIo5aFGK0UkpnLuIchtMqOeukvHvfxcomyjN3lEdAItsCFJPdkf2JN/6FL2DysvDFy3XZF+47Xh1bSktw2aLOhHrQhfmKMOest/ZdQQrM+q0tVrgT7ncMEEOK1ZA5Lf8qpLG0lBH6HEp1EYIzxaqG/xRcTtt3/6Sv5pWP1HlifW0p/VPelig6KeRksqwOzb/7V3Chi0xZrD6CabvF9t4Utwye9gDf9dWlB0SG3JkAV7BoJgS28si+Xae6GuoVgGuq782GiC2obgCAfZFsw/XYwcIz/ZE8+PDAdzAFLw0OokNzVrHsFWOODX73ZMaOJQ0tPV6fbwTJAsR4OQy3nYfSXrQUopHMMUU6NrlaPgsB1dZh1iaZbsPJBwjBfKkGtBrFP80LfYl7DB+6+F+xuQy94tg0ZWINAnJa7xqCpqpzoMg4GDl4uMmwfqGUkjMFCuJAGgkiQ3qpqGyjbQlPk78mlG5pUUujG+mbkD5Ajbq5RN05uhY+l2tIulN8qvhG3W0sQ6ruvi7SdE8EMb4pIA1OmOD14E/oRnUxHly0HBN1i7dh/aXpKeoSKpgkXkZcuk6/aUtmF5QjywRDP70NRvYW5i4mbpWSycop2QDAoCBVnlVa/oiQ==|920
+}//2gmYviiNvYxKTIe4L94gR2Ghq2IsIcWhFoHdMfz1SexiGz4w9/c6mlmwz6qPB4gTJnjBCNY6stpEDX+9UZ17mffnngwOoSPIaSteaiDu5IbsSAgjJquTnXlhBrfZpfifgsEqBxVAxyg3lG82Tuo4F4xsaq7ChLDHbFHrYdOhEbWyYiysb1BY03EiJ3Sc2+YwkHZyU2RbgSJinOfmjZN9cPBe2y8C9yO2zvACFM3il2q6Pkma+2vXkJFEg/OKztRBiPWbv8iog/GcOX1kO+gM5RZd1h0iTaw46WvIne2o1m9EmEVrttaTudRnlqcKKse8Z48v7QU893jdyYNFOHCDq6VujnsqEmo1jl8AXmzK1V7H1ICbTB5W+j2ywIDr+4letgbCdJAgitm0PC6cnFwUzlyFuKkMkSJRxp/ZhgAv0NBZFJ3A7Rx70tzYteXBvDCSOKSIKDNPz5PVYlSGNoHikm/zpaZutwVeIZ8CAdcekSLyXb3Ww0icFYmqKVdm/SmU3HTKUXnSuK8ljXiWtAH56Ix/mjoZtQdEGGq9/INQ2WE98DDcgdVi3Xu9bkXXibShHu48CkOyOZYxv4elSNEbc+jfIZSd4ROFsyubhog1gcDfetf9r74+H59e+JQ4XaVMT39O86CPOkoLmmJIDnxHbOe43l1K4cw5h7ApbZzhI4c5mceaHNPDxL+yjynrImAfXEwJjMhRofdeu7uy22VWSao43ZB8LqUWBE7tlpzFUwTwmSsSSE+rtHLcwoUQRIRk3XgV+0Vjp9IwgRf+11iAhWkk+yoYin5VMqmtnthCL4q5U+pHPLWqB0LiN0913nGQ2ba+dkJW7oUN601hBnqksWFeK9GEnnuBomwW9aP1AiM1EB5BFXd1VL8TX6+tAR5gGzr/qZfXROb/3BbcWqYgmQ==|920
