@@ -2,12 +2,12 @@
   "IntegrateWithOtherApplication": {
     "Password": "7#lVdcWX(Pea"
   },
+  "ListviewLoadingIndicatorSettings": {},
   "IsPageInContainerBackgroundHardCodeWhite": true,
   "WebSitePort": 62865,
   "UserServicePort": 53778,
   "NotAllowModifyDatabaseByJsApi": false,
   "NotAllowSendMailByJsApi": false,
-  "StartPage": "検索_高度な検索",
   "StartDateFiscalYear": 4,
   "MaxRowCount": 100000000,
   "AuditingList": {
