@@ -268,7 +268,7 @@
                                   "CompareType": 6,
                                   "ColumnBindingInfo": {
                                     "TableName": "v_eqshipping_info",
-                                    "ColumnName": "plan_no"
+                                    "ColumnName": "planno"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -408,24 +408,264 @@
                                           "Condition1": {
                                             "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                                             "Condition1": {
-                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                                              "CompareType": 6,
-                                              "ColumnBindingInfo": {
-                                                "TableName": "v_eqshipping_info",
-                                                "ColumnName": "JKHN01"
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "Condition1": {
+                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                "Condition1": {
+                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                  "Condition1": {
+                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                    "Condition1": {
+                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                      "Condition1": {
+                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                        "Condition1": {
+                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                          "Condition1": {
+                                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                            "Condition1": {
+                                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                              "Condition1": {
+                                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                "Condition1": {
+                                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                  "Condition1": {
+                                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                    "Condition1": {
+                                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                      "Condition1": {
+                                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                        "Condition1": {
+                                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                          "Condition1": {
+                                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                            "CompareType": 6,
+                                                                            "ColumnBindingInfo": {
+                                                                              "TableName": "v_eqshipping_info",
+                                                                              "ColumnName": "JKHN01"
+                                                                            },
+                                                                            "Value": {
+                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                              "SerializeProperty": "=検索_高度な検索!F7"
+                                                                            },
+                                                                            "LeftBracket": 1
+                                                                          },
+                                                                          "Condition2": {
+                                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                            "CompareType": 6,
+                                                                            "ColumnBindingInfo": {
+                                                                              "TableName": "v_eqshipping_info",
+                                                                              "ColumnName": "JKHN02"
+                                                                            },
+                                                                            "Value": {
+                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                              "SerializeProperty": "=検索_高度な検索!F7"
+                                                                            }
+                                                                          },
+                                                                          "RelationType": 1
+                                                                        },
+                                                                        "Condition2": {
+                                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                          "CompareType": 6,
+                                                                          "ColumnBindingInfo": {
+                                                                            "TableName": "v_eqshipping_info",
+                                                                            "ColumnName": "JKHN03"
+                                                                          },
+                                                                          "Value": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=検索_高度な検索!F7"
+                                                                          }
+                                                                        },
+                                                                        "RelationType": 1
+                                                                      },
+                                                                      "Condition2": {
+                                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                        "CompareType": 6,
+                                                                        "ColumnBindingInfo": {
+                                                                          "TableName": "v_eqshipping_info",
+                                                                          "ColumnName": "JKHN04"
+                                                                        },
+                                                                        "Value": {
+                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                          "SerializeProperty": "=検索_高度な検索!F7"
+                                                                        }
+                                                                      },
+                                                                      "RelationType": 1
+                                                                    },
+                                                                    "Condition2": {
+                                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                      "CompareType": 6,
+                                                                      "ColumnBindingInfo": {
+                                                                        "TableName": "v_eqshipping_info",
+                                                                        "ColumnName": "JKHN05"
+                                                                      },
+                                                                      "Value": {
+                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                        "SerializeProperty": "=検索_高度な検索!F7"
+                                                                      }
+                                                                    },
+                                                                    "RelationType": 1
+                                                                  },
+                                                                  "Condition2": {
+                                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                    "CompareType": 6,
+                                                                    "ColumnBindingInfo": {
+                                                                      "TableName": "v_eqshipping_info",
+                                                                      "ColumnName": "JKHN06"
+                                                                    },
+                                                                    "Value": {
+                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                      "SerializeProperty": "=検索_高度な検索!F7"
+                                                                    }
+                                                                  },
+                                                                  "RelationType": 1
+                                                                },
+                                                                "Condition2": {
+                                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                  "CompareType": 6,
+                                                                  "ColumnBindingInfo": {
+                                                                    "TableName": "v_eqshipping_info",
+                                                                    "ColumnName": "JKHN07"
+                                                                  },
+                                                                  "Value": {
+                                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                    "SerializeProperty": "=検索_高度な検索!F7"
+                                                                  }
+                                                                },
+                                                                "RelationType": 1
+                                                              },
+                                                              "Condition2": {
+                                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                "CompareType": 6,
+                                                                "ColumnBindingInfo": {
+                                                                  "TableName": "v_eqshipping_info",
+                                                                  "ColumnName": "JKHN08"
+                                                                },
+                                                                "Value": {
+                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                  "SerializeProperty": "=検索_高度な検索!F7"
+                                                                }
+                                                              },
+                                                              "RelationType": 1
+                                                            },
+                                                            "Condition2": {
+                                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                              "CompareType": 6,
+                                                              "ColumnBindingInfo": {
+                                                                "TableName": "v_eqshipping_info",
+                                                                "ColumnName": "JKHN09"
+                                                              },
+                                                              "Value": {
+                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                "SerializeProperty": "=検索_高度な検索!F7"
+                                                              }
+                                                            },
+                                                            "RelationType": 1
+                                                          },
+                                                          "Condition2": {
+                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                            "CompareType": 6,
+                                                            "ColumnBindingInfo": {
+                                                              "TableName": "v_eqshipping_info",
+                                                              "ColumnName": "JKHN10"
+                                                            },
+                                                            "Value": {
+                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                              "SerializeProperty": "=検索_高度な検索!F7"
+                                                            }
+                                                          },
+                                                          "RelationType": 1
+                                                        },
+                                                        "Condition2": {
+                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                          "CompareType": 6,
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "v_eqshipping_info",
+                                                            "ColumnName": "JKHN11"
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=検索_高度な検索!F7"
+                                                          }
+                                                        },
+                                                        "RelationType": 1
+                                                      },
+                                                      "Condition2": {
+                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                        "CompareType": 6,
+                                                        "ColumnBindingInfo": {
+                                                          "TableName": "v_eqshipping_info",
+                                                          "ColumnName": "JKHN12"
+                                                        },
+                                                        "Value": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=検索_高度な検索!F7"
+                                                        }
+                                                      },
+                                                      "RelationType": 1
+                                                    },
+                                                    "Condition2": {
+                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                      "CompareType": 6,
+                                                      "ColumnBindingInfo": {
+                                                        "TableName": "v_eqshipping_info",
+                                                        "ColumnName": "JKHN13"
+                                                      },
+                                                      "Value": {
+                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                        "SerializeProperty": "=検索_高度な検索!F7"
+                                                      }
+                                                    },
+                                                    "RelationType": 1
+                                                  },
+                                                  "Condition2": {
+                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                    "CompareType": 6,
+                                                    "ColumnBindingInfo": {
+                                                      "TableName": "v_eqshipping_info",
+                                                      "ColumnName": "JKHN14"
+                                                    },
+                                                    "Value": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=検索_高度な検索!F7"
+                                                    }
+                                                  },
+                                                  "RelationType": 1
+                                                },
+                                                "Condition2": {
+                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                  "CompareType": 6,
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "v_eqshipping_info",
+                                                    "ColumnName": "JKHN15"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=検索_高度な検索!F7"
+                                                  }
+                                                },
+                                                "RelationType": 1
                                               },
-                                              "Value": {
-                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                                "SerializeProperty": "=検索_高度な検索!F7"
+                                              "Condition2": {
+                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                "CompareType": 6,
+                                                "ColumnBindingInfo": {
+                                                  "TableName": "v_eqshipping_info",
+                                                  "ColumnName": "JKHN16"
+                                                },
+                                                "Value": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=検索_高度な検索!F7"
+                                                }
                                               },
-                                              "LeftBracket": 1
+                                              "RelationType": 1
                                             },
                                             "Condition2": {
                                               "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
                                               "CompareType": 6,
                                               "ColumnBindingInfo": {
                                                 "TableName": "v_eqshipping_info",
-                                                "ColumnName": "JKHN02"
+                                                "ColumnName": "JKHN17"
                                               },
                                               "Value": {
                                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -439,7 +679,7 @@
                                             "CompareType": 6,
                                             "ColumnBindingInfo": {
                                               "TableName": "v_eqshipping_info",
-                                              "ColumnName": "JKHN03"
+                                              "ColumnName": "JKHN18"
                                             },
                                             "Value": {
                                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -453,7 +693,7 @@
                                           "CompareType": 6,
                                           "ColumnBindingInfo": {
                                             "TableName": "v_eqshipping_info",
-                                            "ColumnName": "JKHN04"
+                                            "ColumnName": "JKHN19"
                                           },
                                           "Value": {
                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -467,7 +707,7 @@
                                         "CompareType": 6,
                                         "ColumnBindingInfo": {
                                           "TableName": "v_eqshipping_info",
-                                          "ColumnName": "JKHN05"
+                                          "ColumnName": "JKHN20"
                                         },
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -481,7 +721,7 @@
                                       "CompareType": 6,
                                       "ColumnBindingInfo": {
                                         "TableName": "v_eqshipping_info",
-                                        "ColumnName": "JKHN06"
+                                        "ColumnName": "JKHN21"
                                       },
                                       "Value": {
                                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -495,7 +735,7 @@
                                     "CompareType": 6,
                                     "ColumnBindingInfo": {
                                       "TableName": "v_eqshipping_info",
-                                      "ColumnName": "JKHN07"
+                                      "ColumnName": "JKHN22"
                                     },
                                     "Value": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -509,7 +749,7 @@
                                   "CompareType": 6,
                                   "ColumnBindingInfo": {
                                     "TableName": "v_eqshipping_info",
-                                    "ColumnName": "JKHN08"
+                                    "ColumnName": "JKHN23"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -523,7 +763,7 @@
                                 "CompareType": 6,
                                 "ColumnBindingInfo": {
                                   "TableName": "v_eqshipping_info",
-                                  "ColumnName": "JKHN09"
+                                  "ColumnName": "JKHN24"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -537,7 +777,7 @@
                               "CompareType": 6,
                               "ColumnBindingInfo": {
                                 "TableName": "v_eqshipping_info",
-                                "ColumnName": "JKHN10"
+                                "ColumnName": "JKHN25"
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -551,7 +791,7 @@
                             "CompareType": 6,
                             "ColumnBindingInfo": {
                               "TableName": "v_eqshipping_info",
-                              "ColumnName": "JKHN11"
+                              "ColumnName": "JKHN26"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -565,7 +805,7 @@
                           "CompareType": 6,
                           "ColumnBindingInfo": {
                             "TableName": "v_eqshipping_info",
-                            "ColumnName": "JKHN12"
+                            "ColumnName": "JKHN27"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -579,7 +819,7 @@
                         "CompareType": 6,
                         "ColumnBindingInfo": {
                           "TableName": "v_eqshipping_info",
-                          "ColumnName": "JKHN13"
+                          "ColumnName": "JKHN28"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -593,7 +833,7 @@
                       "CompareType": 6,
                       "ColumnBindingInfo": {
                         "TableName": "v_eqshipping_info",
-                        "ColumnName": "JKHN14"
+                        "ColumnName": "JKHN29"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -607,7 +847,7 @@
                     "CompareType": 6,
                     "ColumnBindingInfo": {
                       "TableName": "v_eqshipping_info",
-                      "ColumnName": "JKHN15"
+                      "ColumnName": "JKHN30"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -647,24 +887,264 @@
                                         "Condition1": {
                                           "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
                                           "Condition1": {
-                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
-                                            "CompareType": 6,
-                                            "ColumnBindingInfo": {
-                                              "TableName": "v_eqshipping_info",
-                                              "ColumnName": "JKSN01"
+                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                            "Condition1": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "Condition1": {
+                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                "Condition1": {
+                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                  "Condition1": {
+                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                    "Condition1": {
+                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                      "Condition1": {
+                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                        "Condition1": {
+                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                          "Condition1": {
+                                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                            "Condition1": {
+                                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                              "Condition1": {
+                                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                "Condition1": {
+                                                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                  "Condition1": {
+                                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                    "Condition1": {
+                                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                      "Condition1": {
+                                                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                        "Condition1": {
+                                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                          "CompareType": 6,
+                                                                          "ColumnBindingInfo": {
+                                                                            "TableName": "v_eqshipping_info",
+                                                                            "ColumnName": "JKSN01"
+                                                                          },
+                                                                          "Value": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=検索_高度な検索!F9"
+                                                                          },
+                                                                          "LeftBracket": 1
+                                                                        },
+                                                                        "Condition2": {
+                                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                          "CompareType": 6,
+                                                                          "ColumnBindingInfo": {
+                                                                            "TableName": "v_eqshipping_info",
+                                                                            "ColumnName": "JKSN02"
+                                                                          },
+                                                                          "Value": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=検索_高度な検索!F9"
+                                                                          }
+                                                                        },
+                                                                        "RelationType": 1
+                                                                      },
+                                                                      "Condition2": {
+                                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                        "CompareType": 6,
+                                                                        "ColumnBindingInfo": {
+                                                                          "TableName": "v_eqshipping_info",
+                                                                          "ColumnName": "JKSN03"
+                                                                        },
+                                                                        "Value": {
+                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                          "SerializeProperty": "=検索_高度な検索!F9"
+                                                                        }
+                                                                      },
+                                                                      "RelationType": 1
+                                                                    },
+                                                                    "Condition2": {
+                                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                      "CompareType": 6,
+                                                                      "ColumnBindingInfo": {
+                                                                        "TableName": "v_eqshipping_info",
+                                                                        "ColumnName": "JKSN04"
+                                                                      },
+                                                                      "Value": {
+                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                        "SerializeProperty": "=検索_高度な検索!F9"
+                                                                      }
+                                                                    },
+                                                                    "RelationType": 1
+                                                                  },
+                                                                  "Condition2": {
+                                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                    "CompareType": 6,
+                                                                    "ColumnBindingInfo": {
+                                                                      "TableName": "v_eqshipping_info",
+                                                                      "ColumnName": "JKSN05"
+                                                                    },
+                                                                    "Value": {
+                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                      "SerializeProperty": "=検索_高度な検索!F9"
+                                                                    }
+                                                                  },
+                                                                  "RelationType": 1
+                                                                },
+                                                                "Condition2": {
+                                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                  "CompareType": 6,
+                                                                  "ColumnBindingInfo": {
+                                                                    "TableName": "v_eqshipping_info",
+                                                                    "ColumnName": "JKSN06"
+                                                                  },
+                                                                  "Value": {
+                                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                    "SerializeProperty": "=検索_高度な検索!F9"
+                                                                  }
+                                                                },
+                                                                "RelationType": 1
+                                                              },
+                                                              "Condition2": {
+                                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                                "CompareType": 6,
+                                                                "ColumnBindingInfo": {
+                                                                  "TableName": "v_eqshipping_info",
+                                                                  "ColumnName": "JKSN07"
+                                                                },
+                                                                "Value": {
+                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                  "SerializeProperty": "=検索_高度な検索!F9"
+                                                                }
+                                                              },
+                                                              "RelationType": 1
+                                                            },
+                                                            "Condition2": {
+                                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                              "CompareType": 6,
+                                                              "ColumnBindingInfo": {
+                                                                "TableName": "v_eqshipping_info",
+                                                                "ColumnName": "JKSN08"
+                                                              },
+                                                              "Value": {
+                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                "SerializeProperty": "=検索_高度な検索!F9"
+                                                              }
+                                                            },
+                                                            "RelationType": 1
+                                                          },
+                                                          "Condition2": {
+                                                            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                            "CompareType": 6,
+                                                            "ColumnBindingInfo": {
+                                                              "TableName": "v_eqshipping_info",
+                                                              "ColumnName": "JKSN09"
+                                                            },
+                                                            "Value": {
+                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                              "SerializeProperty": "=検索_高度な検索!F9"
+                                                            }
+                                                          },
+                                                          "RelationType": 1
+                                                        },
+                                                        "Condition2": {
+                                                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                          "CompareType": 6,
+                                                          "ColumnBindingInfo": {
+                                                            "TableName": "v_eqshipping_info",
+                                                            "ColumnName": "JKSN10"
+                                                          },
+                                                          "Value": {
+                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                            "SerializeProperty": "=検索_高度な検索!F9"
+                                                          }
+                                                        },
+                                                        "RelationType": 1
+                                                      },
+                                                      "Condition2": {
+                                                        "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                        "CompareType": 6,
+                                                        "ColumnBindingInfo": {
+                                                          "TableName": "v_eqshipping_info",
+                                                          "ColumnName": "JKSN11"
+                                                        },
+                                                        "Value": {
+                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                          "SerializeProperty": "=検索_高度な検索!F9"
+                                                        }
+                                                      },
+                                                      "RelationType": 1
+                                                    },
+                                                    "Condition2": {
+                                                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                      "CompareType": 6,
+                                                      "ColumnBindingInfo": {
+                                                        "TableName": "v_eqshipping_info",
+                                                        "ColumnName": "JKSN12"
+                                                      },
+                                                      "Value": {
+                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                        "SerializeProperty": "=検索_高度な検索!F9"
+                                                      }
+                                                    },
+                                                    "RelationType": 1
+                                                  },
+                                                  "Condition2": {
+                                                    "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                    "CompareType": 6,
+                                                    "ColumnBindingInfo": {
+                                                      "TableName": "v_eqshipping_info",
+                                                      "ColumnName": "JKSN13"
+                                                    },
+                                                    "Value": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=検索_高度な検索!F9"
+                                                    }
+                                                  },
+                                                  "RelationType": 1
+                                                },
+                                                "Condition2": {
+                                                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                  "CompareType": 6,
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "v_eqshipping_info",
+                                                    "ColumnName": "JKSN14"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=検索_高度な検索!F9"
+                                                  }
+                                                },
+                                                "RelationType": 1
+                                              },
+                                              "Condition2": {
+                                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                                "CompareType": 6,
+                                                "ColumnBindingInfo": {
+                                                  "TableName": "v_eqshipping_info",
+                                                  "ColumnName": "JKSN15"
+                                                },
+                                                "Value": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=検索_高度な検索!F9"
+                                                }
+                                              },
+                                              "RelationType": 1
                                             },
-                                            "Value": {
-                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                                              "SerializeProperty": "=検索_高度な検索!F9"
+                                            "Condition2": {
+                                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                              "CompareType": 6,
+                                              "ColumnBindingInfo": {
+                                                "TableName": "v_eqshipping_info",
+                                                "ColumnName": "JKSN16"
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=検索_高度な検索!F9"
+                                              }
                                             },
-                                            "LeftBracket": 1
+                                            "RelationType": 1
                                           },
                                           "Condition2": {
                                             "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
                                             "CompareType": 6,
                                             "ColumnBindingInfo": {
                                               "TableName": "v_eqshipping_info",
-                                              "ColumnName": "JKSN02"
+                                              "ColumnName": "JKSN17"
                                             },
                                             "Value": {
                                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -678,7 +1158,7 @@
                                           "CompareType": 6,
                                           "ColumnBindingInfo": {
                                             "TableName": "v_eqshipping_info",
-                                            "ColumnName": "JKSN03"
+                                            "ColumnName": "JKSN18"
                                           },
                                           "Value": {
                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -692,7 +1172,7 @@
                                         "CompareType": 6,
                                         "ColumnBindingInfo": {
                                           "TableName": "v_eqshipping_info",
-                                          "ColumnName": "JKSN04"
+                                          "ColumnName": "JKSN19"
                                         },
                                         "Value": {
                                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -706,7 +1186,7 @@
                                       "CompareType": 6,
                                       "ColumnBindingInfo": {
                                         "TableName": "v_eqshipping_info",
-                                        "ColumnName": "JKSN05"
+                                        "ColumnName": "JKSN20"
                                       },
                                       "Value": {
                                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -720,7 +1200,7 @@
                                     "CompareType": 6,
                                     "ColumnBindingInfo": {
                                       "TableName": "v_eqshipping_info",
-                                      "ColumnName": "JKSN06"
+                                      "ColumnName": "JKSN21"
                                     },
                                     "Value": {
                                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -734,7 +1214,7 @@
                                   "CompareType": 6,
                                   "ColumnBindingInfo": {
                                     "TableName": "v_eqshipping_info",
-                                    "ColumnName": "JKSN07"
+                                    "ColumnName": "JKSN22"
                                   },
                                   "Value": {
                                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -748,7 +1228,7 @@
                                 "CompareType": 6,
                                 "ColumnBindingInfo": {
                                   "TableName": "v_eqshipping_info",
-                                  "ColumnName": "JKSN08"
+                                  "ColumnName": "JKSN23"
                                 },
                                 "Value": {
                                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -762,7 +1242,7 @@
                               "CompareType": 6,
                               "ColumnBindingInfo": {
                                 "TableName": "v_eqshipping_info",
-                                "ColumnName": "JKSN09"
+                                "ColumnName": "JKSN24"
                               },
                               "Value": {
                                 "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -776,7 +1256,7 @@
                             "CompareType": 6,
                             "ColumnBindingInfo": {
                               "TableName": "v_eqshipping_info",
-                              "ColumnName": "JKSN10"
+                              "ColumnName": "JKSN25"
                             },
                             "Value": {
                               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -790,7 +1270,7 @@
                           "CompareType": 6,
                           "ColumnBindingInfo": {
                             "TableName": "v_eqshipping_info",
-                            "ColumnName": "JKSN11"
+                            "ColumnName": "JKSN26"
                           },
                           "Value": {
                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -804,7 +1284,7 @@
                         "CompareType": 6,
                         "ColumnBindingInfo": {
                           "TableName": "v_eqshipping_info",
-                          "ColumnName": "JKSN12"
+                          "ColumnName": "JKSN27"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -818,7 +1298,7 @@
                       "CompareType": 6,
                       "ColumnBindingInfo": {
                         "TableName": "v_eqshipping_info",
-                        "ColumnName": "JKSN13"
+                        "ColumnName": "JKSN28"
                       },
                       "Value": {
                         "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -832,7 +1312,7 @@
                     "CompareType": 6,
                     "ColumnBindingInfo": {
                       "TableName": "v_eqshipping_info",
-                      "ColumnName": "JKSN14"
+                      "ColumnName": "JKSN29"
                     },
                     "Value": {
                       "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -846,7 +1326,7 @@
                   "CompareType": 6,
                   "ColumnBindingInfo": {
                     "TableName": "v_eqshipping_info",
-                    "ColumnName": "JKSN15"
+                    "ColumnName": "JKSN30"
                   },
                   "Value": {
                     "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -870,7 +1350,7 @@
               "=F7",
               "=F9"
             ],
-            "ID": "eae4cf28cb274386970137ae5c1e3c2d"
+            "ID": "2c7164faa1c2408184c7466d3208190d"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -1262,7 +1742,7 @@
               "=AU5",
               "=F7"
             ],
-            "ID": "55a2b197cf3b4aefab34c07590cf5b4d",
+            "ID": "9e8e5e35c9644e769ced8c61f24db795",
             "Disabled": true
           },
           {
@@ -1419,7 +1899,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "1f1ce014376a4e858a69e4f29543f10a",
+            "ID": "e83e56824bdc45a58cb22863e5b9c5a1",
             "Disabled": true
           },
           {
@@ -1622,7 +2102,7 @@
       },
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
-        "ColumnName": "plan_no"
+        "ColumnName": "planno"
       }
     },
     "13,4": {
@@ -1692,7 +2172,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "fb948142-dd3c-4b9a-b6c9-35a46b4ddced"
+                "ID": "61374d6d-dddf-439e-b688-5b96f8f7e913"
               },
               {
                 "CommandList": [
@@ -1706,7 +2186,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "b3c7b71c-d86e-4ac7-bed3-e6846e5bafda"
+                "ID": "5538d111-88fb-4b3e-97e1-0fc7c292eb57"
               }
             ]
           }
@@ -1759,7 +2239,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "3f16aa29-d081-429d-85c9-55535473515c"
+                "ID": "1e9c3989-c9d6-418f-80bb-6bdc94a33935"
               },
               {
                 "CommandList": [
@@ -1773,7 +2253,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "f6d90282-1a9c-4e37-a3b5-e095fd62ba25"
+                "ID": "f61d8710-ce90-4012-8b52-3bc46321697a"
               }
             ]
           }
@@ -1825,7 +2305,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "4905e3be-7b6f-4167-98a1-43a3eaf430b7"
+                "ID": "4f88bb7b-289d-4c2e-8ec5-5b4e5c9307e8"
               },
               {
                 "CommandList": [
@@ -1839,7 +2319,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "47b5e44a-f612-40ca-b4c6-7627cdc12be8"
+                "ID": "cac8fdcf-3a3a-4a40-8aa3-0bc769f822d5"
               }
             ]
           }
@@ -3484,7 +3964,6 @@
     "13,28,1,7",
     "13,35,1,4",
     "13,39,1,4",
-    "13,1,1,3",
     "13,47,1,3",
     "13,50,1,4",
     "13,54,1,3",
@@ -3505,7 +3984,6 @@
     "14,1,18,61",
     "13,43,1,4",
     "8,5,1,5",
-    "12,1,1,3",
     "12,4,1,8",
     "12,12,1,8",
     "12,20,1,8",
@@ -3515,7 +3993,9 @@
     "12,43,1,4",
     "12,47,1,3",
     "12,50,1,4",
-    "12,54,1,3"
+    "12,54,1,3",
+    "13,1,1,3",
+    "12,1,1,3"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -3577,7 +4057,7 @@
           }
         },
         "Params": [],
-        "ID": "3540fc56a6054f8cbdfb77f02ba43151"
+        "ID": "9dd4b948789f404584a7a3e7bcf7da6a"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -3587,13 +4067,13 @@
             {
               "ColumnBindingInfo": {
                 "TableName": "v_eqshipping_info",
-                "ColumnName": "plan_no"
+                "ColumnName": "planno"
               },
               "Order": 0
             }
           ]
         },
-        "ID": "36b83beb8a1a4c839053bacc1ae91c70"
+        "ID": "71cadd767b9f42df955eda96180a8fa3"
       }
     ],
     "AuthorizeInfo": {
@@ -3608,4 +4088,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//0+1Zegf88YWVdxbMxkRKcmyHczO/h2KV18O+zC1FGnlk5BoFjtLZEXKobwuJ2/lFTHSWDUu/dAomz7og2ET1pwJcekI9qag1wAt/yQKnZflO5/LE/3z5wpY7++ABhj/jayJOiw5Mxh8c5zr1fxORQxJEHwGEyMHYJkrmJ8N75FZYWlk0AOsyi0l2/53on38DdtUK6aiG1jE9bGxRaRm/tpmXtfWGxHt81lR5qe6lI6cefoudxCMvwXCOAfg1OINDR+b4S/sObUKVI9pu+wSLfmWp0jIME3UV9+1c+pJg4dZlxCT3bfms5DhbP02iuGffy6UTobNOFSKUQ6rTol1DRbNNPasAIzL2Os469JM7zE6xz8ZAnZqz7zMiiUWJ9GROpX6E3oFMQK4M2bYByuypqxAXneKz/VHE417L9x++yQ/8nm4y8AGavYNgM8mKXWVAyww/lLcgq1xuYfyUE+X4QlWptT58NACalHPfUDVKRQ6tpzYLzZyptOpk1c8vX1AFQJZgqXda8lLoCFlZN1EKrtjj8TAYZD1HXYox5IRrmxG8egY2pd1USynqRrZnvVvgenyyV0qHl8M+V3sg15ZoD0AXPBpq6yrVBE/om1P/zMJtEWhBUAH2JF1V1ONVGTcHgqHWRxx4eoJcBxGS6Fyeq5/AURYzs8Q/+/oTweZl+clLlgzFGaHm66v6iiIpRo5+MZnQgcVeHXRfY/Fs9f9ECC5OcIJaRQiMUzxE0H2yDFIye5X7hEmqga/JIqSMfv0+KuyaGiIc7ZDetTp9uz7wRDNvZ6ulln4Sb/D6fv6xQEtMBYEqoyR7620vIemdZJPIZBqsBiR9cHwzRsG7yYCwYUM3OdJ/U91t7e1DxAtzf8kBdW5t44QJKtOEFM8jKQDuGxOks1i/pHZbis3diBbbvw==|920
+}//hBnXKTgW79iqu1aSxbcA19VL2bqbJTwCmzua1zmPMq83Alf1032tayydodpcHMtYXdOfW+6g0XbzC/msc+pi15cmQg8uRMkrW/EEDKCHJf3dNwIGtwM1l5F46JUF5cfwbawL2uYaKvWqKRpdNMHjJ98n64hFR+EWL/ocoJe0E7FD9VHTG5HM5ihi2ZppWptiXjVa9leXLrm3IVlzP64HJcHKibepDYaqJr1rdnUG7RN+rjz+Wk4GrK6lNBV7h5tPSBMSY55k2ulYZyEVmOaBxh2MeYyUiVT66+gJ2K7HUoSwwLsmtlB6iO/9akkv0hAxAZ/qiRD739y1PxvPLpXzMnH2lhLFio1zuYVn7Cchxnu0/jzOSUO7gDJsVU3A2LU9+UP/Muw60f68OeBpcQ70hIGzhxm6g79K884Z5BWIr0uFTP4L6R+nnSs7WSK/s7PU2S19k/KO0HhppWPNlP9KGNz8PBkkGFggxzlyn+uZp6vfWZXxXI9M51wu7ggc6aO12OXYvf2sIZA05dYjjwNaXvy995wS+4fq9qqkpQGuwf2HerQDdXnKhjcueTPMiWyGgAT9cShSfME+2ujRw3vDTiz3pWAafX9iwG95mH9cfLTAOvUA+giH/KVTkZLwo7tU8Cyab28NRZ74CeU8hOtAJ+wdx83A7I0yr8Au2hVCO1gxhiVeOCrzYepwyU9RnuZxx1AcaPv1hDu2+E8goq8ClDExbtf3dCAK/i85idZalG2UinlevFsZRVfAD5sooVG7Tkb1GAvZcSwDY+35Jcl1ztxw4FMc+wuTzT+xdVkBNJxQfbQHp95x8NzeQ7F/cBUZJ9Ej1htsetggyn7zw9jgJsu2Ag95T2om3WpWqVl10SR1nTZTOjubQ8AwX6DOVE9MyTRcq1T0xoa8LSiyh/f+Fg==|920

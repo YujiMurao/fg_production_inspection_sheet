@@ -11,13 +11,13 @@
           "DesignLengthInPixel": 10.0
         }
       },
-      "28": {
+      "43": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 10.0
         }
       }
     },
-    "Count": 29
+    "Count": 44
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -62,7 +62,6 @@
     "7,3": "その他データ",
     "8,1": "完成日→生産工場",
     "9,1": "出荷日(電算データ)",
-    "10,1": "出荷日(日付データ変換)",
     "12,1": "単体品番",
     "12,2": "シリアルＮＯ.",
     "12,3": "検査表データ(PDF)\n単体用"
@@ -77,7 +76,7 @@
     "2,2": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
-        "ColumnName": "plan_no"
+        "ColumnName": "planno"
       }
     },
     "3,2": {
@@ -180,12 +179,6 @@
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSYTE"
-      }
-    },
-    "10,2": {
-      "BindingInfo": {
-        "TableName": "v_eqshipping_info",
-        "ColumnName": "shipment_date"
       }
     },
     "13,1": {
@@ -396,6 +389,186 @@
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
         "ColumnName": "JKSN15"
+      }
+    },
+    "28,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN16"
+      }
+    },
+    "28,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN16"
+      }
+    },
+    "29,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN17"
+      }
+    },
+    "29,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN17"
+      }
+    },
+    "30,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN18"
+      }
+    },
+    "30,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN18"
+      }
+    },
+    "31,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN19"
+      }
+    },
+    "31,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN19"
+      }
+    },
+    "32,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN20"
+      }
+    },
+    "32,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN20"
+      }
+    },
+    "33,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN21"
+      }
+    },
+    "33,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN21"
+      }
+    },
+    "34,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN22"
+      }
+    },
+    "34,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN22"
+      }
+    },
+    "35,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN23"
+      }
+    },
+    "35,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN23"
+      }
+    },
+    "36,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN24"
+      }
+    },
+    "36,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN24"
+      }
+    },
+    "37,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN25"
+      }
+    },
+    "37,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN25"
+      }
+    },
+    "38,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN26"
+      }
+    },
+    "38,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN26"
+      }
+    },
+    "39,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN27"
+      }
+    },
+    "39,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN27"
+      }
+    },
+    "40,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN28"
+      }
+    },
+    "40,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN28"
+      }
+    },
+    "41,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN29"
+      }
+    },
+    "41,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN29"
+      }
+    },
+    "42,1": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKHN30"
+      }
+    },
+    "42,2": {
+      "BindingInfo": {
+        "TableName": "v_eqshipping_info",
+        "ColumnName": "JKSN30"
       }
     }
   },
@@ -611,6 +784,23 @@
       },
       {
         "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "FontStyle": 1,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "Formatter": 16,
+        "TextIndent": 3,
+        "HorizontalAlignment": 12,
+        "VerticalAlignment": 9,
+        "WordWrap": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
         "FontSize": 14.666666984558105,
         "FontStyle": 1,
         "FontWeight": 1,
@@ -644,7 +834,7 @@
         "FontStyle": 1,
         "FontWeight": 7,
         "Foreground": 2,
-        "Formatter": 16,
+        "Formatter": 17,
         "HorizontalAlignment": 9,
         "VerticalAlignment": 9,
         "WordWrap": true,
@@ -660,7 +850,7 @@
         "FontStyle": 1,
         "FontWeight": 1,
         "Foreground": 2,
-        "Formatter": 17,
+        "Formatter": 18,
         "TextIndent": 3,
         "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
@@ -677,7 +867,7 @@
         "FontStyle": 1,
         "FontWeight": 7,
         "Foreground": 2,
-        "Formatter": 16,
+        "Formatter": 17,
         "TextIndent": 0,
         "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
@@ -691,7 +881,7 @@
         "FontStyle": 1,
         "FontWeight": 1,
         "Foreground": 2,
-        "Formatter": 16,
+        "Formatter": 17,
         "TextIndent": 0,
         "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
@@ -705,7 +895,7 @@
         "FontStyle": 1,
         "FontWeight": 1,
         "Foreground": 2,
-        "Formatter": 16,
+        "Formatter": 17,
         "TextIndent": 0,
         "HorizontalAlignment": 12,
         "VerticalAlignment": 14,
@@ -730,7 +920,8 @@
         "FontStyle": 1,
         "FontWeight": 7,
         "Formatter": 8,
-        "HorizontalAlignment": 9,
+        "TextIndent": 5,
+        "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
@@ -766,7 +957,7 @@
         "Strikethrough": false
       },
       {
-        "Background": 18,
+        "Background": 19,
         "FontSize": 12.0,
         "Formatter": 8,
         "HorizontalAlignment": 9,
@@ -777,14 +968,15 @@
         "BorderRight": 1
       },
       {
-        "Background": 18,
+        "Background": 19,
         "FontFamily": 0,
         "FontSize": 13.333333333333332,
         "FontStyle": 1,
         "FontWeight": 1,
         "Foreground": 2,
         "Formatter": 8,
-        "HorizontalAlignment": 9,
+        "TextIndent": 5,
+        "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
@@ -819,7 +1011,8 @@
         "FontWeight": 1,
         "Foreground": 2,
         "Formatter": 8,
-        "HorizontalAlignment": 9,
+        "TextIndent": 5,
+        "HorizontalAlignment": 12,
         "VerticalAlignment": 9,
         "WordWrap": false,
         "Strikethrough": false,
@@ -845,7 +1038,7 @@
         "BorderRight": 0
       },
       {
-        "Background": 18,
+        "Background": 19,
         "FontFamily": 0,
         "FontSize": 12.0,
         "FontStyle": 1,
@@ -992,6 +1185,7 @@
         "Background 1 0",
         "Top",
         "Blue",
+        "####/##/##",
         "@",
         "yyyy/MM/dd",
         "#FFCCFFFF"
@@ -1041,92 +1235,152 @@
       "7,4": 16,
       "7,5": 17,
       "8,1": 3,
-      "8,2": 4,
-      "8,3": 18,
-      "8,4": 19,
+      "8,2": 18,
+      "8,3": 19,
+      "8,4": 20,
       "8,5": 14,
       "9,1": 3,
-      "9,2": 4,
+      "9,2": 18,
       "9,3": 12,
-      "9,4": 19,
+      "9,4": 20,
       "9,5": 14,
-      "10,1": 20,
-      "10,2": 21,
+      "10,1": 21,
+      "10,2": 22,
       "10,3": 13,
-      "10,4": 19,
-      "11,1": 22,
-      "11,2": 23,
-      "11,3": 24,
-      "11,4": 24,
-      "12,1": 25,
-      "12,2": 26,
-      "12,3": 27,
-      "12,4": 28,
-      "13,1": 29,
-      "13,2": 30,
-      "13,4": 28,
-      "13,5": 31,
-      "14,1": 32,
-      "14,2": 33,
-      "14,3": 34,
+      "10,4": 20,
+      "11,1": 23,
+      "11,2": 24,
+      "11,3": 25,
+      "11,4": 25,
+      "12,1": 26,
+      "12,2": 27,
+      "12,3": 28,
+      "12,4": 29,
+      "13,1": 30,
+      "13,2": 31,
+      "13,4": 29,
+      "13,5": 32,
+      "14,1": 33,
+      "14,2": 34,
+      "14,3": 35,
       "14,4": 10,
-      "15,1": 35,
-      "15,2": 30,
-      "15,3": 36,
+      "15,1": 36,
+      "15,2": 31,
+      "15,3": 37,
       "15,4": 10,
-      "16,1": 32,
-      "16,2": 33,
-      "16,3": 37,
+      "16,1": 33,
+      "16,2": 34,
+      "16,3": 38,
       "16,4": 10,
-      "17,1": 35,
-      "17,2": 30,
-      "17,3": 38,
-      "18,1": 32,
-      "18,2": 33,
-      "18,3": 38,
-      "19,1": 35,
-      "19,2": 30,
-      "19,3": 39,
-      "19,4": 40,
-      "20,1": 32,
-      "20,2": 33,
-      "20,3": 41,
+      "17,1": 36,
+      "17,2": 31,
+      "17,3": 39,
+      "18,1": 33,
+      "18,2": 34,
+      "18,3": 39,
+      "19,1": 36,
+      "19,2": 31,
+      "19,3": 40,
+      "19,4": 41,
+      "20,1": 33,
+      "20,2": 34,
+      "20,3": 42,
       "20,4": 2,
-      "21,1": 35,
-      "21,2": 30,
-      "21,3": 41,
+      "21,1": 36,
+      "21,2": 31,
+      "21,3": 42,
       "21,4": 2,
-      "22,1": 32,
-      "22,2": 33,
-      "22,3": 39,
-      "22,4": 40,
-      "23,1": 35,
-      "23,2": 30,
-      "23,3": 41,
+      "22,1": 33,
+      "22,2": 34,
+      "22,3": 40,
+      "22,4": 41,
+      "23,1": 36,
+      "23,2": 31,
+      "23,3": 42,
       "23,4": 2,
-      "24,1": 32,
-      "24,2": 33,
-      "24,3": 41,
+      "24,1": 33,
+      "24,2": 34,
+      "24,3": 42,
       "24,4": 2,
-      "25,1": 35,
-      "25,2": 30,
-      "25,3": 39,
-      "25,4": 40,
-      "26,1": 32,
-      "26,2": 33,
-      "26,3": 41,
+      "25,1": 36,
+      "25,2": 31,
+      "25,3": 40,
+      "25,4": 41,
+      "26,1": 33,
+      "26,2": 34,
+      "26,3": 42,
       "26,4": 2,
-      "27,1": 35,
-      "27,2": 30,
-      "27,3": 13,
-      "28,1": 42,
-      "28,2": 43
+      "27,1": 36,
+      "27,2": 31,
+      "27,3": 39,
+      "27,4": 2,
+      "28,1": 33,
+      "28,2": 34,
+      "28,3": 39,
+      "28,4": 2,
+      "29,1": 36,
+      "29,2": 31,
+      "29,3": 39,
+      "29,4": 2,
+      "30,1": 33,
+      "30,2": 34,
+      "30,3": 39,
+      "30,4": 2,
+      "31,1": 36,
+      "31,2": 31,
+      "31,3": 39,
+      "31,4": 2,
+      "32,1": 33,
+      "32,2": 34,
+      "32,3": 39,
+      "32,4": 2,
+      "33,1": 36,
+      "33,2": 31,
+      "33,3": 39,
+      "33,4": 2,
+      "34,1": 33,
+      "34,2": 34,
+      "34,3": 39,
+      "34,4": 2,
+      "35,1": 36,
+      "35,2": 31,
+      "35,3": 39,
+      "35,4": 2,
+      "36,1": 33,
+      "36,2": 34,
+      "36,3": 39,
+      "36,4": 2,
+      "37,1": 36,
+      "37,2": 31,
+      "37,3": 39,
+      "37,4": 2,
+      "38,1": 33,
+      "38,2": 34,
+      "38,3": 39,
+      "38,4": 2,
+      "39,1": 36,
+      "39,2": 31,
+      "39,3": 39,
+      "39,4": 2,
+      "40,1": 33,
+      "40,2": 34,
+      "40,3": 39,
+      "40,4": 2,
+      "41,1": 36,
+      "41,2": 31,
+      "41,3": 39,
+      "41,4": 2,
+      "42,1": 33,
+      "42,2": 34,
+      "42,3": 13,
+      "43,1": 43,
+      "43,2": 44
     },
     "ColStyles": {
-      "1": 44,
-      "2": 44,
-      "3": 44,
-      "4": 44
+      "1": 45,
+      "2": 45,
+      "3": 45,
+      "4": 45
     },
     "SheetStyle": {
       "FontFamily": 0,
@@ -1169,4 +1423,4 @@
     "PageOrder": 1,
     "PaperSize": {}
   }
-}//qdTdjNAIk9MjjyWEFwdqaQihyWvbbX3VdMG3MBaXlpk2z0uFDt2rcQ4dJ9/vqNxdlCdil4gGdy9MNtcvDBCv2e0XqQQSaHY2/aaz0Olpunt0SRoyuiaTaWTHtAWFvi1IuomfCTAF1UFszoh/o+rQPIlDPCySuglMX6R8HzMVlYthAGz2OciBi5fKh1HPC+0e5UwIWBEijNj5zRXRUPAUec45mzNwzagO1r3WnN7nGZLs3S+yfifQFFzxuJ5SqhlOnfYKXdsJPS9eVw1beVXVKhZtjtso45PgsTmc4ZHyfevF7UNSZ2Vn3xVfiZv2MZocqTZ3H0flqFn63FET63OD0Xbgqg9cg+hoEBR7poRnsO6o5sVBVnEytaqffhmqfR0yDb3IP/t0IGWe4ffRgGEjGVjXu4d8AzYBx91+BAgMuORa/jBfxi5KTU6bswbIQ8c0lEfF5TNrbrjQ+VPSXgv1ksfEowaFxbMCsIQGEhsJnIjWOWIOKmBKYot8cUnDm613nOrSLn7Il59CVVo5NYxL9kFUJ31TGnJH3wCyy+Pa82YpZ+P4sxPagynuMiyWwHtwuZxBVVI6TbsTDP5fcx5CkJpzbj1x+YLhaewsfqyMSL0Muyv0b8ZzLSb8yXUn7BnXD4OBQraxx4sS3lma3MNIxFUP7vOnd6ctW6N/892rY/H0IzN7iwND6hj4dyeGNbTSV7RSY1ziPyvXYo4Z2Tbmf27tuvT/TVEqPramdnnLCbnw7t6Y9hKfyVv3IY5nkG7E37Qf1LOIaW3ryOaEc8GwcOz/Mew7scKDo29VdfSis2jVioKZsQFexTa5n9sa0lOXUmIXBIf90tjeD4HK2ut3QNFxdKh0DPJ+zIKPUXowElu/QqBPBQ0OZoouzXVoW8cckOmZOpx6XUcL7Byw+OFGJQ==|920
+}//CmKiE4J/UHXXLlRY1QW53iS13aa6KKIeap9Ofb3ms5FxQptTQfRTWOor+NWDgjMxCTeh5070gHg4okpHrseO0sGaf8BNhLIZSwnX+5iBqkxwnt0fnFUgym3qCtDGQkByEjnNyRJwvEm2oCsQTleJRat/lszzrjWi8YAWP8EW/7dNDuEcquKFG/jOH80U+A0NhFl5xNIuwffmyeDFx0F8zqn7blwj9iWULzxcqVHo7830GmekZFPIpyMl4DwpQ0uXYknfwTWTVppbhYGWLm6bvulbYIwGDISRgS2458ynEkL575KqgSakW5jwgQBFL2byvrsoBclmKSrRgqqUhOuHQFNhRtpRqRcfS1jNYJO2lfVXvWiORyPH7S0qlaS6z53IDeZxfbHaCiU505pjQpCiPYHi2FK/gO16HTkJktYR6bWfZStp40wwIO7dEzXF1oxrAvBDYjyPwzj/X0aquLeQRkVqMlA2w1TdWhrlPuCVny6szlMzrQ/j4mUUMonAm/CyJJINZYLIV/D6M3/PazV+FKe7UVy9iVHzUOJI2TP+aa6aD4+g1e2rgB048HfsGXj6rNRudluj9XnfbARwaQArzW8mikQalU8S8AwAEXIjQlPdITyF6CheKo3QPhcUC5IKoxplocoZEpusfwxDKKumD5EkTMrmjSHR0YoPS7Gu0s1Jb+vmMYXPNSMJ+ili1Wqujfy+l7/hC5lfPjxFFP7U+u/U0pFiUVo16UXLjVtCOUqoL3Hf0Pinqgd7YMLRnQoawK/hWBaZa2gzi7GqkizwsuNkXUapZpGgg/NDMUl40E+KUkBIZU+tIj7Eao3Kv2xTmBi360vOnVZzEtaTMFnr+ocDQPFx9vjzvkuzyTO7kifmAhD7Krgr9Fth9SpSu1G0BGRiegfoje92KdSM4Tw2wA==|920

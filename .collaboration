@@ -14,16 +14,7 @@
   },
   {
     "ModuleName": "TableView/v_eqshipping_info",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:07:56.3742255+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\v_eqshipping_info.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/v_eqshipping_info_zero",
@@ -135,42 +126,15 @@
   },
   {
     "ModuleName": "PCPage/出荷情報 (view)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:20:25.7034177+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\情報登録\\出荷情報 (view).json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/出荷情報一覧",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:22:02.7884405+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\情報登録\\出荷情報一覧.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/出荷情報画面_登録・更新の共通ページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:22:16.7142194+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\情報登録\\出荷情報画面_登録・更新の共通ページ.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "Pages/検索",
@@ -182,16 +146,7 @@
   },
   {
     "ModuleName": "PCPage/RJ情報登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:22:25.7286911+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\RJ情報登録.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/使用説明",
@@ -199,16 +154,7 @@
   },
   {
     "ModuleName": "PCPage/出荷情報画面",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:18:29.7512286+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\出荷情報画面.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/検索_高度な検索 (全件)",
@@ -216,16 +162,7 @@
   },
   {
     "ModuleName": "PCPage/検索_高度な検索",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:17:16.6007594+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\検索_高度な検索.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/装置情報マスター",
@@ -241,16 +178,7 @@
   },
   {
     "ModuleName": "MasterPCPage/RJ情報登録_マスターページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:24:15.3860271+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\RJ情報登録_マスターページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/RJ情報登録ミラー_マスターページ",
@@ -262,16 +190,7 @@
   },
   {
     "ModuleName": "MasterPCPage/出荷情報一覧_マスターページ",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:24:43.0998964+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\出荷情報一覧_マスターページ.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "MasterPCPage/編集_RRC_すべて",
@@ -279,16 +198,7 @@
   },
   {
     "ModuleName": "MasterPCPage/高度な検索",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-03-28T16:25:26.5646455+09:00",
-    "ModuleType": 3,
-    "ToRemoveFiles": [
-      "MasterPages\\高度な検索.json"
-    ]
+    "ModuleType": 3
   },
   {
     "ModuleName": "TaskScheduler/スケジュールタスク1",

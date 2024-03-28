@@ -222,7 +222,7 @@
                                                                                           "CompareType": 6,
                                                                                           "ColumnBindingInfo": {
                                                                                             "TableName": "v_eqshipping_info",
-                                                                                            "ColumnName": "plan_no"
+                                                                                            "ColumnName": "planno"
                                                                                           },
                                                                                           "Value": {
                                                                                             "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -764,7 +764,7 @@
             "Params": [
               "=AY7"
             ],
-            "ID": "fad4fa7d15ca4d56acb9e77c52cbdf2e"
+            "ID": "cac1df48c394466b82b18abf064bff38"
           },
           {
             "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
@@ -839,7 +839,7 @@
               }
             },
             "Params": [],
-            "ID": "9ab09af8f3264940a9cf3bd9aedb4d23"
+            "ID": "db0067c51464449a981cb7b88431fa33"
           }
         ],
         "Text": "RJ情報登録ミラー"
@@ -1789,4 +1789,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//lyGznGuCP2ixYWHt6FgB1QmrcPumpSLjPDZ97dAvZ7fjYfOk5+magGYQiWMLH8Sgse140SsYN25wcUrouz55W6HQHT2q3W/ThKRhabsjHqLtE+1AFe2J96mPxFE7pGI4P6DZaWuHOX08rpEaNVwf8hRT75Yo4KGfn06gv+AEc5MvU4WzoH4AStkInqzdrMvnU8GvNFMl1BLBZX9vTUehFGlWwQ7bUiCUcbzIIB8dDeozAuYLG6vz6E7b2BVrr2ZKBEXkn/OwZNTM8Vpy7+PC7uLJEyYGPbc8XYbYEBgIfniSa/nWvuQxE0rTpiqMPE0Txpo6lAlA0ETFQBtspCpYa1mlc5poZ7FG5ylNfwwaj9IBn+Jr7OLQW3tVr48y4fEw7LnGF/gR4Xl1Gv+CWYMoHQ6UC1vy1KgvYmKpFAdKoDpPeMpHGMHGJ7reCAoDStTSy8kSs1krPxeOz6JWzNG1xaKl/bYXFXf79xPRDfu+1KvHXQboMX8iIecTFh2AcSthF9x1LzEyAS+YTaaSKgGgnER59IwU9tchsPq47h7RwxMmPB3jpzmF/qfZrbWwwJ9qH10QB5/bNMcMKwJupn+n/zNCGUv4qsrWROQS9Wr+nswoZCsCaZMW3aO7Urcv+nzQtThSSUxdpXjqp06lV2evID8amDr9SdHqQQcDloSL5/YcTJRbssTVSSDHPD6otz6F8fhN3jBfR0kssyfGM+nvJjOn0btZwuqe3Zajh1k7FDs2cEt2la687prd5WtE842SP7HV29RwRJGa0dxIIhztdbBn82CramG2UH1WghkWSDudsi1SwqmMpVs9ybPxqBNbEIfbi1ev5PsK7J7X1qWr4ETZ64pWl4jXTA/VTFU7Fv24VONW4cRbW74lMis7q382JmxXqKFq4isSaswGplx73w==|920
+}//aHoso3avFZYCLzviIFENAB6aGumC0uCRM0JkgHh0qC6n6z1Fye+bI/570/ycBAlsr70lav1mmN927EqWwAQp2tH80i8jlNX72P0DKGXHIS6LODriYKN27bwSRW4jXRVFVV6/0ssUecsZnlHfZkdzGU3z0IbxHOgYLZgECl6bMxBRTsH5PlJ9Ik/EaENd1HKQZv6IGeuuNAmlOCTV8vMCX7xFTyKuCuzQG3w6LcFZxbVexPDMk6gvGF5uhpwrSwSVP2jMtq/vEWjNTrMf9+ByenuCOs4zGBzQzqoeoxHMWl06WLAPWJJakPFhfyk/r+zgDsLIqOgW0swRJqtDF8bAyanVYgaeXSw4ZHaA6QmilbehxZ6H359D4ZSx8cO1Er0yMzzrsS0r2lbEuKzYsurgh6FoTcdCDmIHqAlzGIGZ2eMufR2yzgNkoWKX6DpeqzSzK0QkBFO/4/qoFxcaB+o2unsG/fsg26k51RA/PWr0tAMGwr+PCxKZdNW1ZN4GuEY8FTlp3HirYOkcgvYQ8P5AecDhCqxWKsNCKlGTM6mj/SVWA3TxoY2IW0MUXpRx7IgCgVQvyRnibDbpa+cvPgBcEfuZtoq5qHpJ/XiOIJsnR0RWxvrXIbNhx07NND+ppFB6196CpHMhcW1gyW3EtQ80K5ExzCrKbxlzo3cQT0OHg5k7/5udpc9XMtIHJfUBhgvjW5leu8HbN8A5rEFIZt2uCbdqP3Kc/Fi6UVZbEaayKULstEglFBoIgpVm36bLqJNVlbKM3fava7Pv+LNHN3cd3vcRhg1oK1yfM8wH+2Pv7BK/xE1kGD+gJeBEUZWMiSkVmEoOmuOiBES+amotR9qZk4xmdCNuTydpKHQUEJPnx62dVo10tuqnJR4PwClNHEWQvJV6jE8nFxP6UPIUTHTUTw==|920

@@ -106,7 +106,7 @@
               }
             },
             "Params": [],
-            "ID": "7ea6d73fbc234d9da9b83b51de085821"
+            "ID": "f5857c7e79004dc49dcecac069b504ee"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -246,7 +246,7 @@
               }
             },
             "Params": [],
-            "ID": "12e7d02541504a5893a71269b88e61a6"
+            "ID": "4081d4baac0b4cd694ae56401fdcf89b"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -386,7 +386,7 @@
               }
             },
             "Params": [],
-            "ID": "4a3c3d9a6b3e4a7bb2a4e356facf4458"
+            "ID": "19888716509b4d54a4d35685cdc59bc3"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -544,7 +544,7 @@
               }
             },
             "Params": [],
-            "ID": "050ee0022d294882b3f2b2ec658b5403"
+            "ID": "bd66b2eddf1d46dcb187c8af3f3c3733"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -702,7 +702,7 @@
               }
             },
             "Params": [],
-            "ID": "13f942d740804efc86819bdef9b28a2c"
+            "ID": "379a14421e354a3eb4b36eb997e916b5"
           },
           {
             "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
@@ -816,18 +816,13 @@
     "7,3": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
-        "ColumnName": "plan_no"
+        "ColumnName": "planno"
       }
     },
     "7,7": {
       "BindingInfo": {
         "TableName": "v_eqshipping_info",
-        "ColumnName": "plan_no",
-        "RelationBinding": {
-          "RelatedTable": "trn_eqpshipping_info",
-          "RelatedColumn": "plan_no",
-          "DisplayColumn": "shipment_date"
-        }
+        "ColumnName": "planno"
       }
     }
   },
@@ -1243,18 +1238,18 @@
     "7,48,1,5",
     "7,53,1,2",
     "8,1,21,54",
-    "7,3,1,4",
-    "7,7,1,9",
     "6,1,1,2",
-    "6,3,1,4",
-    "6,7,1,9",
     "6,16,1,9",
     "6,25,1,8",
     "6,33,1,6",
     "6,39,1,4",
     "6,43,1,5",
     "6,48,1,5",
-    "6,53,1,2"
+    "6,53,1,2",
+    "7,3,1,4",
+    "6,3,1,4",
+    "7,7,1,9",
+    "6,7,1,9"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1271,4 +1266,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//3MgeYtZkUXu+QRA7ourdhSiQDLZW4NnDVwCUJLzuKmJ13Dz9V/iR1e7/dYAkjl+eDSbIJ/KTU6S42SpCBCqzc13v3aAyqdDm9KVlSjDjRIH7Pgx9MpkymW+chQsdHaa7hAszP5TbHS1NH5Ony6jOLLKgeplRonl+GIYedzQ1yYqSIfwHJKYjo5jokkzOetrYij3mef9O86etu7ooWdWeHd6QykV3r2xQMEEzx56YukM+uXSGNbOtcDN4gA5S9NBErQmCvjXBDK5THQ9zT+k3d1W/2eTHL6o+dFsdU4kJCwLuNI3hWq7T2+MENkjrGczxiEUfzhpgFs2wcT2g5p+e/6+zDdHh+as+lgSCfUrdgGFcmphnbFDf5nexD3tGjFAe2RbQr88EU7B1Nbalmpbl1sxzxt73JMwzqdxQyiHgOcItZ9Y/CL200YpvvfLMZAwkyhVEG3CfOOnLM2uOIJX2hZ03GQ4BhCrWISBoOoWxzz4SKq8nlbfbiyTu84Y1AIOVBPNe1QyTkquSxdDYyAipFGE3UmhnYx2ROjfD2RyT8VM0IDSMM988fdi6ItnRqNqBX4squTPVYcAy6o0aHwsLM50eWiH6xT2GJaLihPzjlucpVJw6faSCGPTflQIrO9vcsiiIACJxnCPpAut3ggFRzngOq17S57HeFbVh9Px0LKay20Ep+Ldq0iQL8D4ZKdWL7MO5fWKNfnFWt4tSYMhpz79dIJwea66VUHGfTsxxfJe+bC4rktS/EKFQUApqBEJ+gv7m4IQgKVO38YWrgrgOe7u+i+ZkJ8AUtx1Cj6cejS9we3MA1IZZUX/db2+b7mVErFzWAVI5Mv+c31DVIj8CotQ8KhMU6ErO4JkxSkah4U4znw81Xgqk8mtwCL8at6sWJxPP/sc/smb77Id21oY8pA==|920
+}//WM2vJ2H1tk/PcJ6s0V+ANkSIoiANCu15Qk7warn1AQpE79BXOBUKZ4nDY5j4MQVKGfBZbkpiLfGqCUOL6CBEpgYS8SjnjGI+Rfb3Tqrk53Dy1UICRYHs46bvyy46t7ZMtmHCvKRF3ngXU2UofXXz7ZswZegHO2KuojPwQgW9LEsU2jW48+gD6OSlbANNQBxnHsZVwn1d7IE7Ck9KOXWVGuYQmuPo67u8urEUuUOUwHnrHSfoDEVumh777zeCqrrVcRWyqRVvLZkOogN87tQ9kiNXPegJtSdrLh2VDkcI073x7GXG6sQX6/sF8930z0FCZSb25rKtJTWmz+boDqw3XRAFig7qj7790NpSlYqzdYT7ze707fPzpFQeKnSdPxAhJoyNBO5bPC4GPGReRnyaAUp7FdPVp+trScNIbozkl3nPdZ1wTDc/vGR4gRLGOVzgO6enS7G+bKg2ma7ZAq+0RwldKhxmJkEHBQlCkPP32p/ZxhBLiRtTRYSubvN+6s6SkThkAvnnpDj/nvcga6uAImn3z9CDCEpmjKYPcYUybH6PlkjHkZjWIVH6vmpVKLcwONxZbbdGxDeBPGUSNldjx7UuzUfR5K8z6ObOutx10R8NfTggzXcdivhwZwwbgxN8L3dLf77LFcA1n53uD7b0iYIPzy5YgcVD4k0JjtY4P4YkYJFnwXP8AdvSK3pUR2vyC66+xzZgHDy1WRnkmDxoOjOOfSw3QZiO3yQb4YOIayl/XYZFutJj1h4PsVI3k2GF88bziSLeGOwdtPTv1K65LTMOlnUo35mho0JGcTkn9D6ylhpT0AHA/mgckr/1klxM9RfQm3KURn4IEUylJzABGSjDOzpENr9Qs2PFQZGJxSehcLZnmQ8ihvdevAuBMQnE4nrHf3H9BjF//DrPZ4W20Q==|920
