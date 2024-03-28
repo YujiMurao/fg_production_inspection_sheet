@@ -161,7 +161,16 @@
   },
   {
     "ModuleName": "PCPage/出荷情報画面_登録・更新の共通ページ",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-03-28T16:22:16.7142194+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\情報登録\\出荷情報画面_登録・更新の共通ページ.json"
+    ]
   },
   {
     "ModuleName": "Pages/検索",
