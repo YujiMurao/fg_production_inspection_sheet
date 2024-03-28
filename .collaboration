@@ -135,7 +135,16 @@
   },
   {
     "ModuleName": "PCPage/出荷情報 (view)",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-03-28T16:20:25.7034177+09:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\情報登録\\出荷情報 (view).json"
+    ]
   },
   {
     "ModuleName": "PCPage/出荷情報一覧",
