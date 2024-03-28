@@ -241,7 +241,16 @@
   },
   {
     "ModuleName": "MasterPCPage/RJ情報登録_マスターページ",
-    "ModuleType": 3
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-03-28T16:24:15.3860271+09:00",
+    "ModuleType": 3,
+    "ToRemoveFiles": [
+      "MasterPages\\RJ情報登録_マスターページ.json"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/RJ情報登録ミラー_マスターページ",
