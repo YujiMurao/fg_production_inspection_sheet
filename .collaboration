@@ -18,29 +18,11 @@
   },
   {
     "ModuleName": "TableView/v_eqshipping_info_zero",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T09:52:37.5219773+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\v_eqshipping_info_zero.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/v_mpflib_mpjn00",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T09:52:37.5219773+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\v_mpflib_mpjn00.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -176,42 +158,15 @@
   },
   {
     "ModuleName": "PCPage/検索_高度な検索 (全件)",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T09:06:27.6917976+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\検索_高度な検索 (全件).json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/検索_高度な検索",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T11:02:40.2388676+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\検索_高度な検索.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/装置情報マスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T10:38:45.4307508+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\装置情報マスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/製造検査表-メイン",
@@ -263,16 +218,7 @@
   },
   {
     "ModuleName": "UserService",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T10:20:30.4950263+09:00",
-    "ModuleType": 11,
-    "ToRemoveFiles": [
-      "UserServiceDB.sqlite3"
-    ]
+    "ModuleType": 11
   },
   {
     "ModuleName": "CustomLibrary",
@@ -296,12 +242,6 @@
   },
   {
     "ModuleName": "PCPage/製造検査表(全件)",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-08-21T11:02:40.2388676+09:00",
     "ModuleType": 1
   }
 ]
