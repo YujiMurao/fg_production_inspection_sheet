@@ -136,7 +136,7 @@
     "8,56": "全件検索画面を開く",
     "8,64": "M",
     "10,4": "ヒット数：",
-    "10,10": "出荷日が2006年以前の計画はノーツを参照してください",
+    "10,10": "出荷日が2014年以前の計画はノーツを参照してください",
     "10,50": "リストをエクスポート",
     "10,64": "T",
     "12,1": "計画№",
@@ -1352,7 +1352,7 @@
               "=F7",
               "=F9"
             ],
-            "ID": "bb10b5212e6c413aae7c4bca7a6a8c76"
+            "ID": "e50db84c9c73448e8d679386b4c395db"
           },
           {
             "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
@@ -1744,7 +1744,7 @@
               "=AU5",
               "=F7"
             ],
-            "ID": "a865f4e052354494a71b5eca7d5e9363",
+            "ID": "a49a7e1f719c413da8a9c2408b1ea14e",
             "Disabled": true
           },
           {
@@ -1901,7 +1901,7 @@
               "Value": "0"
             },
             "Params": [],
-            "ID": "a8df07bb3d314a72b77658ac803dc52b",
+            "ID": "77fb5f3aae6f468ba814cd01428b1438",
             "Disabled": true
           },
           {
@@ -2208,7 +2208,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "2153bbaf-2be7-4ae0-89d1-ff7765ee4310"
+                "ID": "08c0549d-4fc1-4685-ad59-3cbaf31b1135"
               },
               {
                 "CommandList": [
@@ -2222,7 +2222,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "5f01bf41-a61e-4d1b-a18f-d42f18c3ee7d"
+                "ID": "b38973c0-cbe5-4c36-8bbb-bfbfc771fb15"
               }
             ]
           }
@@ -2275,7 +2275,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "56e2c2d8-1039-4e78-b40c-adec85ebe6d0"
+                "ID": "2fb74fbb-8c15-4e27-9df5-631357d3bae4"
               },
               {
                 "CommandList": [
@@ -2289,7 +2289,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "4e6719c4-a742-49ff-876f-b45fa4c1ec07"
+                "ID": "88c78445-e5ae-4530-8472-c7515cd399d6"
               }
             ]
           }
@@ -2341,7 +2341,7 @@
                     "MessageFormula": "計画番号フォルダが作成されていないためにリンク先へ移動することはできません。"
                   }
                 ],
-                "ID": "aaad6f09-cdec-4f67-b8dd-68ad6d6f321f"
+                "ID": "235b4258-2995-4874-8e27-504334773dc9"
               },
               {
                 "CommandList": [
@@ -2355,7 +2355,7 @@
                     "IsOpenInNewTab": true
                   }
                 ],
-                "ID": "bc116ee2-64a5-488c-a63a-9858cadcaa69"
+                "ID": "7f444b0b-1d66-4265-80cb-c3334167fa3d"
               }
             ]
           }
@@ -4108,7 +4108,7 @@
           }
         },
         "Params": [],
-        "ID": "d085feaeeef3497fbccc26151e1dd743"
+        "ID": "70b19f24dd74498cbcf5c5fd5182c3f4"
       },
       {
         "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
@@ -4124,7 +4124,7 @@
             }
           ]
         },
-        "ID": "6f1b2b53a2b64b7790f82c903f52d4bc"
+        "ID": "9010d811613e4c09a3dca49f5f139321"
       }
     ],
     "AuthorizeInfo": {
@@ -4139,4 +4139,4 @@
     "Margin": {},
     "PaperSize": {}
   }
-}//hVm/y6zFMxSG+tCcxbe69kGzeQVyDokebwI1JDcoGY/p9yT7WezCmcBzm0BMv+RNEzAeEb/UPPPHlYa7Xxk0Iv+OW/lh1g/8x9xeJwhcRZdIk3hwyEaM4RCn0U6H/KYIdBixWdNMUGviwgzrVaZf5VydbL1rSbK7Be5Gjo+QbpTyE5Qf4ZINSfiZrH2IAhC3VyQS8ouhIMerCuB5lYLET+sA/ICFUNc9MOLAQnU7z0i/kcGqKMmah3vJ3I10D51+8cs4J5RfhvzQOk4b7NZvyR4PVqRD6FqflbV64C/fhfEkHI2Irps60Y9GaddXbmy0VMOIp18ixcS8Sv2xpCDlBNJsqxLtxsPvfnBDNre8Wbo4hk+Rn61VceXPOS5gVtBhmTObr8DSALc6v5wRWJkigYuItYZCH8t6TGQT3Muj7LFkvlALvUTAMa4a3577pmvfQrxqNdURdGLao9kZ7ZnmAdnuP5ohNYVwz/urQmWkypxaCwgXLIvstN4NA7By9Xf6KvmOtuH3uF2Hq7YdpLOhDNsOzQZ9O2FYg5JBgrq91c+gQq+jXToDtc98OpdJPGfrhbZ4B7rZxm/AqZODOTwbVvjExcHj1m00ccS73MKgC+6Q9qbAQiydYueUuw5AUNzRj0L04qFpHGkDSFz9Ne+oOAqVIHro8yu1nFY7gYEqXeE2gHjw0zjN7Bm8LMdlkWQ/8uOvl4o0lP2hTwpXc+FlXD3iPcnhqyX7A2uC5cO+P6fCvuxT3uIFLXhHYsc1GjRWi7/Ly5W0fZmtkJLDz/XstgjUsxtVMDGUwzKMGhEC4RZxuTHjrq5lJkiQXK95n/t+hNvin3YpM5wr4LMKpoJc2UH8qPNpd/wFKf1f5rXtFsFNpjkaLLnRuS+XnKGJhLNqR81zDM0maoNSLtLHw2MTjw==|920
+}//DKjPEC4BWQet2HXXWohiHLdXCMLCJMkQzV3FCVS1CVFL3LifoXU4/9KbYujpVIgyDDF3TUaokayQC/lwF8ZUuzjQiWQF9j4HkEVaBRZRCfyWVPMB6bya+I7tcHMSJM/EZYGZ4rRniNH1XQSh8bla+cPnu5UkWAB2nAkRqTqS7ObBpqOGEW9pVOpL584O20F+OFJXi/apXLH+F87MxCL9J6bamiXQr4gI/hQ9Iv4XudtaGX229KPxih9jjr6fk5Lbo4SJyvGaXzjDHhM1fhVsd/3vAemNV/J9tsY3u4O21TS2QfcBcH+bpXUOviGLrbARr9RxK3CyG+hjzZPmZ8P6Vr7DrwfAcz5NvBZDzxWQnST+ddpdffzFaN0bxIv12D8iYEBHLoU7dkN/o29hUZV3TVLZw4DAKW+FLnFaDL2WNjsxg68AgkhAFbhVR2U1/dPYMqrQzugwU2vLL4BP9sg0SPLJISIU7HK22dNPF3h8izIBeHPZkWrgwPwoLPx+qjte80d+Pi40uCYl7rvuYg9Ane5rzZUG01JzbqL/GcwJFjYWo26qMICjMyNXVkiFtS97Z3YbYgeOAr9daRaNMqvo1dG/bqBND5QPdPhwX5bcNPrSmS3DNs7Fs0PdjLvprXVdsv/R/Xgx0uiabgwVARjXVWRn7+6zEis5YQxwJQoLk25jRCpurPApzvojh9P3AudbE0kfC8qtHFObeg9I7DzRxDOiRyCQ8K/yNSrCdYzweqBrFiPJv/REXIzinh9Pw995acrPMFYvxEYfGzhMa2ehc/Y7/PGp6a24VT0xy5MYj5Fy3KUYBIroTpDWs0H9KEVb9DBTzCRl6ceXrIuH1oDlQQTXTgRISa/QXoHOPqiRO9O0qyRZ6zWbzR5DIZaH3enRGQ2NZ0HztmKOaq4GCxHTpA==|920
