@@ -166,16 +166,7 @@
   },
   {
     "ModuleName": "PCPage/装置情報マスター",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "RORZE_CO\\ymurao",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2024-11-26T16:37:14.5904753+09:00",
-    "ModuleType": 1,
-    "ToRemoveFiles": [
-      "Pages\\装置情報マスター.json"
-    ]
+    "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/製造検査表-メイン",
