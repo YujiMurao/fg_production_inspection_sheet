@@ -18,7 +18,16 @@
   },
   {
     "ModuleName": "TableView/v_eqshipping_info_zero",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "RORZE_CO\\ymurao",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-11-28T17:57:59.8721038+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\v_eqshipping_info_zero.json"
+    ]
   },
   {
     "ModuleName": "TableView/v_mpflib_mpjn00",
